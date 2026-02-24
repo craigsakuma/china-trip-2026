@@ -4,8 +4,9 @@ import type { Metadata } from "next";
 import { cities, getCityBySlug } from "@/data/cities";
 import { getProfile } from "@/data/profiles";
 import WeatherTable from "@/components/weather-table";
-import ItemCard from "@/components/item-card";
 import HeroImage from "@/components/hero-image";
+import CitySections from "@/components/city-sections";
+import { CityRatings } from "@/components/city-ratings";
 
 /* ── Static params for all city slugs ─────────────────────── */
 export function generateStaticParams() {
@@ -85,6 +86,9 @@ export default async function CityPage(props: {
                 </span>
               ))}
             </div>
+            <div className="mt-3">
+              <CityRatings citySlug={slug} variant="dark" />
+            </div>
           </div>
         </div>
       </section>
@@ -123,47 +127,13 @@ export default async function CityPage(props: {
         )}
       </section>
 
-      {/* ── Neighborhoods ─────────────────────────────────── */}
-      {profile.neighborhoods.length > 0 && (
-        <section className="mx-auto max-w-4xl px-4 py-12">
-          <h2 className="mb-6 text-2xl font-bold tracking-tight">
-            Where to Stay
-          </h2>
-          <div className="grid gap-4 sm:grid-cols-2">
-            {profile.neighborhoods.map((n) => (
-              <ItemCard key={n.slug} type="neighborhood" item={n} />
-            ))}
-          </div>
-        </section>
-      )}
-
-      {/* ── Activities ────────────────────────────────────── */}
-      {profile.activities.length > 0 && (
-        <section className="mx-auto max-w-4xl px-4 py-12">
-          <h2 className="mb-6 text-2xl font-bold tracking-tight">
-            Activities
-          </h2>
-          <div className="grid gap-4 sm:grid-cols-2">
-            {profile.activities.map((a) => (
-              <ItemCard key={a.slug} type="activity" item={a} />
-            ))}
-          </div>
-        </section>
-      )}
-
-      {/* ── Restaurants ───────────────────────────────────── */}
-      {profile.restaurants.length > 0 && (
-        <section className="mx-auto max-w-4xl px-4 py-12">
-          <h2 className="mb-6 text-2xl font-bold tracking-tight">
-            Restaurants
-          </h2>
-          <div className="grid gap-4 sm:grid-cols-2">
-            {profile.restaurants.map((r) => (
-              <ItemCard key={r.slug} type="restaurant" item={r} />
-            ))}
-          </div>
-        </section>
-      )}
+      {/* ── Neighborhoods / Activities / Restaurants / Reviews ── */}
+      <CitySections
+        citySlug={slug}
+        neighborhoods={profile.neighborhoods}
+        activities={profile.activities}
+        restaurants={profile.restaurants}
+      />
 
       {/* ── Practical Tips ────────────────────────────────── */}
       {Object.keys(profile.practicalTips).length > 0 && (

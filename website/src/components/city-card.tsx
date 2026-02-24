@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { CityRatings } from "@/components/city-ratings";
 import type { City } from "@/types";
 
 function tierBadge(tier: City["tier"]) {
@@ -67,8 +68,8 @@ export default function CityCard({ city }: { city: City }) {
             </div>
           )}
 
-          {/* Rating placeholder */}
-          <p className="text-xs text-muted-foreground">Not yet rated</p>
+          {/* Ratings */}
+          <CityRatings citySlug={city.slug} variant="light" />
         </CardContent>
       </Card>
     </Link>

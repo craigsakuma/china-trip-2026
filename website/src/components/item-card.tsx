@@ -11,6 +11,7 @@ import {
   CollapsibleContent,
 } from "@/components/ui/collapsible";
 import { formatPriceTier } from "@/lib/pricing";
+import FavoriteButton from "@/components/favorite-button";
 import type { Neighborhood, Activity, Restaurant } from "@/types";
 
 type ItemType = "neighborhood" | "activity" | "restaurant";
@@ -19,6 +20,9 @@ type Item = Neighborhood | Activity | Restaurant;
 interface ItemCardProps {
   item: Item;
   type: ItemType;
+  citySlug?: string;
+  favoritedBy?: { userId: string; color: string }[];
+  onFavoriteToggle?: () => void;
 }
 
 function isActivity(item: Item, type: ItemType): item is Activity {
@@ -98,7 +102,13 @@ function ExpandedPhoto({ photo }: { photo: { src: string; alt: string; credit?: 
   );
 }
 
-export default function ItemCard({ item, type }: ItemCardProps) {
+export default function ItemCard({
+  item,
+  type,
+  citySlug,
+  favoritedBy = [],
+  onFavoriteToggle,
+}: ItemCardProps) {
   const [open, setOpen] = useState(false);
   const photo = getPhoto(item, type);
 
@@ -132,6 +142,18 @@ export default function ItemCard({ item, type }: ItemCardProps) {
                 {collapsedInfo(item, type)}
               </p>
             </div>
+
+            {citySlug && (
+              <div onClick={(e) => e.stopPropagation()}>
+                <FavoriteButton
+                  citySlug={citySlug}
+                  itemSlug={item.slug}
+                  section={type}
+                  favoritedBy={favoritedBy}
+                  onToggle={() => onFavoriteToggle?.()}
+                />
+              </div>
+            )}
 
             <ChevronDown
               className={`size-4 shrink-0 text-muted-foreground transition-transform ${
