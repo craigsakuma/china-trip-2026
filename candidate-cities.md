@@ -1,6 +1,6 @@
 # Candidate Cities — China Trip 2026
 
-20 destinations beyond Beijing and Hong Kong, selected to match our traveler profile: authentic experiences, hiking, great food, art/history, and cultural immersion.
+22 destinations beyond Beijing and Hong Kong, selected to match our traveler profile: authentic experiences, hiking, great food, art/history, and cultural immersion.
 
 ---
 
@@ -202,6 +202,28 @@ One of China's most historically significant and least-touristed cities. Was the
 - **Highlights:** Old city walk covering Kaiyuan Temple, Qingjing Mosque (one of China's oldest), the only surviving Manichaean temple in the world; Maritime Museum; street food (meat dumplings, fish ball soup, oyster omelets)
 - **Best for:** History (deeply unique), food, cultural immersion, off-the-beaten-path
 - **Suggested days:** 2
+
+---
+
+## 21. Shanghai — Shanghai Municipality
+
+Shanghai is China's most cosmopolitan metropolis, and at first glance may seem like an odd fit for travelers seeking authentic cultural immersion. However, beneath the glitzy surface lies a city with deep roots: centuries-old water towns on its outskirts, a thriving local food scene beyond xiaolongbao, and some of China's best museums and art spaces. Mid-October weather is excellent (mid-60s to low 70s°F, low rainfall). It rewards those who dig deeper but requires more effort to find the authentic layer compared to cities like Chengdu or Dali, and it lacks serious hiking.
+
+- **Highlights:** Jinze Water Town (quiet, genuinely lived-in, almost no foreign tourists — skip the over-touristed Zhouzhuang), Old City backstreet food deep-dive through longtang lane houses and wet markets, M50 Art District (working artist studios in converted textile mills) and Power Station of Art (free contemporary art museum)
+- **Best for:** Food, art, modern history, architecture, urban cultural contrast
+- **Suggested days:** 2-3 (best as a gateway city at trip start/end)
+- **Why you might skip it:** Authentic side requires deliberate seeking-out. City's dominant character is modern and commercial. No hiking. Most expensive city in mainland China. Time may be better allocated to places where authentic experiences are the default.
+
+---
+
+## 22. Xi'an — Shaanxi Province
+
+Xi'an is one of the strongest candidates in all of China for travelers who prioritize history and food. As the ancient capital of thirteen dynasties and the eastern terminus of the Silk Road, the depth of history is unmatched — 3,000+ years of layers. Unlike Shanghai, the authentic character is impossible to miss, from the intact Ming Dynasty city walls to the vibrant Muslim Quarter where Hui culture has thrived for a millennium. Mid-October weather is ideal (55-68°F, crisp and dry). The food scene is distinct from the rest of China — heavy on hand-pulled noodles, lamb, and bread-based dishes reflecting its Silk Road heritage.
+
+- **Highlights:** Terracotta Warriors combined with Huaqing Hot Springs (world history + light hiking), Muslim Quarter deep food exploration beyond the tourist drag (yangrou paomo, biang biang noodles, persimmon cakes), cycling/walking the 13.7km Ming Dynasty city wall loop and Beilin (Forest of Steles) Museum with 2,000 years of calligraphy
+- **Best for:** Ancient history, food (unique regional cuisine), cultural immersion, Silk Road heritage, calligraphy/art
+- **Suggested days:** 2-3 (optional 3rd day for Huashan sacred mountain hike — world-class but strenuous)
+- **Why you might skip it:** Geographic outlier if itinerary focuses on southern China (requires internal flight). Terracotta Warriors site is a mass-tourism destination with large crowds. City outside the walls feels like a typical large Chinese city.
 
 ---
 
