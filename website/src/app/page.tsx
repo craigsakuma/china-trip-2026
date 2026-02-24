@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Header from "@/components/header";
 import CityCard from "@/components/city-card";
 import ChinaMap from "@/components/china-map-wrapper";
@@ -11,10 +10,7 @@ export default function Home() {
       <Header />
 
       {/* ── Map ──────────────────────────────────────────────── */}
-      <section className="mx-auto max-w-5xl px-4 py-12">
-        <h2 className="mb-6 text-2xl font-bold tracking-tight">
-          Where We&rsquo;re Going
-        </h2>
+      <section className="mx-auto max-w-5xl px-4 pt-6 pb-8">
         <ChinaMap cities={cities} />
       </section>
 
@@ -32,18 +28,12 @@ export default function Home() {
 
       {/* ── More Destinations ────────────────────────────────── */}
       <section className="mx-auto max-w-6xl px-4 py-12">
-        <h2 className="mb-4 text-2xl font-bold tracking-tight">
+        <h2 className="mb-6 text-2xl font-bold tracking-tight">
           More Destinations
         </h2>
-        <div className="flex flex-wrap gap-2">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {moreCities.map((city) => (
-            <Link
-              key={city.slug}
-              href={`/city/${city.slug}`}
-              className="rounded-full border px-3 py-1.5 text-sm transition-colors hover:bg-accent hover:text-accent-foreground"
-            >
-              {city.name}
-            </Link>
+            <CityCard key={city.slug} city={city} />
           ))}
         </div>
       </section>

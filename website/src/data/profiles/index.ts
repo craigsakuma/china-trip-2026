@@ -55,7 +55,3 @@ const fullProfiles: Record<string, CityProfile> = {
 export function getProfile(slug: string): CityProfile | null {
   return fullProfiles[slug] ?? null;
 }
-
-export function hasFullProfile(slug: string): boolean {
-  return slug in fullProfiles;
-}

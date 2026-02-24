@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -18,13 +19,20 @@ export default function CityCard({ city }: { city: City }) {
   return (
     <Link href={`/city/${city.slug}`} className="group block">
       <Card className="overflow-hidden py-0 transition-shadow hover:shadow-lg">
-        {/* Gradient image area */}
         <div
           className="relative aspect-[16/10]"
           style={{
             background: `linear-gradient(135deg, hsl(${city.hue}, 45%, 35%), hsl(${city.hue + 30}, 40%, 55%))`,
           }}
         >
+          <Image
+            src={`/photos/${city.slug}/_hero.jpg`}
+            alt={city.name}
+            fill
+            className="object-cover transition-transform duration-300 group-hover:scale-105"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
           <div className="absolute bottom-3 left-3">{tierBadge(city.tier)}</div>
         </div>
 

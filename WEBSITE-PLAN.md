@@ -256,47 +256,13 @@ china-trip-2026/
 
 > Port existing markdown content into structured data. Create new city profiles.
 
-### Beijing (Complete Profile Exists)
-- [x] Convert `cities/beijing.md` → structured TypeScript data object ✅
-  - `src/data/profiles/beijing.ts` — 4 neighborhoods, 17 activities, 14 restaurants, weather, tips, 28 sources
-  - Build succeeds and all data renders on the city page
-
-### Hong Kong (Needs Research + Writing)
-- [ ] Research and create Hong Kong city profile
-  - Same depth as Beijing: neighborhoods, activities, restaurants, weather, tips
-  - October weather data, food recommendations, hiking trails (Dragon's Back, Lion Rock, etc.)
-  - Dim sum spots, street food, Victoria Peak, cultural sites
-
-### Remaining 22 Cities (Stub → Full)
-- [x] Create stub profiles for all remaining cities ✅
-  - `src/data/profiles/stubs.ts` — all 22 cities with exec summaries and weather data
-  - Each stub renders as a functional page with "Full city profile coming soon" message
-
-- [ ] Prioritize full profiles for featured cities:
-  - [ ] Guilin & Yangshuo
-  - [ ] Chengdu
-  - [ ] Dali
-  - [ ] Lijiang & Tiger Leaping Gorge
-  - [ ] Chongqing
-  - [ ] Huangshan
-  - [ ] Guizhou (Kaili/Xijiang/Zhaoxing)
-  - [ ] Zhangjiajie
-  - [ ] Hangzhou
-  - [ ] Pingyao
-
-- [ ] Lower-priority full profiles (non-featured):
-  - [ ] Kunming
-  - [ ] Fenghuang
-  - [ ] Leshan & Emeishan
-  - [ ] Datong
-  - [ ] Luoyang
-  - [ ] Xiamen & Gulangyu
-  - [ ] Suzhou
-  - [ ] Lhasa
-  - [ ] Shangri-La
-  - [ ] Quanzhou
-  - [ ] Shanghai
-  - [ ] Xi'an
+### All 24 City Profiles — Complete ✅
+- [x] Beijing — 4 neighborhoods, 17 activities, 24 restaurants, 28 sources ✅
+- [x] Hong Kong — 4 neighborhoods, 11 activities, 15 restaurants, 50 sources ✅
+- [x] All 22 remaining cities — full profiles with neighborhoods, activities, restaurants, practical tips, sources ✅
+- [x] Hero photos for all 24 cities from Wikimedia Commons ✅
+- [x] Removed stubs.ts, all profiles use direct imports ✅
+- [x] Removed "coming soon" stub page — all cities render full profiles ✅
 
 ---
 
@@ -426,11 +392,10 @@ china-trip-2026/
 > Replace gradient placeholders with curated photos. Final UX polish.
 
 ### Image Curation
-- [ ] **Hero images** — 1 per city (24 total)
-  - Source from Unsplash/Pexels (free, high-quality)
-  - Prefer October/autumn shots when available
-  - Store in `public/images/heroes/[slug].jpg`
-  - Optimize with Next.js `<Image>` component (auto-resizing, WebP)
+- [x] **Hero images** — 1 per city (24 total) ✅
+  - Sourced from Wikimedia Commons via curation script
+  - Stored in `public/photos/[slug]/_hero.jpg` with `_sources.json` attribution
+  - Rendered with Next.js `<Image>` component on city pages and homepage cards
 
 - [ ] **Neighborhood images** — 1 per neighborhood
   - Representative street-level or aerial shots
@@ -442,9 +407,9 @@ china-trip-2026/
   - Dish photos where available, exterior shots otherwise
 
 ### UX Polish
-- [ ] **Map ↔ Card hover interaction**
-  - Hovering a card highlights map dot, hovering map dot highlights card
-  - Shared state via React context
+- [x] **Map hover popup** ✅
+  - City names hidden by default, shown on hover (larger, bold, white outline)
+  - Popup card with hero photo, city name, region, and description on marker hover
 
 - [ ] **Card sort by rating**
   - Homepage: sort featured cities by average group rating

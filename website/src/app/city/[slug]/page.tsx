@@ -34,44 +34,7 @@ export default async function CityPage(props: {
   if (!city) notFound();
 
   const profile = getProfile(slug);
-
-  /* ── Stub page when profile hasn't been written yet ─────── */
-  if (!profile) {
-    return (
-      <div className="min-h-screen">
-        <div className="mx-auto max-w-3xl px-4 py-12">
-          <Link
-            href="/"
-            className="mb-8 inline-block text-sm text-muted-foreground transition-colors hover:text-foreground"
-          >
-            &larr; All Destinations
-          </Link>
-
-          <div
-            className="mb-8 flex flex-col justify-end rounded-xl p-8"
-            style={{
-              background: `linear-gradient(135deg, hsl(${city.hue} 70% 40%), hsl(${city.hue} 60% 25%))`,
-              minHeight: 200,
-            }}
-          >
-            <h1 className="text-4xl font-bold text-white">{city.name}</h1>
-            <p className="mt-1 text-white/80">
-              {city.region} &middot; {city.suggestedDays} days
-            </p>
-          </div>
-
-          <p className="text-lg leading-relaxed text-muted-foreground">
-            {city.description}
-          </p>
-          <p className="mt-6 rounded-lg border border-dashed p-4 text-center text-sm text-muted-foreground">
-            Full city profile coming soon.
-          </p>
-        </div>
-      </div>
-    );
-  }
-
-  /* ── Full profile page ──────────────────────────────────── */
+  if (!profile) notFound();
   return (
     <div className="min-h-screen">
       {/* Back link */}
