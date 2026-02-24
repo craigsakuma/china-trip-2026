@@ -3,9 +3,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { cities, getCityBySlug } from "@/data/cities";
 import { getProfile } from "@/data/profiles";
-import { Badge } from "@/components/ui/badge";
 import WeatherTable from "@/components/weather-table";
 import ItemCard from "@/components/item-card";
+import HeroImage from "@/components/hero-image";
 
 /* ── Static params for all city slugs ─────────────────────── */
 export function generateStaticParams() {
@@ -87,25 +87,41 @@ export default async function CityPage(props: {
       {/* ── Hero ──────────────────────────────────────────── */}
       <section className="mx-auto mt-4 max-w-4xl px-4">
         <div
-          className="flex flex-col justify-end rounded-xl p-8 md:p-12"
-          style={{
-            background: `linear-gradient(135deg, hsl(${city.hue} 70% 40%), hsl(${city.hue} 60% 25%))`,
-            minHeight: 260,
-          }}
+          className="relative flex flex-col justify-end overflow-hidden rounded-xl p-8 md:p-12"
+          style={
+            profile.heroPhoto
+              ? { minHeight: 260 }
+              : {
+                  background: `linear-gradient(135deg, hsl(${city.hue} 70% 40%), hsl(${city.hue} 60% 25%))`,
+                  minHeight: 260,
+                }
+          }
         >
-          <h1 className="text-4xl font-bold text-white">{city.name}</h1>
-          <p className="mt-1 text-white/80">
-            {city.region} &middot; {city.suggestedDays} days
-          </p>
-          <div className="mt-3 flex flex-wrap gap-2">
-            {profile.famousFor.map((tag) => (
-              <span
-                key={tag}
-                className="rounded-full border border-white/30 bg-white/15 px-2.5 py-0.5 text-xs font-medium text-white backdrop-blur-sm"
-              >
-                {tag}
-              </span>
-            ))}
+          {profile.heroPhoto ? (
+            <HeroImage photo={profile.heroPhoto} hue={city.hue} />
+          ) : (
+            <div
+              className="absolute inset-0"
+              style={{
+                background: `linear-gradient(135deg, hsl(${city.hue} 70% 40%), hsl(${city.hue} 60% 25%))`,
+              }}
+            />
+          )}
+          <div className="relative z-10">
+            <h1 className="text-4xl font-bold text-white">{city.name}</h1>
+            <p className="mt-1 text-white/80">
+              {city.region} &middot; {city.suggestedDays} days
+            </p>
+            <div className="mt-3 flex flex-wrap gap-2">
+              {profile.famousFor.map((tag) => (
+                <span
+                  key={tag}
+                  className="rounded-full border border-white/30 bg-white/15 px-2.5 py-0.5 text-xs font-medium text-white backdrop-blur-sm"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       </section>

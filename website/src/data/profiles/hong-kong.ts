@@ -2,6 +2,7 @@ import type { CityProfile } from "@/types";
 
 export const hongKongProfile: CityProfile = {
   slug: "hong-kong",
+  heroPhoto: { src: "/photos/hong-kong/_hero.jpg", alt: "Hong Kong skyline and Victoria Harbour at dusk", credit: "Simon Zhu" },
   executiveSummary: [
     "Hong Kong in mid-October is widely regarded as the city at its finest. The brutal summer humidity has broken, typhoon season is winding down (though a tail-end storm remains a small statistical possibility), and temperatures settle into a sweet spot that makes the city\u2019s extraordinary network of hiking trails genuinely enjoyable. The urban frenzy that defines Hong Kong year-round is still fully present, but October light is golden, the harbor shimmers, and outdoor tables fill nightly with locals who have emerged from months of air-conditioned hibernation.",
     "Hong Kong remains one of the world\u2019s most singular cities: a vertical Cantonese metropolis with a British colonial overlay, a booming contemporary art scene layered over ancient temple traditions, and a food culture of almost absurd range and quality. At the same time, it is compact and superbly connected by one of the world\u2019s best public transit systems. Three friends willing to walk, take the MTR, and eat at plastic-stool restaurants alongside bankers and construction workers can experience the full spectrum \u2014 from incense-clouded ancestral halls to Michelin-starred rooftop dining \u2014 within a single day.",
@@ -26,27 +27,32 @@ export const hongKongProfile: CityProfile = {
   weather: [
     {
       period: "Early Oct",
-      avgHigh: "29\u00b0C / 84\u00b0F",
-      avgLow: "24\u00b0C / 75\u00b0F",
-      rainDays: "~4 days",
-      aqi: "~45",
+      avgHigh: 84,
+      avgLow: 75,
+      rainChance: 30,
+      precip: 1.8,
+      sunrise: "6:14 AM",
+      sunset: "6:11 PM",
       conditions: "Warm and hazy, still feels like late summer",
     },
     {
       period: "Mid Oct",
-      avgHigh: "27\u00b0C / 81\u00b0F",
-      avgLow: "22\u00b0C / 72\u00b0F",
-      rainDays: "~4 days",
-      aqi: "~45",
-      conditions:
-        "Transition window, spectacular mornings, afternoons can cloud up",
+      avgHigh: 81,
+      avgLow: 72,
+      rainChance: 25,
+      precip: 1.3,
+      sunrise: "6:20 AM",
+      sunset: "5:58 PM",
+      conditions: "Transition window, spectacular mornings, afternoons can cloud up",
     },
     {
       period: "Late Oct",
-      avgHigh: "25\u00b0C / 77\u00b0F",
-      avgLow: "20\u00b0C / 68\u00b0F",
-      rainDays: "1-2 days",
-      aqi: "~40",
+      avgHigh: 77,
+      avgLow: 68,
+      rainChance: 15,
+      precip: 0.9,
+      sunrise: "6:27 AM",
+      sunset: "5:46 PM",
       conditions: "Best stretch, excellent for hikes and island day trips",
     },
   ],
@@ -125,6 +131,8 @@ export const hongKongProfile: CityProfile = {
         "Wear sunscreen \u2014 the ridge is fully exposed",
         "Finish at Shek O for a seafood lunch on the beach",
       ],
+      priceTier: 1,
+      photo: { src: "/photos/hong-kong/dragons-back-hike.jpg", alt: "Ridgeline hiking trail with ocean views" },
     },
     {
       slug: "lion-rock-hike",
@@ -140,6 +148,8 @@ export const hongKongProfile: CityProfile = {
         "Steep stairs \u2014 proper hiking shoes essential",
         "Bring 2L water per person",
       ],
+      priceTier: 1,
+      photo: { src: "/photos/hong-kong/lion-rock-hike.jpg", alt: "Urban hiking with Kowloon skyline views" },
     },
     {
       slug: "lantau-peak-hike",
@@ -154,6 +164,8 @@ export const hongKongProfile: CityProfile = {
         "October offers the best visibility of the year",
         "The sunrise hike is legendary \u2014 start in darkness from Ngong Ping",
       ],
+      priceTier: 1,
+      photo: { src: "/photos/hong-kong/lantau-peak-hike.jpg", alt: "Lantau Peak trail above the clouds" },
     },
     {
       slug: "chi-lin-nunnery-and-nan-lian-garden",
@@ -168,6 +180,8 @@ export const hongKongProfile: CityProfile = {
         "Arrive 9am on a weekday for peaceful atmosphere",
         "Combine with Wong Tai Sin Temple (one MTR stop away)",
       ],
+      priceTier: 0,
+      photo: { src: "/photos/hong-kong/chi-lin-nunnery-and-nan-lian-garden.jpg", alt: "Tang Dynasty temple complex wooden architecture" },
     },
     {
       slug: "man-mo-temple-and-hollywood-road",
@@ -182,6 +196,8 @@ export const hongKongProfile: CityProfile = {
         "Arrive 8-10am before tour groups",
         "Bargain at 50-60% of asking price on Cat Street",
       ],
+      priceTier: 0,
+      photo: { src: "/photos/hong-kong/man-mo-temple-and-hollywood-road.jpg", alt: "Incense coils hanging from temple ceiling" },
     },
     {
       slug: "star-ferry-crossing-and-tst-waterfront",
@@ -196,6 +212,8 @@ export const hongKongProfile: CityProfile = {
         "Sit on the upper deck for best views",
         "Cross at dusk for golden-hour harbor light",
       ],
+      priceTier: 1,
+      photo: { src: "/photos/hong-kong/star-ferry-crossing-and-tst-waterfront.jpg", alt: "Victoria Harbour with Star Ferry crossing" },
     },
     {
       slug: "hong-kong-museum-of-history",
@@ -210,6 +228,8 @@ export const hongKongProfile: CityProfile = {
         "Free on Wednesdays",
         "Combine with nearby Museum of Art for a full museum day",
       ],
+      priceTier: 0,
+      photo: { src: "/photos/hong-kong/hong-kong-museum-of-history.jpg", alt: "Hong Kong cultural museum building exterior" },
     },
     {
       slug: "kowloon-walled-city-park",
@@ -223,6 +243,8 @@ export const hongKongProfile: CityProfile = {
       tips: [
         "Adjacent Kowloon City Food Street has great Thai restaurants",
       ],
+      priceTier: 0,
+      photo: { src: "/photos/hong-kong/kowloon-walled-city-park.jpg", alt: "Classical Chinese garden in Kowloon" },
     },
     {
       slug: "mong-kok-markets-and-flower-bird-garden-circuit",
@@ -236,6 +258,8 @@ export const hongKongProfile: CityProfile = {
       tips: [
         "Flower Market is best before 11am",
       ],
+      priceTier: 1,
+      photo: { src: "/photos/hong-kong/mong-kok-markets-and-flower-bird-garden-circuit.jpg", alt: "Busy Mong Kok street market at night" },
     },
     {
       slug: "cheung-chau-island-day-trip",
@@ -250,6 +274,8 @@ export const hongKongProfile: CityProfile = {
         "Take the first morning ferry to maximize time",
         "Rent bikes for $5-8/day to explore the island",
       ],
+      priceTier: 1,
+      photo: { src: "/photos/hong-kong/cheung-chau-island-day-trip.jpg", alt: "Cheung Chau fishing village harbor" },
     },
     {
       slug: "lamma-island-seafood-day-trip",
@@ -264,6 +290,8 @@ export const hongKongProfile: CityProfile = {
         "Book Rainbow Seafood in advance",
         "Confirm live seafood prices before ordering",
       ],
+      priceTier: 1,
+      photo: { src: "/photos/hong-kong/lamma-island-seafood-day-trip.jpg", alt: "Lamma Island coastal hiking trail" },
     },
     {
       slug: "temple-street-night-market-yau-ma-tei",
@@ -278,6 +306,8 @@ export const hongKongProfile: CityProfile = {
         "Begin at Kansu Street Jade Market before it closes",
         "Best food is on Woosung Street, not the main market strip",
       ],
+      priceTier: 1,
+      photo: { src: "/photos/hong-kong/temple-street-night-market-yau-ma-tei.jpg", alt: "Temple Street Night Market stalls and lights" },
     },
     {
       slug: "wong-tai-sin-temple",
@@ -292,6 +322,8 @@ export const hongKongProfile: CityProfile = {
         "Visit on a weekday morning for a more contemplative experience",
         "Combine with Chi Lin Nunnery (one MTR stop away)",
       ],
+      priceTier: 0,
+      photo: { src: "/photos/hong-kong/wong-tai-sin-temple.jpg", alt: "Wong Tai Sin Temple main hall with incense" },
     },
   ],
 
@@ -311,6 +343,8 @@ export const hongKongProfile: CityProfile = {
       whatToOrder:
         "BBQ pork buns (the signature), har gow, turnip cake.",
       bestFor: "Late breakfast / early lunch",
+      priceTier: 1,
+      photo: { src: "/photos/hong-kong/tim-ho-wan.jpg", alt: "BBQ pork buns with crackly sugar top" },
     },
     {
       slug: "luk-yu-tea-house",
@@ -326,6 +360,8 @@ export const hongKongProfile: CityProfile = {
       whatToOrder:
         "Chicken feet, BBQ pork buns, egg tarts.",
       bestFor: "Weekday morning yum cha",
+      priceTier: 2,
+      photo: { src: "/photos/hong-kong/luk-yu-tea-house.jpg", alt: "Traditional tea house dark wood interior" },
     },
     {
       slug: "yung-kee",
@@ -341,6 +377,8 @@ export const hongKongProfile: CityProfile = {
       whatToOrder:
         "Roast goose (the signature), century egg with pickled ginger.",
       bestFor: "Lunch",
+      priceTier: 2,
+      photo: { src: "/photos/hong-kong/yung-kee.jpg", alt: "Charcoal-fired roast goose on platter" },
     },
     {
       slug: "maxims-palace",
@@ -356,6 +394,8 @@ export const hongKongProfile: CityProfile = {
       whatToOrder:
         "Whatever the trolley brings \u2014 that\u2019s the whole point.",
       bestFor: "Weekend brunch",
+      priceTier: 2,
+      photo: { src: "/photos/hong-kong/maxims-palace.jpg", alt: "Dim sum trolley with bamboo steamers" },
     },
     {
       slug: "sing-heung-yuen",
@@ -371,6 +411,8 @@ export const hongKongProfile: CityProfile = {
       whatToOrder:
         "Tomato beef noodles, butter toast, Hong Kong milk tea.",
       bestFor: "Breakfast",
+      priceTier: 1,
+      photo: { src: "/photos/hong-kong/sing-heung-yuen.jpg", alt: "Dai pai dong street stall with stools" },
     },
     {
       slug: "joy-hing-roasted-meat",
@@ -386,6 +428,8 @@ export const hongKongProfile: CityProfile = {
       whatToOrder:
         "Char siu rice, roast pork belly rice.",
       bestFor: "Lunch",
+      priceTier: 1,
+      photo: { src: "/photos/hong-kong/joy-hing-roasted-meat.jpg", alt: "Char siu BBQ pork with rice" },
     },
     {
       slug: "lin-heung-tea-house",
@@ -401,6 +445,8 @@ export const hongKongProfile: CityProfile = {
       whatToOrder:
         "Follow the regulars \u2014 grab whatever comes off the trolley fastest.",
       bestFor: "Early morning yum cha",
+      priceTier: 1,
+      photo: { src: "/photos/hong-kong/lin-heung-tea-house.jpg", alt: "Trolley dim sum with communal tables" },
     },
     {
       slug: "cha-chaan-teng-circuit",
@@ -417,6 +463,8 @@ export const hongKongProfile: CityProfile = {
       whatToOrder:
         "Pineapple buns (with butter slab), French toast (drenched in condensed milk), Hong Kong milk tea.",
       bestFor: "Breakfast or afternoon snack",
+      priceTier: 1,
+      photo: { src: "/photos/hong-kong/cha-chaan-teng-circuit.jpg", alt: "Hong Kong cha chaan teng formica tables" },
     },
     {
       slug: "rainbow-seafood",
@@ -432,6 +480,8 @@ export const hongKongProfile: CityProfile = {
       whatToOrder:
         "Steamed fish (whatever is freshest), typhoon shelter crab, salt-and-pepper squid.",
       bestFor: "Lunch or dinner",
+      priceTier: 2,
+      photo: { src: "/photos/hong-kong/rainbow-seafood.jpg", alt: "Waterfront seafood restaurant Lamma Island" },
     },
     {
       slug: "lei-garden",
@@ -447,6 +497,8 @@ export const hongKongProfile: CityProfile = {
       whatToOrder:
         "BBQ char siu, steamed crab, dim sum at lunch.",
       bestFor: "Lunch dim sum or dinner",
+      priceTier: 2,
+      photo: { src: "/photos/hong-kong/lei-garden.jpg", alt: "Elegant Cantonese restaurant interior" },
     },
     {
       slug: "lung-king-heen",
@@ -462,6 +514,8 @@ export const hongKongProfile: CityProfile = {
       whatToOrder:
         "Chef\u2019s tasting menu, or order \u00e0 la carte and trust the captain\u2019s recommendations.",
       bestFor: "Weekday lunch (half the price of dinner)",
+      priceTier: 4,
+      photo: { src: "/photos/hong-kong/lung-king-heen.jpg", alt: "Fine dining harbor view restaurant" },
     },
     {
       slug: "chuen-cheung-kui",
@@ -477,6 +531,8 @@ export const hongKongProfile: CityProfile = {
       whatToOrder:
         "Salt-baked chicken (the signature), stuffed tofu, braised pork belly with preserved vegetables.",
       bestFor: "Dinner",
+      priceTier: 2,
+      photo: { src: "/photos/hong-kong/chuen-cheung-kui.jpg", alt: "Salt-baked chicken in parchment" },
     },
     {
       slug: "lamma-hilton",
@@ -492,6 +548,8 @@ export const hongKongProfile: CityProfile = {
       whatToOrder:
         "Steamed fish, garlic prawns, salt-and-pepper mantis shrimp.",
       bestFor: "Lunch",
+      priceTier: 2,
+      photo: { src: "/photos/hong-kong/lamma-hilton.jpg", alt: "Casual waterfront seafood dining" },
     },
     {
       slug: "mott-32",
@@ -507,6 +565,8 @@ export const hongKongProfile: CityProfile = {
       whatToOrder:
         "Applewood Peking duck (must pre-order), iberico char siu, crispy sugar-coated pork.",
       bestFor: "Dinner",
+      priceTier: 3,
+      photo: { src: "/photos/hong-kong/mott-32.jpg", alt: "Dramatic bank vault restaurant interior" },
     },
   ],
 

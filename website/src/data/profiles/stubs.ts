@@ -19,45 +19,45 @@ function stub(slug: string, summary: string[], weather: CityProfile["weather"]):
 }
 
 const octoberWeatherYunnan: CityProfile["weather"] = [
-  { period: "Early Oct", avgHigh: "22°C / 72°F", avgLow: "13°C / 55°F", rainDays: "3", aqi: "~40", conditions: "Clear skies, comfortable" },
-  { period: "Mid Oct", avgHigh: "20°C / 68°F", avgLow: "11°C / 52°F", rainDays: "2", aqi: "~35", conditions: "Dry, golden light" },
-  { period: "Late Oct", avgHigh: "18°C / 64°F", avgLow: "9°C / 48°F", rainDays: "1", aqi: "~35", conditions: "Cool, crisp, excellent visibility" },
+  { period: "Early Oct", avgHigh: 72, avgLow: 55, rainChance: 25, precip: 0.8, sunrise: "7:05 AM", sunset: "6:50 PM", conditions: "Clear skies, comfortable" },
+  { period: "Mid Oct", avgHigh: 68, avgLow: 52, rainChance: 18, precip: 0.5, sunrise: "7:12 AM", sunset: "6:38 PM", conditions: "Dry, golden light" },
+  { period: "Late Oct", avgHigh: 64, avgLow: 48, rainChance: 10, precip: 0.3, sunrise: "7:20 AM", sunset: "6:27 PM", conditions: "Cool, crisp, excellent visibility" },
 ];
 
 const octoberWeatherSichuan: CityProfile["weather"] = [
-  { period: "Early Oct", avgHigh: "22°C / 72°F", avgLow: "15°C / 59°F", rainDays: "4", aqi: "~60", conditions: "Mild, occasionally misty" },
-  { period: "Mid Oct", avgHigh: "20°C / 68°F", avgLow: "13°C / 55°F", rainDays: "3", aqi: "~55", conditions: "Comfortable, autumn color emerging" },
-  { period: "Late Oct", avgHigh: "17°C / 63°F", avgLow: "11°C / 52°F", rainDays: "2", aqi: "~55", conditions: "Cool, atmospheric fog" },
+  { period: "Early Oct", avgHigh: 72, avgLow: 59, rainChance: 35, precip: 1.2, sunrise: "6:55 AM", sunset: "6:40 PM", conditions: "Mild, occasionally misty" },
+  { period: "Mid Oct", avgHigh: 68, avgLow: 55, rainChance: 28, precip: 0.9, sunrise: "7:02 AM", sunset: "6:28 PM", conditions: "Comfortable, autumn color emerging" },
+  { period: "Late Oct", avgHigh: 63, avgLow: 52, rainChance: 20, precip: 0.6, sunrise: "7:10 AM", sunset: "6:17 PM", conditions: "Cool, atmospheric fog" },
 ];
 
 const octoberWeatherHunan: CityProfile["weather"] = [
-  { period: "Early Oct", avgHigh: "24°C / 75°F", avgLow: "15°C / 59°F", rainDays: "3", aqi: "~55", conditions: "Warm, good visibility" },
-  { period: "Mid Oct", avgHigh: "21°C / 70°F", avgLow: "13°C / 55°F", rainDays: "3", aqi: "~50", conditions: "Comfortable, autumn colors" },
-  { period: "Late Oct", avgHigh: "18°C / 64°F", avgLow: "10°C / 50°F", rainDays: "2", aqi: "~50", conditions: "Cooler, crisp mornings" },
+  { period: "Early Oct", avgHigh: 75, avgLow: 59, rainChance: 28, precip: 1.0, sunrise: "6:20 AM", sunset: "6:05 PM", conditions: "Warm, good visibility" },
+  { period: "Mid Oct", avgHigh: 70, avgLow: 55, rainChance: 25, precip: 0.8, sunrise: "6:28 AM", sunset: "5:53 PM", conditions: "Comfortable, autumn colors" },
+  { period: "Late Oct", avgHigh: 64, avgLow: 50, rainChance: 18, precip: 0.5, sunrise: "6:35 AM", sunset: "5:43 PM", conditions: "Cooler, crisp mornings" },
 ];
 
 const octoberWeatherShanxi: CityProfile["weather"] = [
-  { period: "Early Oct", avgHigh: "19°C / 66°F", avgLow: "7°C / 45°F", rainDays: "2", aqi: "~70", conditions: "Dry, crisp" },
-  { period: "Mid Oct", avgHigh: "15°C / 59°F", avgLow: "4°C / 39°F", rainDays: "1", aqi: "~75", conditions: "Cool, clear skies" },
-  { period: "Late Oct", avgHigh: "12°C / 54°F", avgLow: "1°C / 34°F", rainDays: "1", aqi: "~80", conditions: "Cold mornings, layers essential" },
+  { period: "Early Oct", avgHigh: 66, avgLow: 45, rainChance: 15, precip: 0.4, sunrise: "6:18 AM", sunset: "5:58 PM", conditions: "Dry, crisp" },
+  { period: "Mid Oct", avgHigh: 59, avgLow: 39, rainChance: 10, precip: 0.2, sunrise: "6:30 AM", sunset: "5:42 PM", conditions: "Cool, clear skies" },
+  { period: "Late Oct", avgHigh: 54, avgLow: 34, rainChance: 8, precip: 0.1, sunrise: "6:42 AM", sunset: "5:28 PM", conditions: "Cold mornings, layers essential" },
 ];
 
 const octoberWeatherEastern: CityProfile["weather"] = [
-  { period: "Early Oct", avgHigh: "24°C / 75°F", avgLow: "16°C / 61°F", rainDays: "3", aqi: "~55", conditions: "Warm, pleasant" },
-  { period: "Mid Oct", avgHigh: "21°C / 70°F", avgLow: "14°C / 57°F", rainDays: "2", aqi: "~55", conditions: "Golden autumn, osmanthus blooming" },
-  { period: "Late Oct", avgHigh: "18°C / 64°F", avgLow: "11°C / 52°F", rainDays: "2", aqi: "~60", conditions: "Comfortable, excellent for walking" },
+  { period: "Early Oct", avgHigh: 75, avgLow: 61, rainChance: 28, precip: 1.0, sunrise: "5:55 AM", sunset: "5:38 PM", conditions: "Warm, pleasant" },
+  { period: "Mid Oct", avgHigh: 70, avgLow: 57, rainChance: 20, precip: 0.7, sunrise: "6:02 AM", sunset: "5:25 PM", conditions: "Golden autumn, osmanthus blooming" },
+  { period: "Late Oct", avgHigh: 64, avgLow: 52, rainChance: 18, precip: 0.5, sunrise: "6:10 AM", sunset: "5:14 PM", conditions: "Comfortable, excellent for walking" },
 ];
 
 const octoberWeatherFujian: CityProfile["weather"] = [
-  { period: "Early Oct", avgHigh: "28°C / 82°F", avgLow: "21°C / 70°F", rainDays: "3", aqi: "~45", conditions: "Warm, humid" },
-  { period: "Mid Oct", avgHigh: "26°C / 79°F", avgLow: "19°C / 66°F", rainDays: "2", aqi: "~40", conditions: "Pleasant, sea breezes" },
-  { period: "Late Oct", avgHigh: "24°C / 75°F", avgLow: "17°C / 63°F", rainDays: "2", aqi: "~40", conditions: "Comfortable, dry" },
+  { period: "Early Oct", avgHigh: 82, avgLow: 70, rainChance: 28, precip: 1.2, sunrise: "5:58 AM", sunset: "5:45 PM", conditions: "Warm, humid" },
+  { period: "Mid Oct", avgHigh: 79, avgLow: 66, rainChance: 20, precip: 0.8, sunrise: "6:05 AM", sunset: "5:35 PM", conditions: "Pleasant, sea breezes" },
+  { period: "Late Oct", avgHigh: 75, avgLow: 63, rainChance: 15, precip: 0.5, sunrise: "6:12 AM", sunset: "5:26 PM", conditions: "Comfortable, dry" },
 ];
 
 const octoberWeatherTibet: CityProfile["weather"] = [
-  { period: "Early Oct", avgHigh: "18°C / 64°F", avgLow: "2°C / 36°F", rainDays: "1", aqi: "~25", conditions: "Dry, intense sun at altitude" },
-  { period: "Mid Oct", avgHigh: "16°C / 61°F", avgLow: "0°C / 32°F", rainDays: "0", aqi: "~20", conditions: "Clear, cold mornings, pristine air" },
-  { period: "Late Oct", avgHigh: "13°C / 55°F", avgLow: "-3°C / 27°F", rainDays: "0", aqi: "~20", conditions: "Cold, very dry, stunning visibility" },
+  { period: "Early Oct", avgHigh: 64, avgLow: 36, rainChance: 10, precip: 0.2, sunrise: "7:30 AM", sunset: "7:10 PM", conditions: "Dry, intense sun at altitude" },
+  { period: "Mid Oct", avgHigh: 61, avgLow: 32, rainChance: 5, precip: 0.1, sunrise: "7:38 AM", sunset: "6:58 PM", conditions: "Clear, cold mornings, pristine air" },
+  { period: "Late Oct", avgHigh: 55, avgLow: 27, rainChance: 3, precip: 0.0, sunrise: "7:47 AM", sunset: "6:47 PM", conditions: "Cold, very dry, stunning visibility" },
 ];
 
 export const stubProfiles: Record<string, CityProfile> = {

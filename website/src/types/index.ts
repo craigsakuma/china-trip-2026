@@ -1,3 +1,9 @@
+export interface Photo {
+  src: string;
+  alt: string;
+  credit?: string;
+}
+
 export interface City {
   slug: string;
   name: string;
@@ -14,10 +20,12 @@ export interface City {
 
 export interface WeatherRow {
   period: string;
-  avgHigh: string;
-  avgLow: string;
-  rainDays: string;
-  aqi: string;
+  avgHigh: number;       // °F
+  avgLow: number;        // °F
+  rainChance: number;    // percentage (0-100)
+  precip: number;        // inches
+  sunrise: string;       // e.g. "6:10 AM"
+  sunset: string;        // e.g. "5:57 PM"
   conditions: string;
 }
 
@@ -41,6 +49,8 @@ export interface Activity {
   cost: string;
   costBreakdown?: string;
   tips: string[];
+  priceTier?: 0 | 1 | 2 | 3 | 4;
+  photo?: Photo;
 }
 
 export interface Restaurant {
@@ -56,6 +66,8 @@ export interface Restaurant {
   reviews?: string;
   whatToOrder: string;
   bestFor: string;
+  priceTier?: 0 | 1 | 2 | 3 | 4;
+  photo?: Photo;
 }
 
 export interface PracticalTips {
@@ -64,6 +76,7 @@ export interface PracticalTips {
 
 export interface CityProfile {
   slug: string;
+  heroPhoto?: Photo;
   executiveSummary: string[];
   famousFor: string[];
   whyItFits: string[];

@@ -2,6 +2,7 @@ import type { CityProfile } from "@/types";
 
 export const beijingProfile: CityProfile = {
   slug: "beijing",
+  heroPhoto: { src: "/photos/beijing/_hero.jpg", alt: "Forbidden City golden rooftops at sunset", credit: "Ling Tang" },
   executiveSummary: [
     'Beijing in mid-October enters what locals call "golden autumn" \u2014 the city\u2019s ginkgo trees explode into brilliant yellow, temple grounds blaze with red maple, and the surrounding mountains turn crimson and gold. October delivers the best air quality of the year (average AQI of 74) [1].',
     "The city operates on two parallel tracks: the monumental Beijing of imperial palaces and grand boulevards, and the deeply human Beijing of narrow hutong alleyways where elderly neighbors play chess on stone benches, parks where retirees practice tai chi at dawn, and neighborhood restaurants where Peking duck is served with no English menu and no tourist markup. With knowledgeable local guides, 3,000 years of history come alive in ways that remain invisible to the selfie-stick crowd. The Great Wall sections favored by hikers (Jinshanling, Gubeikou) offer genuinely challenging terrain with sweeping mountain views and almost no other visitors [2].",
@@ -26,32 +27,37 @@ export const beijingProfile: CityProfile = {
   weather: [
     {
       period: "Early Oct",
-      avgHigh: "21\u00b0C / 70\u00b0F",
-      avgLow: "10\u00b0C / 50\u00b0F",
-      rainDays: "2 days",
-      aqi: "~74",
+      avgHigh: 70,
+      avgLow: 50,
+      rainChance: 15,
+      precip: 0.4,
+      sunrise: "6:10 AM",
+      sunset: "5:57 PM",
       conditions: "Clear, crisp; peak autumn color begins",
     },
     {
       period: "Mid Oct",
-      avgHigh: "18\u00b0C / 64\u00b0F",
-      avgLow: "8\u00b0C / 46\u00b0F",
-      rainDays: "1-2 days",
-      aqi: "~74",
-      conditions:
-        "Golden autumn; best foliage; excellent visibility [1]",
+      avgHigh: 64,
+      avgLow: 46,
+      rainChance: 12,
+      precip: 0.3,
+      sunrise: "6:25 AM",
+      sunset: "5:35 PM",
+      conditions: "Golden autumn; best foliage; excellent visibility [1]",
     },
     {
       period: "Late Oct",
-      avgHigh: "14\u00b0C / 57\u00b0F",
-      avgLow: "4\u00b0C / 39\u00b0F",
-      rainDays: "1 day",
-      aqi: "~80",
+      avgHigh: 57,
+      avgLow: 39,
+      rainChance: 10,
+      precip: 0.2,
+      sunrise: "6:42 AM",
+      sunset: "5:13 PM",
       conditions: "Cooler; layers essential; fewer visitors",
     },
   ],
   whatToPack:
-    "Layers for 4-21\u00b0C (39-70\u00b0F) swings within a single day. Light jacket, fleece, comfortable walking shoes, sturdy hiking shoes for Great Wall.",
+    "Layers for 39-70\u00b0F swings within a single day. Light jacket, fleece, comfortable walking shoes, sturdy hiking shoes for Great Wall.",
 
   // ─── Neighborhoods ─────────────────────────────────────────────
   neighborhoods: [
@@ -126,6 +132,8 @@ export const beijingProfile: CityProfile = {
         "Book tickets 3-5 days in advance on the Palace Museum WeChat mini-program (October dates sell out)",
         "Exit through the north gate directly into Jingshan Park",
       ],
+      priceTier: 3,
+      photo: { src: "/photos/beijing/the-forbidden-city-palace-museum.jpg", alt: "Forbidden City courtyard with red walls" },
     },
     {
       slug: "great-wall-at-jinshanling",
@@ -143,6 +151,8 @@ export const beijingProfile: CityProfile = {
         "The transition zone between restored and wild sections is where the magic happens",
         "October autumn colors in surrounding mountains are spectacular [2]",
       ],
+      priceTier: 2,
+      photo: { src: "/photos/beijing/great-wall-at-jinshanling.jpg", alt: "Great Wall stretching across mountain ridges" },
     },
     {
       slug: "gubeikou-to-jinshanling-wild-wall-hike",
@@ -160,6 +170,8 @@ export const beijingProfile: CityProfile = {
         "Carry all water and food \u2014 no vendors on wild sections",
         "The S501 suburban train from Beijing North to Gubeikou departs ~6:50 AM ($2)",
       ],
+      priceTier: 2,
+      photo: { src: "/photos/beijing/gubeikou-to-jinshanling-wild-wall-hike.jpg", alt: "Wild Great Wall section with autumn foliage" },
     },
     {
       slug: "summer-palace-and-longevity-hill",
@@ -177,6 +189,8 @@ export const beijingProfile: CityProfile = {
         "The rear hill area has far fewer visitors and more natural scenery [8]",
         "Rent a boat on Kunming Lake (~$8/hr) for a different perspective",
       ],
+      priceTier: 2,
+      photo: { src: "/photos/beijing/summer-palace-and-longevity-hill.jpg", alt: "Summer Palace Kunming Lake with pagoda" },
     },
     {
       slug: "fragrant-hills-park",
@@ -193,6 +207,8 @@ export const beijingProfile: CityProfile = {
         "Skip the main Xianglu Peak trail \u2014 take the southern mountain trails past Yan Yue Pavilion and Xiangshan Temple for best foliage with fewer people [9]",
         "Wear proper hiking shoes",
       ],
+      priceTier: 1,
+      photo: { src: "/photos/beijing/fragrant-hills-park.jpg", alt: "Autumn foliage in Beijing park" },
     },
     {
       slug: "temple-of-heaven-and-morning-park-culture",
@@ -209,6 +225,8 @@ export const beijingProfile: CityProfile = {
         "Walk the Long Corridor where retirees sing and play instruments \u2014 visitors are often invited to join [10]",
         "Pairs well with a Peking duck lunch afterward at nearby Siji Minfu",
       ],
+      priceTier: 1,
+      photo: { src: "/photos/beijing/temple-of-heaven-and-morning-park-culture.jpg", alt: "Temple of Heaven Hall of Prayer" },
     },
     {
       slug: "jingshan-park",
@@ -226,6 +244,8 @@ export const beijingProfile: CityProfile = {
         "Late afternoon golden-hour light is ideal; most tour groups skip this entirely",
         "After descending, walk to Beihai Park\u2019s east entrance (200m away)",
       ],
+      priceTier: 1,
+      photo: { src: "/photos/beijing/jingshan-park.jpg", alt: "Jingshan Park panoramic view of Forbidden City" },
     },
     {
       slug: "beihai-park",
@@ -243,6 +263,8 @@ export const beijingProfile: CityProfile = {
         "North shore is quieter and more contemplative",
         'Combines naturally with Jingshan and the Forbidden City for a full "imperial core" day',
       ],
+      priceTier: 1,
+      photo: { src: "/photos/beijing/beihai-park.jpg", alt: "Beihai Park White Dagoba and lake" },
     },
     {
       slug: "lama-temple-and-guozijian-street",
@@ -259,6 +281,8 @@ export const beijingProfile: CityProfile = {
         "Walk to the Confucius Temple and Imperial College after \u2014 far quieter and more contemplative [13]",
         "Guozijian Street has traditional architecture, cafes, and cultural shops, connecting directly to Wudaoying Hutong",
       ],
+      priceTier: 1,
+      photo: { src: "/photos/beijing/lama-temple-and-guozijian-street.jpg", alt: "Tibetan Buddhist temple incense and red lanterns" },
     },
     {
       slug: "wudaoying-hutong",
@@ -275,6 +299,8 @@ export const beijingProfile: CityProfile = {
         "Metal Hands Coffee is a neighborhood institution",
         "Wander into side alleys for quieter residential atmosphere \u2014 excellent lunch spot",
       ],
+      priceTier: 0,
+      photo: { src: "/photos/beijing/wudaoying-hutong.jpg", alt: "Beijing hutong narrow alley with bicycles" },
     },
     {
       slug: "deep-hutong-walking-tour",
@@ -292,6 +318,8 @@ export const beijingProfile: CityProfile = {
         "The best hutongs have no shops, just residential life",
         "Visit Prince Gong\u2019s Mansion ($6) for the best-preserved aristocratic courtyard compound",
       ],
+      priceTier: 2,
+      photo: { src: "/photos/beijing/deep-hutong-walking-tour.jpg", alt: "Hutong alleyway with traditional doorways" },
     },
     {
       slug: "798-art-district",
@@ -309,6 +337,8 @@ export const beijingProfile: CityProfile = {
         "Have lunch at one of the district\u2019s cafes",
         "Consider combining with nearby Caochangdi art village (10 min taxi) for a more raw, less commercial scene",
       ],
+      priceTier: 1,
+      photo: { src: "/photos/beijing/798-art-district.jpg", alt: "Contemporary art gallery industrial interior" },
     },
     {
       slug: "traditional-tea-ceremony",
@@ -324,6 +354,8 @@ export const beijingProfile: CityProfile = {
         'BEWARE the "tea ceremony scam" \u2014 friendly strangers inviting you to a teahouse is a well-known Beijing scam [16]',
         "Only book through reputable operators or your hotel",
       ],
+      priceTier: 3,
+      photo: { src: "/photos/beijing/traditional-tea-ceremony.jpg", alt: "Chinese tea ceremony setup with clay teapot" },
     },
     {
       slug: "hutong-cooking-class",
@@ -340,6 +372,8 @@ export const beijingProfile: CityProfile = {
         "Classes that include a morning market visit are significantly more immersive [17]",
         "Request Beijing-specific dishes (zhajiang noodles, dumplings, scallion pancakes)",
       ],
+      priceTier: 2,
+      photo: { src: "/photos/beijing/hutong-cooking-class.jpg", alt: "Chinese dumplings being handmade" },
     },
     {
       slug: "panjiayuan-antique-market",
@@ -357,6 +391,8 @@ export const beijingProfile: CityProfile = {
         "Bring cash; the minority-group crafts and vintage propaganda poster sections are fascinating",
         "Ask vendors to tell stories behind pieces",
       ],
+      priceTier: 0,
+      photo: { src: "/photos/beijing/panjiayuan-antique-market.jpg", alt: "Chinese antique market with calligraphy scrolls" },
     },
     {
       slug: "peking-opera-performance",
@@ -373,6 +409,8 @@ export const beijingProfile: CityProfile = {
         "Arrive early to watch actors applying face paint backstage",
         "No shows Mon/Tue/Sun",
       ],
+      priceTier: 2,
+      photo: { src: "/photos/beijing/peking-opera-performance.jpg", alt: "Peking opera performer in elaborate costume" },
     },
     {
       slug: "chinese-calligraphy-workshop",
@@ -387,6 +425,8 @@ export const beijingProfile: CityProfile = {
       tips: [
         "Seek a class taught by a genuine calligraphy master. The meditative pace IS the point. Your finished piece makes a meaningful souvenir.",
       ],
+      priceTier: 2,
+      photo: { src: "/photos/beijing/chinese-calligraphy-workshop.jpg", alt: "Chinese calligraphy brush and ink stone" },
     },
   ],
 
@@ -411,6 +451,8 @@ export const beijingProfile: CityProfile = {
         "Whole Peking duck ($36), crispy skin dipped in white sugar (the traditional opening bite), black pepper duck liver, cold-tossed pea shoots.",
       bestFor:
         "Lunch (arrive 10:30 AM opening to avoid worst queues)",
+      priceTier: 2,
+      photo: { src: "/photos/beijing/siji-minfu.jpg", alt: "Peking duck being carved tableside" },
     },
     {
       slug: "li-qun-roast-duck",
@@ -429,6 +471,8 @@ export const beijingProfile: CityProfile = {
       whatToOrder:
         "Whole roast duck (~$26), duck soup from the carcass (complimentary \u2014 ask for it), cucumber side.",
       bestFor: "Either meal. Call ahead to pre-order your duck.",
+      priceTier: 2,
+      photo: { src: "/photos/beijing/li-qun-roast-duck.jpg", alt: "Whole roast duck on platter" },
     },
     {
       slug: "sheng-yong-xing",
@@ -446,6 +490,8 @@ export const beijingProfile: CityProfile = {
       whatToOrder:
         "Classic duck, jujube roast duck, duck skin with creative toppings.",
       bestFor: "Dinner. Make a reservation.",
+      priceTier: 2,
+      photo: { src: "/photos/beijing/sheng-yong-xing.jpg", alt: "Modern Peking duck presentation" },
     },
 
     // — Street Food —
@@ -466,6 +512,8 @@ export const beijingProfile: CityProfile = {
       whatToOrder:
         "Pork and fennel, leek/shrimp/egg, zucchini and scrambled egg, lamb. Get at least three varieties for the table.",
       bestFor: "Lunch",
+      priceTier: 1,
+      photo: { src: "/photos/beijing/manjie-dumpling-house.jpg", alt: "Steamed dumplings in bamboo basket" },
     },
     {
       slug: "zhang-mama",
@@ -484,6 +532,8 @@ export const beijingProfile: CityProfile = {
       whatToOrder:
         "Boboji (skewers in spicy broth \u2014 the signature), huiguorou (twice-cooked pork), mapo doufu, dry-pot dishes.",
       bestFor: "Either meal; dinner has more atmosphere",
+      priceTier: 1,
+      photo: { src: "/photos/beijing/zhang-mama.jpg", alt: "Sichuan spicy dishes on table" },
     },
     {
       slug: "huguo-si-xiaochi",
@@ -504,6 +554,8 @@ export const beijingProfile: CityProfile = {
         "Wandouhuang (sweet pea cake), ludagun (rolling donkey sweet rice rolls), aiwowo, miancha (millet flour tea). For breakfast: jianbing, douzhir (fermented mung bean drink \u2014 true Beijing acquired taste).",
       bestFor:
         "Breakfast (before 8 AM for the real morning crowd)",
+      priceTier: 1,
+      photo: { src: "/photos/beijing/huguo-si-xiaochi.jpg", alt: "Traditional Beijing snacks assortment" },
     },
 
     // — Regional Chinese —
@@ -525,6 +577,8 @@ export const beijingProfile: CityProfile = {
       whatToOrder:
         "Shui zhu yu (boiled fish in chili oil), mapo doufu, lazi ji (chicken buried in dried chilies), fuqi fei pian (husband-and-wife lung slices), dan dan noodles.",
       bestFor: "Lunch is less crowded",
+      priceTier: 1,
+      photo: { src: "/photos/beijing/chuan-ban.jpg", alt: "Sichuan boiled fish in chili oil" },
     },
     {
       slug: "crescent-moon-muslim-restaurant",
@@ -543,6 +597,8 @@ export const beijingProfile: CityProfile = {
       whatToOrder:
         "Lamb kebabs, dapanji (big plate chicken over noodles \u2014 great for 3 people), kao baozi (baked stuffed buns), hand-pulled noodles, homemade yogurt.",
       bestFor: "Dinner",
+      priceTier: 1,
+      photo: { src: "/photos/beijing/crescent-moon-muslim-restaurant.jpg", alt: "Uyghur lamb kebabs on metal skewers" },
     },
     {
       slug: "little-yunnan",
@@ -561,6 +617,8 @@ export const beijingProfile: CityProfile = {
       whatToOrder:
         "Yunnan beef with mint salad, Lijiang spicy chicken, grilled tilapia with lemongrass, crossing-the-bridge noodles, fried goat\u2019s cheese.",
       bestFor: "Either meal",
+      priceTier: 1,
+      photo: { src: "/photos/beijing/little-yunnan.jpg", alt: "Yunnan cuisine with herbs and mushrooms" },
     },
 
     // — Traditional Beijing —
@@ -583,6 +641,8 @@ export const beijingProfile: CityProfile = {
         "Hand-sliced lamb (multiple cuts), sesame paste dipping sauce, frozen tofu, Chinese cabbage, hand-pulled noodles to finish, sugar garlic as palate cleanser.",
       bestFor:
         "Dinner (hotpot is quintessentially an evening social meal)",
+      priceTier: 2,
+      photo: { src: "/photos/beijing/dong-lai-shun.jpg", alt: "Copper hotpot with sliced lamb" },
     },
     {
       slug: "yaoji-chaogan",
@@ -600,6 +660,8 @@ export const beijingProfile: CityProfile = {
         "Best chaogan in Beijing. Baozi among the city\u2019s finest. Chaogan is an acquired taste (garlicky, starchy, organ-meat heavy). Always packed, up to 1 hour wait [26].",
       whatToOrder: "Chaogan (try it at least once), pork baozi.",
       bestFor: "Breakfast, 7:00-9:00 AM",
+      priceTier: 1,
+      photo: { src: "/photos/beijing/yaoji-chaogan.jpg", alt: "Traditional Beijing breakfast chaogan" },
     },
 
     // — Splurge —
@@ -621,6 +683,8 @@ export const beijingProfile: CityProfile = {
       whatToOrder:
         "28-day baby Peking duck (must pre-order), crab marrow ball, steamed seasonal seafood, chef\u2019s recommendation.",
       bestFor: "Dinner. Book well in advance.",
+      priceTier: 4,
+      photo: { src: "/photos/beijing/xin-rong-ji.jpg", alt: "Fine dining Chinese seafood presentation" },
     },
     {
       slug: "trb-hutong",
@@ -641,6 +705,8 @@ export const beijingProfile: CityProfile = {
         "Premium signature tasting menu (seasonal). Sunday brunch ($49) for better value.",
       bestFor:
         "Sunday brunch for value; dinner for the full candlelit temple experience",
+      priceTier: 4,
+      photo: { src: "/photos/beijing/trb-hutong.jpg", alt: "Temple restaurant candlelit interior" },
     },
 
     // — Night Markets —
@@ -661,6 +727,8 @@ export const beijingProfile: CityProfile = {
       whatToOrder:
         "Mala crawfish at Hu Da or any busy competitor, grilled whole fish, lamb skewers, cold beer.",
       bestFor: "Late night, arrive 9-10 PM",
+      priceTier: 1,
+      photo: { src: "/photos/beijing/gui-street-ghost-street.jpg", alt: "Red lantern-lit night food street" },
     },
     {
       slug: "niujie-muslim-quarter",
@@ -681,6 +749,8 @@ export const beijingProfile: CityProfile = {
         "Lamb baozi at Hongji Snacks, lotus leaf sticky rice cake at Yibao, lamb hotpot at Jubaoyuan.",
       bestFor:
         "Late afternoon through evening. Pair with Niujie Mosque visit.",
+      priceTier: 1,
+      photo: { src: "/photos/beijing/niujie-muslim-quarter.jpg", alt: "Muslim quarter street food vendors" },
     },
   ],
 

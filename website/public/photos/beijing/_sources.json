@@ -1,0 +1,38 @@
+{
+  "_hero.jpg": {
+    "title": "Forbidden City golden rooftops at sunset",
+    "author": "Ling Tang",
+    "source": "https://unsplash.com/photos/d7badad00f7d",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "alt": "Forbidden City golden rooftops at sunset",
+    "status": "needs-review"
+  },
+  "the-forbidden-city-palace-museum.jpg": {
+    "title": "Beijing architecture and palace courtyard",
+    "author": "Unsplash",
+    "source": "https://unsplash.com/photos/1599571234909-29ed5d1321d6",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "alt": "Forbidden City courtyard with red walls",
+    "status": "needs-review"
+  },
+  "great-wall-at-jinshanling.jpg": {
+    "title": "Great Wall stretching across mountain ridges",
+    "author": "Ling Tang",
+    "source": "https://unsplash.com/photos/d7badad00f7d",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "alt": "Great Wall stretching across mountain ridges",
+    "status": "needs-review"
+  },
+  "summer-palace-and-longevity-hill.jpg": {
+    "title": "Classical Chinese garden with pagoda",
+    "author": "Pexels",
+    "source": "https://www.pexels.com/photo/2846076/",
+    "license": "Pexels License",
+    "license_url": "https://www.pexels.com/license/",
+    "alt": "Summer Palace marble boat and lake view",
+    "status": "needs-review"
+  }
+}
