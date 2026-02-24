@@ -17,7 +17,7 @@ export interface UserInfo {
 const USERS: UserInfo[] = [
   { id: "craig", displayName: "Craig", color: "#3b82f6" },
   { id: "kiran", displayName: "Kiran", color: "#22c55e" },
-  { id: "hernane", displayName: "Hernane", color: "#f97316" },
+  { id: "hernan", displayName: "Hernan", color: "#f97316" },
 ];
 
 const COOKIE_NAME = "china-trip-user";

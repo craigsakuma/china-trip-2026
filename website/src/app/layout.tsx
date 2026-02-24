@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "China 2026",
   description:
-    "Trip planning for Craig, Kiran & Hernane \u2014 October 2026",
+    "Trip planning for Craig, Kiran & Hernan \u2014 October 2026",
   icons: {
     icon: [
       { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },

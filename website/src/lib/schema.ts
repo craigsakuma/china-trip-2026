@@ -9,7 +9,7 @@ import {
 } from "drizzle-orm/pg-core";
 
 export const users = pgTable("users", {
-  id: text("id").primaryKey(), // "craig" | "kiran" | "hernane"
+  id: text("id").primaryKey(), // "craig" | "kiran" | "hernan"
   displayName: text("display_name").notNull(),
   color: text("color").notNull(), // hex color
 });

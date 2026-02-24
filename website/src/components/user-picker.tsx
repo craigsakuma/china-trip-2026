@@ -8,7 +8,7 @@ export function UserPickerOverlay() {
   if (user) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm">
+    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm">
       <div className="mx-4 w-full max-w-sm rounded-2xl bg-white p-8 shadow-2xl">
         <h2 className="text-center text-2xl font-bold tracking-tight">
           Who are you?
@@ -53,7 +53,7 @@ export function UserAvatar() {
       >
         {user.displayName[0]}
       </button>
-      <div className="invisible absolute right-0 top-full z-50 mt-2 w-40 rounded-lg border bg-white py-1 shadow-lg group-hover:visible">
+      <div className="invisible absolute right-0 top-full z-[100] mt-2 w-40 rounded-lg border bg-white py-1 shadow-lg group-hover:visible">
         {allUsers.map((u) => (
           <button
             key={u.id}

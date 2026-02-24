@@ -67,7 +67,7 @@ export default function Home() {
 
       {/* ── Footer ───────────────────────────────────────────── */}
       <footer className="border-t py-8 text-center text-sm text-muted-foreground">
-        China 2026 &middot; Built for Craig, Kiran &amp; Hernane
+        China 2026 &middot; Built for Craig, Kiran &amp; Hernan
       </footer>
     </div>
   );

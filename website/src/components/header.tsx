@@ -11,9 +11,6 @@ export default function Header() {
         <p className="mt-1.5 text-lg text-muted-foreground">
           October 10&ndash;25 &middot; Kiran&apos;s 50th Birthday
         </p>
-        <p className="mt-1 text-sm text-muted-foreground">
-          Craig &middot; Kiran &middot; Hernane
-        </p>
       </div>
     </header>
   );

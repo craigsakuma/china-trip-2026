@@ -4,7 +4,7 @@ import { reviews, users } from "@/lib/schema";
 import { eq, and } from "drizzle-orm";
 import { cities } from "@/data/cities";
 
-const VALID_USERS = ["craig", "kiran", "hernane"] as const;
+const VALID_USERS = ["craig", "kiran", "hernan"] as const;
 const VALID_SLUGS = new Set(cities.map((c) => c.slug));
 
 export async function GET(req: NextRequest) {
