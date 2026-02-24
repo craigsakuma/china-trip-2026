@@ -1,11 +1,11 @@
 {
   "_hero.jpg": {
-    "title": "Hong Kong skyline and Victoria Harbour at dusk",
-    "author": "Simon Zhu",
-    "source": "",
-    "license": "Unsplash License",
-    "license_url": "https://unsplash.com/license",
-    "alt": "Hong Kong skyline and Victoria Harbour at dusk",
-    "status": "placeholder"
+    "title": "Hong Kong Night Skyline.jpg",
+    "author": "Base64, retouched by CarolSpears",
+    "source": "https://commons.wikimedia.org/wiki/File%3AHong%20Kong%20Night%20Skyline.jpg",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "alt": "A 46 segment × 3 exposure HDR panorama of the Hong Kong night skyline. Taken from Lugard Road at Victoria Peak.",
+    "status": "needs-review"
   }
 }

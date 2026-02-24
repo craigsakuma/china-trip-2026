@@ -2,7 +2,7 @@ import type { CityProfile } from "@/types";
 
 export const hongKongProfile: CityProfile = {
   slug: "hong-kong",
-  heroPhoto: { src: "/photos/hong-kong/_hero.jpg", alt: "Hong Kong skyline and Victoria Harbour at dusk", credit: "Simon Zhu" },
+  heroPhoto: { src: "/photos/hong-kong/_hero.jpg", alt: "Hong Kong night skyline panorama from Victoria Peak", credit: "Base64" },
   executiveSummary: [
     "Hong Kong in mid-October is widely regarded as the city at its finest. The brutal summer humidity has broken, typhoon season is winding down (though a tail-end storm remains a small statistical possibility), and temperatures settle into a sweet spot that makes the city\u2019s extraordinary network of hiking trails genuinely enjoyable. The urban frenzy that defines Hong Kong year-round is still fully present, but October light is golden, the harbor shimmers, and outdoor tables fill nightly with locals who have emerged from months of air-conditioned hibernation.",
     "Hong Kong remains one of the world\u2019s most singular cities: a vertical Cantonese metropolis with a British colonial overlay, a booming contemporary art scene layered over ancient temple traditions, and a food culture of almost absurd range and quality. At the same time, it is compact and superbly connected by one of the world\u2019s best public transit systems. Three friends willing to walk, take the MTR, and eat at plastic-stool restaurants alongside bankers and construction workers can experience the full spectrum \u2014 from incense-clouded ancestral halls to Michelin-starred rooftop dining \u2014 within a single day.",
