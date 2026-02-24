@@ -1,6 +1,6 @@
 # Website Build Plan — China Trip 2026
 
-> Living document. Check off tasks as completed. Last updated: 2026-02-23.
+> Living document. Check off tasks as completed. Last updated: 2026-02-24.
 
 ---
 
@@ -17,14 +17,14 @@ A collaborative trip-planning website where Craig, Kiran, and Hernane can browse
 
 | Layer | Tool | Why |
 |---|---|---|
-| **Framework** | Next.js 15 (App Router) | Vercel-native, file-based routing |
+| **Framework** | Next.js 16 (App Router) | Vercel-native, file-based routing |
 | **UI Components** | shadcn/ui + Tailwind CSS | Pre-built, copy-to-repo components — no runtime dependency |
 | **Database** | Neon Postgres (via Vercel Marketplace) | Free tier, serverless, replaces deprecated @vercel/postgres |
 | **ORM** | Drizzle ORM | Lightweight, type-safe, great Neon support |
 | **Map** | react-simple-maps | Lightweight SVG map, ~40 lines of code |
 | **Auth** | Cookie-based name picker | 3 users, no passwords, no auth library |
 | **Hosting** | Vercel (free tier) | Push-to-deploy from GitHub |
-| **Package Manager** | pnpm | Fast, disk-efficient (used by Next.js SaaS starter) |
+| **Package Manager** | npm | Standard, widely supported (with legacy-peer-deps for react-simple-maps) |
 
 ### Key Dependencies
 
@@ -113,24 +113,24 @@ china-trip-2026/
 
 > Get a skeleton deployed to Vercel so we have a working CI/CD loop from day one.
 
-- [ ] **Create GitHub repository**
+- [x] **Create GitHub repository** ✅
   - `gh repo create china-trip-2026 --public --source=. --remote=origin`
-  - Push existing markdown files as initial commit
+  - Pushed to https://github.com/craigsakuma/china-trip-2026
 
-- [ ] **Scaffold Next.js project**
-  - `npx create-next-app@latest website --typescript --tailwind --eslint --app --src-dir --import-alias "@/*" --use-pnpm`
-  - Verify `pnpm dev` runs on localhost
+- [x] **Scaffold Next.js project** ✅
+  - Next.js 16.1.6 with TypeScript, Tailwind CSS v4, ESLint, App Router
+  - `.npmrc` with `legacy-peer-deps=true` for react-simple-maps React 19 compat
 
-- [ ] **Initialize shadcn/ui**
-  - `cd website && pnpm dlx shadcn@latest init` (select: New York style, Zinc base color, CSS variables)
-  - Add initial components: `pnpm dlx shadcn@latest add card badge button tooltip`
+- [x] **Initialize shadcn/ui** ✅
+  - New York style, Zinc base color, CSS variables
+  - Components: card, badge, button, tooltip, collapsible, accordion, tabs, separator, avatar, scroll-area
 
-- [ ] **Install additional dependencies**
-  - `pnpm add react-simple-maps`
-  - `pnpm add -D @types/react-simple-maps` (if needed)
+- [x] **Install additional dependencies** ✅
+  - react-simple-maps, lucide-react
+  - Custom type declarations for react-simple-maps (`src/types/react-simple-maps.d.ts`)
 
 - [ ] **Deploy to Vercel**
-  - Push to GitHub
+  - Push to GitHub ✅
   - Import project in Vercel dashboard (vercel.com → New Project → Import from GitHub)
   - Set root directory to `website/` in Vercel project settings
   - Verify auto-deploy on push
@@ -145,27 +145,25 @@ china-trip-2026/
 
 > Define TypeScript types and create the static city data that powers all pages.
 
-- [ ] **Define TypeScript interfaces** (`src/types/index.ts`)
-  - `City` — slug, name, region, lat, lng, description, bestFor tags, suggestedDays, featured, tier
-  - `Neighborhood` — name, description, whyItFitsUs, nearby, hotels, topPick flag
-  - `Activity` — name, description, time, location, cost, costBreakdown, tips, topPick flag
-  - `Restaurant` — name, chineseName, category, location, priceRange, cuisine, description, reviews, whatToOrder, bestFor, topPick flag
-  - `WeatherRow` — period, avgHigh, avgLow, rainDays, aqi, conditions
-  - `CityProfile` — extends City with: executiveSummary, famousFor, whyItFits, weather, neighborhoods, activities, restaurants, practicalTips, sources
+- [x] **Define TypeScript interfaces** (`src/types/index.ts`) ✅
+  - City, Neighborhood, Activity, Restaurant, WeatherRow, PracticalTips, CityProfile
 
-- [ ] **Create cities metadata** (`src/data/cities.ts`)
-  - All 24 cities with: slug, name, region, lat/lng coordinates, short description, bestFor tags, suggestedDays, tier, featured flag
-  - Mark 12 cities as featured (see homepage design)
-  - Assign hue values for gradient card backgrounds (until real images are added)
+- [x] **Create cities metadata** (`src/data/cities.ts`) ✅
+  - 24 cities with coordinates, descriptions, bestFor tags, tiers, hue values
+  - 12 featured cities on homepage grid
 
-- [ ] **Create regional circuits data** (`src/data/regional-circuits.ts`)
-  - Port the regional groupings table from `candidate-cities.md`
-  - Each circuit: name, cities (slugs), totalDays, color
+- [x] **Create regional circuits data** (`src/data/regional-circuits.ts`) ✅
+  - 8 circuits with city chains, total days, color codes
 
-- [ ] **Port Beijing content to structured data**
-  - Convert `cities/beijing.md` into a `CityProfile` object
-  - Executive summary, weather rows, 4 neighborhoods, 18 activities, 15 restaurants, practical tips, 28 sources
-  - Validate all prices are USD, all costs have per-person breakdowns
+- [x] **Port Beijing content to structured data** ✅
+  - `src/data/profiles/beijing.ts` — 3 exec summary paragraphs, 7 famousFor, 5 whyItFits
+  - 3 weather rows, 4 neighborhoods, 17 activities, 14 restaurants, 4 practical tip categories, 28 sources
+  - All Top Pick flags preserved, Chinese names included
+
+- [x] **Create stub profiles for all remaining cities** ✅
+  - `src/data/profiles/stubs.ts` — 22 stub profiles with exec summaries and weather data
+  - Reusable weather templates by region (Yunnan, Sichuan, Hunan, Shanxi, Eastern, Fujian, Tibet)
+  - `src/data/profiles/index.ts` — profile registry with getProfile() fallback to stubs
 
 ---
 
@@ -174,63 +172,37 @@ china-trip-2026/
 > Build the homepage: header, map, city cards, more destinations, regional circuits, footer.
 
 ### Header
-- [ ] **Header component** (`src/components/header.tsx`)
-  - Trip title: "China 2026"
-  - Subtitle: "October 10–25 · Kiran's 50th Birthday"
-  - Three traveler names
-  - Stats line: "12 Destinations · ~16 Days"
-  - Clean centered layout, warm color palette
+- [x] **Header component** (`src/components/header.tsx`) ✅
+  - Title, subtitle, traveler names, stats line
 
 ### China Map
-- [ ] **Map component** (`src/components/china-map.tsx`)
-  - Use `react-simple-maps` with `ComposableMap` + `Geographies` + `Marker`
-  - Load world topojson from CDN, project centered on China (`center: [104, 35]`)
-  - Render China in light stone gray, neighbors in lighter gray
-  - Featured cities: larger red/amber dots with always-visible labels
-  - Non-featured cities: smaller gray dots, labels on hover
-  - Tooltip on hover: city name + region
-  - Click dot → scroll to card or navigate to city page
-  - Wrap in `dynamic()` import with `ssr: false` to prevent hydration issues
+- [x] **Map component** (`src/components/china-map.tsx` + `china-map-wrapper.tsx`) ✅
+  - react-simple-maps with Mercator projection centered on China
+  - Featured cities: red dots with always-visible labels; non-featured: gray dots, labels on hover
+  - Client wrapper component for Next.js 16 SSR compatibility
 
 ### City Cards
-- [ ] **City card component** (`src/components/city-card.tsx`)
-  - Image area: gradient placeholder (hue-based) with tier badge overlay ("Must Visit" / "Strong Match")
-  - City name (large, bold)
-  - Region + suggested days (subtle text)
-  - 1-2 line description (truncated)
-  - "Best for" tags as small Badge components
-  - Star ratings row: each traveler's avatar + 0-3 stars (placeholder "—" until Phase 7)
-  - Click → navigates to `/city/[slug]`
-  - Hover: subtle shadow lift
+- [x] **City card component** (`src/components/city-card.tsx`) ✅
+  - HSL gradient placeholder, tier badge, description, bestFor tags, link to city page
 
-- [ ] **Featured destinations grid** on homepage
-  - 3 columns on desktop, 2 on iPad, 1 on mobile
-  - 12 featured city cards
-  - Default sort: Must Visit first, then Strong Match, then Worth Considering
+- [x] **Featured destinations grid** on homepage ✅
+  - 3 columns on desktop, 2 on tablet, 1 on mobile
 
 ### More Destinations
-- [ ] **"More Destinations" section**
-  - Simple flowing list of text links for non-featured cities (12)
-  - Each shows: city name + region
-  - Click → navigates to city page
-  - Styled as small pills/chips
+- [x] **"More Destinations" section** ✅
+  - Flowing pill/chip links for 12 non-featured cities
 
 ### Regional Circuits
-- [ ] **Regional circuits section**
-  - Compact cards showing each circuit: name, city chain, total days
-  - Color-coded dots matching map markers
-  - Data from `regional-circuits.ts`
+- [x] **Regional circuits section** ✅
+  - Color-coded cards with city chains and total days
 
 ### Footer
-- [ ] **Footer**
-  - "China 2026 · Built for Craig, Kiran & Hernane"
-  - Minimal, one line
+- [x] **Footer** ✅
 
 ### Interactions
-- [ ] **Map ↔ Card hover sync**
+- [ ] **Map ↔ Card hover sync** (deferred to Phase 8)
   - Hovering a city card highlights the corresponding map dot
   - Hovering a map dot highlights the corresponding card
-  - Uses shared state (React context or simple useState at page level)
 
 ---
 
@@ -239,66 +211,44 @@ china-trip-2026/
 > Build the `/city/[slug]` page template. Design once, reuse for all 24 cities.
 
 ### Page Layout
-- [ ] **Dynamic route setup** (`src/app/city/[slug]/page.tsx`)
-  - `generateStaticParams()` to pre-build all 24 city pages at build time
-  - Look up city data by slug
-  - 404 if slug not found
+- [x] **Dynamic route setup** (`src/app/city/[slug]/page.tsx`) ✅
+  - `generateStaticParams()` builds all 24 city pages at build time
+  - Next.js 16 Promise params pattern
+  - Stub page ("Coming soon") when no full profile exists
+  - Full profile page when data available
 
 ### Hero Section
-- [ ] **City hero component** (`src/components/city-hero.tsx`)
-  - Full-width image/gradient
-  - City name overlaid large
-  - "Famous for" tags as pills
-  - Star ratings (3 small avatars + stars) in top-right corner
+- [x] **City hero** (inline in page.tsx) ✅
+  - HSL gradient with city name, region, suggested days, famousFor tags as pills
 
 ### Executive Summary
-- [ ] **Summary section**
-  - 2-3 paragraph overview from city data
-  - "Why it fits our profile" as a highlighted callout with bullet points
+- [x] **Summary section** ✅
+  - Multi-paragraph overview + "Why it fits us" highlighted callout
 
 ### Weather Table
-- [ ] **Weather component** (`src/components/weather-table.tsx`)
-  - Three side-by-side cards: Early Oct / Mid Oct / Late Oct
-  - Each card: temp range, rain days, AQI, conditions
-  - Weather icons (simple emoji or SVG)
+- [x] **Weather component** (`src/components/weather-table.tsx`) ✅
+  - Three side-by-side cards with temps, rain days, AQI, conditions
   - "What to pack" note below
 
 ### Content Sections (Neighborhoods, Activities, Restaurants)
-- [ ] **Expandable item card** (`src/components/item-card.tsx`)
-  - Shared component used for neighborhoods, activities, and restaurants
-  - **Collapsed state:** Image thumbnail, title, key stats (cost, time, price), Top Pick badge, favorite hearts
-  - **Expanded state:** Full description, tips (bullets), cost breakdown table, location, links
-  - Click/tap to toggle expand
-  - Favorite heart toggle per user
-  - Favorited items sort to top of section automatically
+- [x] **Expandable item card** (`src/components/item-card.tsx`) ✅
+  - Shared component for all three types with type-safe narrowing
+  - Collapsed: title, key stat, Top Pick badge, chevron
+  - Expanded: full description, type-specific fields (tips, location, whatToOrder, etc.)
+  - amber-400 left border for Top Pick items
 
-- [ ] **Neighborhoods section**
-  - Card grid (same expand/collapse pattern)
-  - Fields: name, description, whyItFitsUs, nearby, hotels
-  - Top Pick badge where applicable
-
-- [ ] **Activities section**
-  - Card grid (expand/collapse)
-  - Fields: name, description, time, location, cost/breakdown, tips
-  - Top Pick badge, cost displayed prominently
-
-- [ ] **Restaurants section**
-  - Grouped by category (Peking Duck, Street Food, Regional, Traditional, Splurge, Late Night)
-  - **Filter pills** (`src/components/restaurant-filters.tsx`): `All | Peking Duck | Street Food | Regional | ...`
-  - Card fields: name, chineseName, priceRange, cuisine, description, whatToOrder, bestFor
-  - Top Pick badge
+- [x] **Neighborhoods section** ✅
+- [x] **Activities section** ✅
+- [x] **Restaurants section** ✅
+  - Restaurant category filter pills built (`src/components/restaurant-filters.tsx`) — not yet wired into city page
 
 ### Practical Tips
-- [ ] **Tips section**
-  - Organized by sub-category (Getting Around, Food & Dining, Money & Communication, Planning Ahead)
-  - Bullet point format
-  - Collapsible sub-sections
+- [x] **Tips section** ✅
+  - Organized by sub-category with bullet points
 
 ### Sources
-- [ ] **Sources/footnotes section**
-  - Numbered list of sources
-  - Footnote markers `[1]` in content link to corresponding source
-  - Collapsible by default (expand to see all)
+- [x] **Sources/footnotes section** ✅
+  - Collapsible `<details>` with numbered source list
 
 ---
 
@@ -307,9 +257,9 @@ china-trip-2026/
 > Port existing markdown content into structured data. Create new city profiles.
 
 ### Beijing (Complete Profile Exists)
-- [ ] Convert `cities/beijing.md` → structured TypeScript data object
-  - 4 neighborhoods, 18 activities, 15 restaurants, weather, tips, 28 sources
-  - Validate all data renders correctly on the city page
+- [x] Convert `cities/beijing.md` → structured TypeScript data object ✅
+  - `src/data/profiles/beijing.ts` — 4 neighborhoods, 17 activities, 14 restaurants, weather, tips, 28 sources
+  - Build succeeds and all data renders on the city page
 
 ### Hong Kong (Needs Research + Writing)
 - [ ] Research and create Hong Kong city profile
@@ -318,10 +268,9 @@ china-trip-2026/
   - Dim sum spots, street food, Victoria Peak, cultural sites
 
 ### Remaining 22 Cities (Stub → Full)
-- [ ] Create stub profiles for all remaining cities
-  - Pull metadata from `candidate-cities.md` (description, bestFor, suggestedDays)
-  - Each stub shows: executive summary, weather table, and "full profile coming soon" placeholder
-  - Stubs are functional pages — they just have less content
+- [x] Create stub profiles for all remaining cities ✅
+  - `src/data/profiles/stubs.ts` — all 22 cities with exec summaries and weather data
+  - Each stub renders as a functional page with "Full city profile coming soon" message
 
 - [ ] Prioritize full profiles for featured cities:
   - [ ] Guilin & Yangshuo
