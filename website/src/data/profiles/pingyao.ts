@@ -107,6 +107,7 @@ export const pingyaoProfile: CityProfile = {
     {
       slug: "city-wall-walk",
       name: "Pingyao City Wall Walk",
+      photo: { src: "/photos/pingyao/city-wall-walk.jpg", alt: "Pingyao City Wall Walk, Pingyao" },
       topPick: true,
       description:
         "The complete 6.4-kilometer circuit atop Pingyao's remarkably intact Ming dynasty walls (built 1370, expanded in later centuries) offers a panoramic view over the entire ancient city — grey-tile rooftops, courtyard compounds, temple pagodas, and the surrounding farmland. Seventy-two watchtowers punctuate the walls, and the ramparts are wide enough for comfortable walking. Early morning or sunset light transforms the experience [1].",
@@ -125,6 +126,7 @@ export const pingyaoProfile: CityProfile = {
     {
       slug: "rishengchang-exchange-house",
       name: "Rishengchang Exchange House (China's First Bank)",
+      photo: { src: "/photos/pingyao/rishengchang-exchange-house.jpg", alt: "Rishengchang Exchange House (China's First Bank), Pingyao" },
       topPick: true,
       description:
         "Founded in 1823, Rishengchang was China's first draft bank — a revolutionary institution that allowed merchants to deposit money in one city and withdraw it in another, eliminating the need to transport silver across bandit-ridden roads. At its peak, the Shanxi banks headquartered in Pingyao controlled an estimated 80% of China's financial transfers. The meticulously preserved compound includes the original vault, counting rooms, and living quarters of the bank's managers [2].",
@@ -142,6 +144,7 @@ export const pingyaoProfile: CityProfile = {
     {
       slug: "ancient-county-yamen",
       name: "Ancient County Yamen (Government Office)",
+      photo: { src: "/photos/pingyao/ancient-county-yamen.jpg", alt: "Ancient County Yamen (Government Office), Pingyao" },
       topPick: false,
       description:
         "One of the best-preserved ancient government offices in China, dating to the Yuan Dynasty (1346) with expansions through the Ming and Qing periods. The compound includes courtrooms, administrative offices, a prison, and the magistrate's living quarters — a complete picture of how local government functioned in imperial China. Daily theatrical reenactments of magistrate court proceedings add color [6].",
@@ -159,6 +162,7 @@ export const pingyaoProfile: CityProfile = {
     {
       slug: "merchant-courtyard-compound-tour",
       name: "Merchant Courtyard Compound Tour",
+      photo: { src: "/photos/pingyao/merchant-courtyard-compound-tour.jpg", alt: "Merchant Courtyard Compound Tour, Pingyao" },
       topPick: true,
       description:
         "Pingyao's wealthy merchant families built elaborate multi-courtyard residential compounds that reveal the social hierarchies, aesthetic sensibilities, and daily life of Qing-era China's mercantile elite. The best examples — Wang Family Compound and Qiao Family Compound (featured in Zhang Yimou's film Raise the Red Lantern) — lie just outside the city and are extraordinary in scale and detail [7].",
@@ -177,6 +181,7 @@ export const pingyaoProfile: CityProfile = {
     {
       slug: "shuanglin-temple",
       name: "Shuanglin Temple — Painted Sculpture Masterpiece",
+      photo: { src: "/photos/pingyao/shuanglin-temple.jpg", alt: "Shuanglin Temple — Painted Sculpture Masterpiece, Pingyao" },
       topPick: true,
       description:
         "Often called the \"museum of painted sculpture,\" this 1,500-year-old Buddhist temple (6 km southwest of Pingyao) contains over 2,000 original painted clay sculptures from the Song, Yuan, Ming, and Qing dynasties — widely considered among the finest examples of traditional Chinese sculpture anywhere. The expressions and detail are breathtaking [8].",
@@ -213,6 +218,7 @@ export const pingyaoProfile: CityProfile = {
     {
       slug: "shanxi-vinegar-experience",
       name: "Shanxi Vinegar Cultural Experience",
+      photo: { src: "/photos/pingyao/shanxi-vinegar-experience.jpg", alt: "Shanxi Vinegar Cultural Experience, Pingyao" },
       topPick: false,
       description:
         "Shanxi province is the vinegar capital of China — aged Shanxi vinegar (laochen cu) is to Chinese cooking what balsamic is to Italian cuisine. Several vinegar workshops in and around Pingyao offer tastings and demonstrations of the traditional aging process, which can take 3-8 years in ceramic jars [3].",
@@ -230,6 +236,7 @@ export const pingyaoProfile: CityProfile = {
     {
       slug: "pingyao-noodle-making-experience",
       name: "Pingyao Noodle-Making Experience",
+      photo: { src: "/photos/pingyao/pingyao-noodle-making-experience.jpg", alt: "Pingyao Noodle-Making Experience, Pingyao" },
       topPick: false,
       description:
         "Shanxi is the noodle capital of China, with more noodle varieties than any other province — hand-pulled, knife-cut, cat ear, rolled, flicked, and dozens more. Several guesthouses and small cooking schools in Pingyao offer hands-on noodle-making sessions where you learn the stretching and cutting techniques from local cooks [3].",
@@ -247,6 +254,7 @@ export const pingyaoProfile: CityProfile = {
     {
       slug: "city-tower-market-square",
       name: "City Tower (Shi Lou) and Market Square",
+      photo: { src: "/photos/pingyao/city-tower-market-square.jpg", alt: "City Tower (Shi Lou) and Market Square, Pingyao" },
       topPick: false,
       description:
         "The three-story City Tower at the intersection of Pingyao's two main streets served as the commercial and civic heart of the old town. Climb to the top for a bird's-eye view down the central axis. The surrounding Market Square was historically where merchants gathered to conduct business and announce prices [1].",
@@ -264,6 +272,7 @@ export const pingyaoProfile: CityProfile = {
     {
       slug: "sunset-from-the-wall",
       name: "Sunset from the City Wall",
+      photo: { src: "/photos/pingyao/sunset-from-the-wall.jpg", alt: "Sunset from the City Wall, Pingyao" },
       topPick: false,
       description:
         "The western section of the city wall faces the open Shanxi countryside and offers unobstructed sunset views. As the sun drops behind the flat agricultural landscape, the grey-brick city below takes on a warm golden glow. This is one of Pingyao's most memorable moments and costs nothing beyond the combo ticket [1].",
@@ -321,6 +330,7 @@ export const pingyaoProfile: CityProfile = {
     {
       slug: "pingyao-knife-cut-noodle-shop",
       name: "Local Knife-Cut Noodle Shops",
+      photo: { src: "/photos/pingyao/pingyao-knife-cut-noodle-shop.jpg", alt: "Local Knife-Cut Noodle Shops, Pingyao" },
       chineseName: "刀削面",
       category: "Street Food / Noodles",
       topPick: false,
@@ -355,6 +365,7 @@ export const pingyaoProfile: CityProfile = {
     {
       slug: "sakura-noodle-house",
       name: "Sakura Noodle House",
+      photo: { src: "/photos/pingyao/sakura-noodle-house.jpg", alt: "Sakura Noodle House, Pingyao" },
       chineseName: "樱花面馆",
       category: "Noodles",
       topPick: false,

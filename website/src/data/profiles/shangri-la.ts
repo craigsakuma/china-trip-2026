@@ -107,6 +107,7 @@ export const shangriLaProfile: CityProfile = {
     {
       slug: "songzanlin-monastery",
       name: "Songzanlin Monastery",
+      photo: { src: "/photos/shangri-la/songzanlin-monastery.jpg", alt: "Songzanlin Monastery, Shangri La" },
       topPick: true,
       description:
         'Yunnan\'s largest Tibetan Buddhist monastery complex, often called the "Little Potala Palace." Built in 1679 by the Fifth Dalai Lama, this sprawling hilltop complex houses approximately 700 monks across multiple halls, living quarters, and prayer rooms. The golden-roofed main halls contain extraordinary murals, thangka paintings, and a sacred atmosphere of burning juniper incense and murmured mantras [2].',
@@ -125,6 +126,7 @@ export const shangriLaProfile: CityProfile = {
     {
       slug: "pudacuo-national-park",
       name: "Pudacuo National Park",
+      photo: { src: "/photos/shangri-la/pudacuo-national-park.jpg", alt: "Pudacuo National Park, Shangri La" },
       topPick: true,
       description:
         "China's first national park meeting IUCN standards, covering 1,300 square kilometers of old-growth forest, alpine lakes, and subalpine meadows at 3,500-4,200m elevation. The two main lakes \u2014 Shudu and Bita \u2014 are surrounded by dense spruce and fir forest that gives way to golden larch groves in October. Wildlife includes Yunnan snub-nosed monkeys, though sightings are rare [6].",
@@ -197,6 +199,7 @@ export const shangriLaProfile: CityProfile = {
     {
       slug: "tibetan-family-visit-and-yak-butter-tea",
       name: "Tibetan Family Visit and Yak Butter Tea Ceremony",
+      photo: { src: "/photos/shangri-la/tibetan-family-visit-and-yak-butter-tea.jpg", alt: "Tibetan Family Visit and Yak Butter Tea Ceremony, Shangri La" },
       topPick: true,
       description:
         "A visit to a traditional Tibetan farmhouse in the countryside around Shangri-La, where a local family demonstrates daily life: churning yak butter tea, making tsampa, tending yaks, and explaining Tibetan customs around the central hearth. These visits offer genuine cultural exchange rather than staged performance [3].",
@@ -251,6 +254,7 @@ export const shangriLaProfile: CityProfile = {
     {
       slug: "thangka-painting-workshop",
       name: "Thangka Painting Workshop",
+      photo: { src: "/photos/shangri-la/thangka-painting-workshop.jpg", alt: "Thangka Painting Workshop, Shangri La" },
       topPick: false,
       description:
         "Hands-on introduction to the centuries-old Tibetan Buddhist art of thangka painting. Working with mineral pigments and traditional brushes, you'll learn the precise iconographic rules governing Buddha figures, mandalas, and sacred symbols under the guidance of a trained Tibetan artist [4].",
@@ -269,6 +273,7 @@ export const shangriLaProfile: CityProfile = {
     {
       slug: "white-water-terrace-baishuitai",
       name: "White Water Terrace (Baishuitai)",
+      photo: { src: "/photos/shangri-la/white-water-terrace-baishuitai.jpg", alt: "White Water Terrace (Baishuitai), Shangri La" },
       topPick: false,
       description:
         "Natural limestone terraces formed over millennia by calcium-rich spring water cascading down a mountainside, creating white, shallow pools that look like a frozen waterfall. Sacred to the local Naxi people and considered the birthplace of Dongba pictographic writing. Remote location means very few visitors [9].",
@@ -292,6 +297,7 @@ export const shangriLaProfile: CityProfile = {
     {
       slug: "silent-holy-stones-tibetan-restaurant",
       name: "Silent Holy Stones Tibetan Restaurant",
+      photo: { src: "/photos/shangri-la/silent-holy-stones-tibetan-restaurant.jpg", alt: "Silent Holy Stones Tibetan Restaurant, Shangri La" },
       chineseName: "\u9759\u5b89\u5c45\u85cf\u9910\u5385",
       category: "Tibetan",
       topPick: true,
@@ -330,6 +336,7 @@ export const shangriLaProfile: CityProfile = {
     {
       slug: "norbu-tibetan-restaurant",
       name: "Norbu Tibetan Restaurant",
+      photo: { src: "/photos/shangri-la/norbu-tibetan-restaurant.jpg", alt: "Norbu Tibetan Restaurant, Shangri La" },
       chineseName: "\u8bfa\u5e03\u85cf\u9910",
       category: "Tibetan",
       topPick: false,
@@ -410,6 +417,7 @@ export const shangriLaProfile: CityProfile = {
     {
       slug: "sichuan-yunnan-family-kitchen",
       name: "Sichuan-Yunnan Family Kitchen",
+      photo: { src: "/photos/shangri-la/sichuan-yunnan-family-kitchen.jpg", alt: "Sichuan-Yunnan Family Kitchen, Shangri La" },
       chineseName: "\u5DDD\u6ED1\u4EBA\u5BB6",
       category: "Chinese",
       topPick: false,

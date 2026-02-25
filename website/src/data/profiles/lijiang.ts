@@ -126,6 +126,7 @@ export const lijiangProfile: CityProfile = {
     {
       slug: "jade-dragon-snow-mountain",
       name: "Jade Dragon Snow Mountain (Yulong Xueshan)",
+      photo: { src: "/photos/lijiang/jade-dragon-snow-mountain.jpg", alt: "Jade Dragon Snow Mountain (Yulong Xueshan), Lijiang" },
       topPick: true,
       description:
         "The sacred mountain of the Naxi people, rising to 5,596 meters and visible from everywhere in Lijiang. The Glacier Park cable car ascends to 4,506 meters — one of the highest cable car stations in the world — with a boardwalk along the glacier edge offering surreal high-altitude views. Below, Spruce Meadow (3,240m) and Blue Moon Valley provide gentler alpine scenery with turquoise glacial pools [3].",
@@ -163,6 +164,7 @@ export const lijiangProfile: CityProfile = {
     {
       slug: "naxi-ancient-music-performance",
       name: "Naxi Ancient Music Evening Performance",
+      photo: { src: "/photos/lijiang/naxi-ancient-music-performance.jpg", alt: "Naxi Ancient Music Evening Performance, Lijiang" },
       topPick: true,
       description:
         "Around 20 elderly Naxi musicians in formal purple gowns perform 500-year-old Taoist-Confucian orchestral music on centuries-old instruments that were hidden underground during the Cultural Revolution. The music — solemn, strange, and beautiful — has been passed down orally for generations. This is living cultural heritage you cannot experience anywhere else [8].",
@@ -199,6 +201,7 @@ export const lijiangProfile: CityProfile = {
     {
       slug: "mu-palace",
       name: "Mu Palace (Mufu)",
+      photo: { src: "/photos/lijiang/mu-palace.jpg", alt: "Mu Palace (Mufu), Lijiang" },
       topPick: false,
       description:
         "The grand residence of the Mu family, hereditary Naxi chieftains who ruled the region for over 470 years. Rebuilt in 1999 after earthquake damage, the palace complex blends Han Chinese palatial architecture with Naxi decorative elements. Climb through the tiered gardens to Lion Hill for panoramic views over the entire Old Town rooftop sea [7].",
@@ -253,6 +256,7 @@ export const lijiangProfile: CityProfile = {
     {
       slug: "lijiang-old-town-deep-walk",
       name: "Lijiang Old Town Deep Walk",
+      photo: { src: "/photos/lijiang/lijiang-old-town-deep-walk.jpg", alt: "Lijiang Old Town Deep Walk, Lijiang" },
       topPick: false,
       description:
         "Beyond the commercial core of Sifang Street, Lijiang's Old Town reveals a labyrinth of quieter lanes where Naxi families still live in traditional courtyard homes. The northern lanes (Wuyi Street, Xinhua Street upper sections) and the western hillside neighborhoods near Lion Hill retain genuine residential character — elderly couples tending courtyard gardens, grandmothers weaving, corner noodle shops with no English sign [7].",
@@ -346,6 +350,7 @@ export const lijiangProfile: CityProfile = {
     {
       slug: "the-master-of-lijiang",
       name: "The Master of Lijiang",
+      photo: { src: "/photos/lijiang/the-master-of-lijiang.jpg", alt: "The Master of Lijiang, Lijiang" },
       chineseName: "\u4e3d\u6c5f\u5927\u5e08",
       category: "Naxi Cuisine",
       topPick: true,
@@ -454,6 +459,7 @@ export const lijiangProfile: CityProfile = {
     {
       slug: "he-fu-restaurant",
       name: "He Fu Yuan Private Kitchen",
+      photo: { src: "/photos/lijiang/he-fu-restaurant.jpg", alt: "He Fu Yuan Private Kitchen, Lijiang" },
       chineseName: "\u548c\u5e9c\u9662\u79c1\u623f\u83dc",
       category: "Upscale",
       topPick: false,

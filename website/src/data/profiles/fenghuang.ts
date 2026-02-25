@@ -217,6 +217,7 @@ export const fenghuangProfile: CityProfile = {
     {
       slug: "hong-bridge-and-river-crossing",
       name: "Hong Bridge (Rainbow Bridge)",
+      photo: { src: "/photos/fenghuang/hong-bridge-and-river-crossing.jpg", alt: "Hong Bridge (Rainbow Bridge), Fenghuang" },
       topPick: false,
       description:
         "Fenghuang's iconic covered bridge -- a two-story wooden structure spanning the Tuo River with shops and tea stalls on its upper level. Originally built during the Ming Dynasty and reconstructed in its current form, Hong Bridge anchors the western end of the old town and serves as both a landmark and a living commercial space. The upper floor tea stalls offer a perfect perch for watching river life unfold below [1].",
@@ -293,6 +294,7 @@ export const fenghuangProfile: CityProfile = {
     {
       slug: "old-house-sour-fish",
       name: "Old House Sour Fish Restaurant",
+      photo: { src: "/photos/fenghuang/old-house-sour-fish.jpg", alt: "Old House Sour Fish Restaurant, Fenghuang" },
       chineseName: "\u8001\u5c4b\u9178\u6c64\u9c7c",
       category: "Xiangxi Specialty",
       topPick: true,
@@ -310,6 +312,7 @@ export const fenghuangProfile: CityProfile = {
     {
       slug: "da-shi-ban-private-kitchen",
       name: "Da Shi Ban Private Kitchen",
+      photo: { src: "/photos/fenghuang/da-shi-ban-private-kitchen.jpg", alt: "Da Shi Ban Private Kitchen, Fenghuang" },
       chineseName: "\u5927\u77f3\u677f\u79c1\u623f\u83dc",
       category: "Xiangxi Specialty",
       topPick: true,
@@ -362,6 +365,7 @@ export const fenghuangProfile: CityProfile = {
     {
       slug: "xiao-mu-wu",
       name: "Xiao Mu Wu (Little Wooden House)",
+      photo: { src: "/photos/fenghuang/xiao-mu-wu.jpg", alt: "Xiao Mu Wu (Little Wooden House), Fenghuang" },
       chineseName: "\u5c0f\u6728\u5c4b",
       category: "Xiangxi Specialty",
       topPick: false,
@@ -416,6 +420,7 @@ export const fenghuangProfile: CityProfile = {
     {
       slug: "hong-bridge-tea-house",
       name: "Hong Bridge Tea Stalls",
+      photo: { src: "/photos/fenghuang/hong-bridge-tea-house.jpg", alt: "Hong Bridge Tea Stalls, Fenghuang" },
       chineseName: "\u8679\u6865\u8336\u697c",
       category: "Tea & Snacks",
       topPick: false,

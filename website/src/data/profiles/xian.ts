@@ -107,6 +107,7 @@ export const xianProfile: CityProfile = {
     {
       slug: "terracotta-warriors-museum",
       name: "Terracotta Warriors (Emperor Qinshihuang's Mausoleum Site Museum)",
+      photo: { src: "/photos/xian/terracotta-warriors-museum.jpg", alt: "Terracotta Warriors (Emperor Qinshihuang's Mausoleum Site Museum), Xian" },
       topPick: true,
       description:
         "One of the most significant archaeological discoveries ever made. In 1974, farmers digging a well uncovered an underground army of over 8,000 life-sized terracotta soldiers, horses, and chariots guarding the tomb of China's first emperor, Qin Shi Huang (259-210 BC). Each warrior has individualized facial features. Pit 1 is the largest and most impressive (6,000 figures in battle formation), Pit 2 has the highest-ranking warriors and cavalry, and Pit 3 is the command headquarters. A knowledgeable guide transforms this from 'looking at statues' into understanding the paranoia, ambition, and engineering genius of the man who unified China [1].",
@@ -125,6 +126,7 @@ export const xianProfile: CityProfile = {
     {
       slug: "city-wall-cycling",
       name: "Cycling the Ming Dynasty City Wall",
+      photo: { src: "/photos/xian/city-wall-cycling.jpg", alt: "Cycling the Ming Dynasty City Wall, Xian" },
       topPick: true,
       description:
         "Xi'an's city wall is the most complete ancient city wall in China \u2014 13.7 km of continuous, fully intact 14th-century fortification standing 12 meters high and wide enough on top for two lanes of traffic. Cycling the full loop takes about 90 minutes and delivers a constantly shifting panorama: the dense old city on one side, the modern skyline on the other, with watchtowers, ramparts, and moat gardens below [6].",
@@ -143,6 +145,7 @@ export const xianProfile: CityProfile = {
     {
       slug: "muslim-quarter-food-walk",
       name: "Muslim Quarter Deep Food Walk",
+      photo: { src: "/photos/xian/muslim-quarter-food-walk.jpg", alt: "Muslim Quarter Deep Food Walk, Xian" },
       topPick: true,
       description:
         "The Muslim Quarter is Xi'an's most important culinary destination \u2014 a dense network of alleys where Hui Muslim families have been cooking Silk Road-influenced food for over a millennium. The main Beiyuanmen street is famous but heavily touristed; the real treasures are in the side alleys (Dapi Yuan, Xiyangshi, Daxuexi Alley, and Huajue Alley) where multi-generational shops serve locals with no English menus and no inflated prices [2].",
@@ -161,6 +164,7 @@ export const xianProfile: CityProfile = {
     {
       slug: "shaanxi-history-museum",
       name: "Shaanxi History Museum",
+      photo: { src: "/photos/xian/shaanxi-history-museum.jpg", alt: "Shaanxi History Museum, Xian" },
       topPick: true,
       description:
         "One of China's four great museums and arguably the best single museum for understanding the full sweep of Chinese civilization. Over 370,000 artifacts spanning 1.1 million years, from Paleolithic tools through Tang Dynasty gold and silver work. The Tang Dynasty gallery alone \u2014 gold filigree crowns, tri-color glazed horses, and exquisite silver vessels \u2014 justifies the visit. The museum traces how Xi'an as a capital shaped Chinese culture across 13 dynasties [5].",
@@ -179,6 +183,7 @@ export const xianProfile: CityProfile = {
     {
       slug: "great-mosque-of-xian",
       name: "Great Mosque of Xi'an",
+      photo: { src: "/photos/xian/great-mosque-of-xian.jpg", alt: "Great Mosque of Xi'an, Xian" },
       topPick: false,
       description:
         "One of the largest and oldest mosques in China, founded in 742 AD during the Tang Dynasty. Unlike any mosque you've seen \u2014 the architecture is entirely traditional Chinese (wooden halls, gardens, memorial arches, and courtyards) but filled with Arabic calligraphy and Islamic decorative motifs. The fusion of Chinese and Islamic aesthetics reflects a thousand years of Hui Muslim life in Xi'an [7].",
@@ -197,6 +202,7 @@ export const xianProfile: CityProfile = {
     {
       slug: "forest-of-steles-museum",
       name: "Forest of Steles Museum (Beilin Museum)",
+      photo: { src: "/photos/xian/forest-of-steles-museum.jpg", alt: "Forest of Steles Museum (Beilin Museum), Xian" },
       topPick: false,
       description:
         "A collection of over 3,000 inscribed stone steles spanning 2,000 years \u2014 the largest collection of its kind in the world. For calligraphy enthusiasts, this is hallowed ground: Tang Dynasty master calligraphy preserved in stone, Nestorian Christian inscriptions from 781 AD documenting early Christianity in China, Confucian classics carved as the imperial standard, and a forest of carved tablets that constitutes one of the longest continuously maintained libraries in human history [4].",
@@ -233,6 +239,7 @@ export const xianProfile: CityProfile = {
     {
       slug: "huaqing-hot-springs",
       name: "Huaqing Hot Springs (Huaqing Palace)",
+      photo: { src: "/photos/xian/huaqing-hot-springs.jpg", alt: "Huaqing Hot Springs (Huaqing Palace), Xian" },
       topPick: false,
       description:
         "A 3,000-year-old imperial hot springs complex at the foot of Mount Li, most famous as the site of Emperor Xuanzong's doomed love affair with his concubine Yang Guifei \u2014 one of the great love stories in Chinese literature. Also the site where Chiang Kai-shek was captured in the 1936 Xi'an Incident that changed the course of Chinese history. The combination of Tang Dynasty ruins, natural hot springs, and dramatic mountain scenery makes it a rich half-day stop [8].",
@@ -251,6 +258,7 @@ export const xianProfile: CityProfile = {
     {
       slug: "small-wild-goose-pagoda",
       name: "Small Wild Goose Pagoda and Xi'an Museum",
+      photo: { src: "/photos/xian/small-wild-goose-pagoda.jpg", alt: "Small Wild Goose Pagoda and Xi'an Museum, Xian" },
       topPick: false,
       description:
         "Often overlooked in favor of its larger sibling, the Small Wild Goose Pagoda (built 707-709 AD) is set in a beautiful walled park with far fewer tourists. The surrounding Xi'an Museum is free and excellent. The pagoda survived a major earthquake in 1556 that cracked it from top to bottom \u2014 the crack is still visible. The temple grounds with ancient trees and quiet courtyards feel like stepping back in time [9].",
@@ -287,6 +295,7 @@ export const xianProfile: CityProfile = {
     {
       slug: "tang-dynasty-music-and-dance-show",
       name: "Tang Dynasty Music and Dance Show",
+      photo: { src: "/photos/xian/tang-dynasty-music-and-dance-show.jpg", alt: "Tang Dynasty Music and Dance Show, Xian" },
       topPick: false,
       description:
         "A recreation of the elaborate court music and dance performances that defined Tang Dynasty (618-907 AD) high culture, when Xi'an (then Chang'an) was the largest and most cosmopolitan city in the world. Colorful costumes, traditional instruments, and choreography based on Tang Dynasty murals and historical records. Multiple venues offer variations [11].",
@@ -305,6 +314,7 @@ export const xianProfile: CityProfile = {
     {
       slug: "dumpling-banquet-experience",
       name: "Dumpling Banquet (Jiaozi Yan)",
+      photo: { src: "/photos/xian/dumpling-banquet-experience.jpg", alt: "Dumpling Banquet (Jiaozi Yan), Xian" },
       topPick: false,
       description:
         "A Xi'an signature: an elaborate multi-course banquet where every dish is a different style of dumpling \u2014 steamed, boiled, fried, baked \u2014 shaped into animals, flowers, and other decorative forms, with fillings ranging from traditional pork to walnuts, seafood, and sweet dessert dumplings. The concept originated in the 1980s to showcase Xi'an's dumpling mastery to visiting dignitaries [12].",
@@ -323,6 +333,7 @@ export const xianProfile: CityProfile = {
     {
       slug: "bell-tower-drum-tower",
       name: "Bell Tower and Drum Tower",
+      photo: { src: "/photos/xian/bell-tower-drum-tower.jpg", alt: "Bell Tower and Drum Tower, Xian" },
       topPick: false,
       description:
         "The two towers at the geographic heart of the old walled city. The Bell Tower (built 1384) stands at the intersection of Xi'an's four main avenues; the Drum Tower (built 1380) marks the entrance to the Muslim Quarter. Together they formed the city's ancient timekeeping system \u2014 the bell rang at dawn, the drum at dusk. Both offer excellent elevated views of the city center [6].",
@@ -397,6 +408,7 @@ export const xianProfile: CityProfile = {
     {
       slug: "liu-jia-roujiamo",
       name: "Liu Jia Roujiamo",
+      photo: { src: "/photos/xian/liu-jia-roujiamo.jpg", alt: "Liu Jia Roujiamo, Xian" },
       chineseName: "\u5218\u5bb6\u8089\u5939\u99cd",
       category: "Street Food",
       topPick: false,
@@ -431,6 +443,7 @@ export const xianProfile: CityProfile = {
     {
       slug: "tong-sheng-xiang",
       name: "Tong Sheng Xiang",
+      photo: { src: "/photos/xian/tong-sheng-xiang.jpg", alt: "Tong Sheng Xiang, Xian" },
       chineseName: "\u540c\u76db\u7965",
       category: "Signature Xi'an",
       topPick: false,
@@ -448,6 +461,7 @@ export const xianProfile: CityProfile = {
     {
       slug: "xi-an-fan-zhuang",
       name: "Xi'an Fan Zhuang",
+      photo: { src: "/photos/xian/xi-an-fan-zhuang.jpg", alt: "Xi'an Fan Zhuang, Xian" },
       chineseName: "\u897f\u5b89\u996d\u5e84",
       category: "Traditional Shaanxi",
       topPick: false,
@@ -465,6 +479,7 @@ export const xianProfile: CityProfile = {
     {
       slug: "hong-hong-chao-shou",
       name: "Hong Hong Chao Shou",
+      photo: { src: "/photos/xian/hong-hong-chao-shou.jpg", alt: "Hong Hong Chao Shou, Xian" },
       chineseName: "\u7ea2\u7ea2\u9178\u83dc\u7092\u7c73",
       category: "Street Food",
       topPick: false,
@@ -482,6 +497,7 @@ export const xianProfile: CityProfile = {
     {
       slug: "de-fa-chang",
       name: "De Fa Chang",
+      photo: { src: "/photos/xian/de-fa-chang.jpg", alt: "De Fa Chang, Xian" },
       chineseName: "\u5fb7\u53d1\u957f",
       category: "Dumpling Banquet",
       topPick: true,
@@ -499,6 +515,7 @@ export const xianProfile: CityProfile = {
     {
       slug: "spring-restaurant",
       name: "Chun Fa Sheng (Spring Restaurant)",
+      photo: { src: "/photos/xian/spring-restaurant.jpg", alt: "Chun Fa Sheng (Spring Restaurant), Xian" },
       chineseName: "\u6625\u53d1\u751f",
       category: "Traditional Shaanxi",
       topPick: false,

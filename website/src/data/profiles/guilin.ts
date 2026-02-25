@@ -145,6 +145,7 @@ export const guilinProfile: CityProfile = {
     {
       slug: "yulong-river-bamboo-rafting",
       name: "Yulong River Bamboo Rafting",
+      photo: { src: "/photos/guilin/yulong-river-bamboo-rafting.jpg", alt: "Yulong River Bamboo Rafting, Guilin" },
       topPick: true,
       description:
         "A hand-poled bamboo raft drifting down the Yulong River \u2014 no motor, no crowd, just a bamboo pole punting through water so clear you can see the river bottom. This is the intimate, quiet alternative to the Li River cruise. Limestone peaks drift past in silence broken only by birdsong and the splash of the pole. The Jiuxian to Gongnong Bridge section is the most scenic [8].",
@@ -181,6 +182,7 @@ export const guilinProfile: CityProfile = {
     {
       slug: "moon-hill-hike",
       name: "Moon Hill Hike",
+      photo: { src: "/photos/guilin/moon-hill-hike.jpg", alt: "Moon Hill Hike, Guilin" },
       topPick: false,
       description:
         "A natural limestone arch near the top of a karst peak that perfectly frames the moon when aligned \u2014 and provides 360-degree views of the surrounding karst valley. The 20-minute climb up ~800 stone steps is the most accessible karst peak hike in the Yangshuo area. On a clear October day, you can see karst towers stretching to the horizon in every direction [9].",
@@ -217,6 +219,7 @@ export const guilinProfile: CityProfile = {
     {
       slug: "reed-flute-cave",
       name: "Reed Flute Cave (Ludi Yan)",
+      photo: { src: "/photos/guilin/reed-flute-cave.jpg", alt: "Reed Flute Cave (Ludi Yan), Guilin" },
       topPick: false,
       description:
         "A 240-meter-long cave system filled with stalactites, stalagmites, and rock formations illuminated by colored lighting. Over 70 Tang Dynasty (792 AD) ink inscriptions on the walls prove visitors have been marveling at these formations for over 1,200 years. The Crystal Palace chamber is the highlight \u2014 an underground cathedral of stone [6].",
@@ -235,6 +238,7 @@ export const guilinProfile: CityProfile = {
     {
       slug: "elephant-trunk-hill",
       name: "Elephant Trunk Hill (Xiangbishan)",
+      photo: { src: "/photos/guilin/elephant-trunk-hill.jpg", alt: "Elephant Trunk Hill (Xiangbishan), Guilin" },
       topPick: false,
       description:
         "Guilin's most recognizable landmark \u2014 a natural rock formation at the confluence of the Li and Peach Blossom rivers that perfectly resembles an elephant drinking from the water. The hill is small but climbable, and the cave inside the 'trunk' has Song Dynasty Buddhist carvings. More of a photo-op than a deep experience, but genuinely iconic [6].",
@@ -253,6 +257,7 @@ export const guilinProfile: CityProfile = {
     {
       slug: "yangshuo-cooking-class",
       name: "Yangshuo Cooking Class",
+      photo: { src: "/photos/guilin/yangshuo-cooking-class.jpg", alt: "Yangshuo Cooking Class, Guilin" },
       topPick: false,
       description:
         "Hands-on cooking in the Yangshuo countryside, typically starting with a visit to the local morning market where your instructor explains ingredients, followed by preparing 4-5 dishes in an outdoor kitchen surrounded by karst peaks. Yangshuo Cooking School and Cloud 9 Cooking School are the two most established operations, both running since the early 2000s [10].",
@@ -289,6 +294,7 @@ export const guilinProfile: CityProfile = {
     {
       slug: "yangshuo-rock-climbing",
       name: "Yangshuo Rock Climbing",
+      photo: { src: "/photos/guilin/yangshuo-rock-climbing.jpg", alt: "Yangshuo Rock Climbing, Guilin" },
       topPick: false,
       description:
         "Yangshuo is one of Asia's premier rock climbing destinations, with hundreds of bolted routes on limestone karst cliffs ranging from beginner to expert. The Moon Hill area and the cliffs near the Yulong River offer dramatic settings. Multiple outfitters in town offer half-day guided sessions with all equipment, no experience necessary [11].",
@@ -307,6 +313,7 @@ export const guilinProfile: CityProfile = {
     {
       slug: "longji-rice-terraces",
       name: "Longji Rice Terraces Day Trip",
+      photo: { src: "/photos/guilin/longji-rice-terraces.jpg", alt: "Longji Rice Terraces Day Trip, Guilin" },
       topPick: false,
       description:
         "Dramatic rice terraces carved into mountainsides over 700 years by Zhuang and Yao minority communities. The terraces cascade down steep valleys in concentric curves. In mid-to-late October, the terraces turn golden as the rice ripens \u2014 one of the most photographed agricultural landscapes in China. The Ping'an and Dazhai sections offer different experiences [12].",
@@ -471,6 +478,7 @@ export const guilinProfile: CityProfile = {
     {
       slug: "east-west-lane-food-street",
       name: "East-West Lane Street Food (Dong Xi Xiang)",
+      photo: { src: "/photos/guilin/east-west-lane-food-street.jpg", alt: "East-West Lane Street Food (Dong Xi Xiang), Guilin" },
       chineseName: "东西巷",
       category: "Street Food",
       topPick: false,

@@ -106,6 +106,7 @@ export const lhasaProfile: CityProfile = {
     {
       slug: "potala-palace",
       name: "Potala Palace",
+      photo: { src: "/photos/lhasa/potala-palace.jpg", alt: "Potala Palace, Lhasa" },
       topPick: true,
       description:
         "The iconic 13-story white-and-red fortress rising above Lhasa was the winter residence of the Dalai Lamas for centuries. Over 1,000 rooms contain chapels, tombs of past Dalai Lamas adorned in gold and jewels, thousands of Buddhist statues, and murals depicting Tibetan history. The sheer scale and sacred density are overwhelming — this is not a museum but a place of active worship [6].",
@@ -124,6 +125,7 @@ export const lhasaProfile: CityProfile = {
     {
       slug: "jokhang-temple-and-barkhor-kora",
       name: "Jokhang Temple and Barkhor Kora",
+      photo: { src: "/photos/lhasa/jokhang-temple-and-barkhor-kora.jpg", alt: "Jokhang Temple and Barkhor Kora, Lhasa" },
       topPick: true,
       description:
         "The holiest temple in Tibetan Buddhism, founded in the 7th century, housing the most sacred Buddha statue in Tibet — the Jowo Rinpoche. But the experience begins outside: the Barkhor kora is the pilgrim circuit encircling the temple, alive with prostrating devotees, prayer wheel spinners, incense burners, and chanting monks. Walking the kora at dawn amid hundreds of pilgrims is Lhasa's single most powerful experience [2].",
@@ -142,6 +144,7 @@ export const lhasaProfile: CityProfile = {
     {
       slug: "sera-monastery-debates",
       name: "Sera Monastery — Monk Debates",
+      photo: { src: "/photos/lhasa/sera-monastery-debates.jpg", alt: "Sera Monastery — Monk Debates, Lhasa" },
       topPick: true,
       description:
         "One of the three great Gelug monasteries of Tibet, Sera is most famous for its afternoon debating courtyard. Every day except Sunday from 3:00-5:00 PM, monks in crimson robes gather under trees and engage in rapid-fire philosophical debates — punctuated by dramatic hand-clapping, foot-stamping, and theatrical gestures. It is mesmerizing, kinetic, and unlike anything you've seen in any other religious tradition [7].",
@@ -196,6 +199,7 @@ export const lhasaProfile: CityProfile = {
     {
       slug: "drepung-monastery",
       name: "Drepung Monastery",
+      photo: { src: "/photos/lhasa/drepung-monastery.jpg", alt: "Drepung Monastery, Lhasa" },
       topPick: false,
       description:
         "Once the largest monastery in the world with over 10,000 monks, Drepung sprawls across a mountainside west of Lhasa like a whitewashed city. Founded in 1416, it served as the seat of the Dalai Lamas before the Potala was built. The Ganden Palace within the complex is where the 2nd-5th Dalai Lamas lived. Fewer tourists than Sera, more contemplative atmosphere [9].",
@@ -214,6 +218,7 @@ export const lhasaProfile: CityProfile = {
     {
       slug: "norbulingka-summer-palace",
       name: "Norbulingka — Summer Palace",
+      photo: { src: "/photos/lhasa/norbulingka-summer-palace.jpg", alt: "Norbulingka — Summer Palace, Lhasa" },
       topPick: false,
       description:
         "The Dalai Lamas' summer palace and garden complex, a UNESCO World Heritage Site alongside the Potala. Norbulingka means 'Jeweled Garden' — 36 hectares of parkland, pavilions, and palace buildings. The New Summer Palace (built for the 14th Dalai Lama in the 1950s) contains remarkably personal murals depicting the entire history of Tibet [10].",
@@ -249,6 +254,7 @@ export const lhasaProfile: CityProfile = {
     {
       slug: "tibetan-cooking-class",
       name: "Tibetan Cooking Class",
+      photo: { src: "/photos/lhasa/tibetan-cooking-class.jpg", alt: "Tibetan Cooking Class, Lhasa" },
       topPick: false,
       description:
         "Hands-on cooking in a traditional Tibetan home, learning to make momos (Tibetan dumplings), thukpa (noodle soup), and tsampa. Tibetan Family Kitchen is the most highly rated operator, offering a 2-hour class that includes dinner with the family. An intimate window into daily Tibetan domestic life [3].",
@@ -266,6 +272,7 @@ export const lhasaProfile: CityProfile = {
     {
       slug: "sera-utse-hermitage-hike",
       name: "Sera Utse Hermitage Hike",
+      photo: { src: "/photos/lhasa/sera-utse-hermitage-hike.jpg", alt: "Sera Utse Hermitage Hike, Lhasa" },
       topPick: false,
       description:
         "A moderate hike up the mountainside behind Sera Monastery to the Sera Utse hermitage — a small meditation retreat clinging to the cliff at roughly 13,500 feet. The trail passes painted rock carvings, prayer flags strung across ravines, and offers panoramic views over the Lhasa valley. This is the best accessible hiking experience within Lhasa itself.",
@@ -347,6 +354,7 @@ export const lhasaProfile: CityProfile = {
     {
       slug: "tashi-restaurant",
       name: "Tashi Restaurant (Tashi I)",
+      photo: { src: "/photos/lhasa/tashi-restaurant.jpg", alt: "Tashi Restaurant (Tashi I), Lhasa" },
       chineseName: undefined,
       category: "Teahouse / Casual",
       topPick: false,
@@ -387,6 +395,7 @@ export const lhasaProfile: CityProfile = {
     {
       slug: "sichuan-restaurants-beijing-east-road",
       name: "Sichuan Restaurants on Beijing East Road",
+      photo: { src: "/photos/lhasa/sichuan-restaurants-beijing-east-road.jpg", alt: "Sichuan Restaurants on Beijing East Road, Lhasa" },
       chineseName: undefined,
       category: "Regional Chinese",
       topPick: false,
@@ -407,6 +416,7 @@ export const lhasaProfile: CityProfile = {
     {
       slug: "lhasa-sweet-tea-houses",
       name: "Traditional Lhasa Sweet Tea Houses",
+      photo: { src: "/photos/lhasa/lhasa-sweet-tea-houses.jpg", alt: "Traditional Lhasa Sweet Tea Houses, Lhasa" },
       chineseName: undefined,
       category: "Teahouse Culture",
       topPick: true,

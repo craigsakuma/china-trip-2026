@@ -107,6 +107,7 @@ export const hangzhouProfile: CityProfile = {
     {
       slug: "west-lake-walk-and-boat",
       name: "West Lake Walk and Boat Ride",
+      photo: { src: "/photos/hangzhou/west-lake-walk-and-boat.jpg", alt: "West Lake Walk and Boat Ride, Hangzhou" },
       topPick: true,
       description:
         "The lake that has inspired Chinese poets and painters for over a thousand years. A full circuit of the lakeside path is roughly 15 km, passing through willow-lined causeways, arched bridges, lotus ponds, and pavilions. The \"Ten Scenes of West Lake\" are classical landscape compositions meant to be experienced at specific times and seasons \u2014 several peak in October. A hand-rowed wooden boat ride to the Three Pools Mirroring the Moon offers the lake from its best angle [4].",
@@ -162,6 +163,7 @@ export const hangzhouProfile: CityProfile = {
     {
       slug: "lingyin-temple-and-feilai-feng",
       name: "Lingyin Temple and Feilai Feng Grottoes",
+      photo: { src: "/photos/hangzhou/lingyin-temple-and-feilai-feng.jpg", alt: "Lingyin Temple and Feilai Feng Grottoes, Hangzhou" },
       topPick: false,
       description:
         "One of China's oldest and most important Buddhist temples, founded in 328 AD, set dramatically against forested limestone cliffs. Feilai Feng (\"Peak That Flew Here\") features over 300 Buddhist rock carvings dating from the 10th to 14th centuries, some of the finest surviving Song and Yuan dynasty sculpture in China. The surrounding forest of ancient camphor trees creates a cathedral-like atmosphere [7].",
@@ -180,6 +182,7 @@ export const hangzhouProfile: CityProfile = {
     {
       slug: "zhejiang-provincial-museum",
       name: "Zhejiang Provincial Museum",
+      photo: { src: "/photos/hangzhou/zhejiang-provincial-museum.jpg", alt: "Zhejiang Provincial Museum, Hangzhou" },
       topPick: true,
       description:
         "One of China's finest provincial museums, beautifully situated on the north shore of West Lake. The collection spans 7,000 years from Neolithic Hemudu culture through the Southern Song dynasty (when Hangzhou was the world's largest and most sophisticated city) to modern Chinese painting. The celadon ceramics collection is world-class [8].",
@@ -198,6 +201,7 @@ export const hangzhouProfile: CityProfile = {
     {
       slug: "china-national-tea-museum",
       name: "China National Tea Museum",
+      photo: { src: "/photos/hangzhou/china-national-tea-museum.jpg", alt: "China National Tea Museum, Hangzhou" },
       topPick: false,
       description:
         "The only national-level museum dedicated to tea in China, set among working tea plantations in the hills southwest of West Lake. Covers the full history, cultivation, and culture of Chinese tea across multiple halls. The tasting room offers expertly prepared examples of China's major tea types with knowledgeable staff [2].",
@@ -234,6 +238,7 @@ export const hangzhouProfile: CityProfile = {
     {
       slug: "leifeng-pagoda-sunset",
       name: "Leifeng Pagoda at Sunset",
+      photo: { src: "/photos/hangzhou/leifeng-pagoda-sunset.jpg", alt: "Leifeng Pagoda at Sunset, Hangzhou" },
       topPick: false,
       description:
         "The rebuilt pagoda on the south shore of West Lake, famous from the Legend of the White Snake \u2014 one of China's most beloved folk tales. The original collapsed in 1924 and was rebuilt in 2002 over the excavated ruins. The top floor offers sweeping views across the lake, and sunset from the upper terrace is one of the classic \"Ten Scenes of West Lake\" [4].",
@@ -252,6 +257,7 @@ export const hangzhouProfile: CityProfile = {
     {
       slug: "xixi-national-wetland-park",
       name: "Xixi National Wetland Park",
+      photo: { src: "/photos/hangzhou/xixi-national-wetland-park.jpg", alt: "Xixi National Wetland Park, Hangzhou" },
       topPick: false,
       description:
         "China's first national wetland park \u2014 a 11.5 sq km labyrinth of waterways, reed beds, persimmon orchards, and traditional fishing villages preserved within the city. In October, the persimmon trees turn orange-red and the annual Persimmon Festival takes place. A genuine escape from the city into a landscape that feels centuries old [9].",
@@ -270,6 +276,7 @@ export const hangzhouProfile: CityProfile = {
     {
       slug: "hangzhou-cooking-class",
       name: "Hangzhou Cooking Class",
+      photo: { src: "/photos/hangzhou/hangzhou-cooking-class.jpg", alt: "Hangzhou Cooking Class, Hangzhou" },
       topPick: false,
       description:
         "Hands-on class learning Hangzhou's signature dishes: Dongpo pork (the legendary braised pork belly created by poet Su Dongpo), beggar's chicken (clay-wrapped whole chicken), and West Lake vinegar fish. Typically includes a morning market visit to source ingredients and context on Hangzhou's culinary philosophy of freshness and restraint [3].",
@@ -292,6 +299,7 @@ export const hangzhouProfile: CityProfile = {
     {
       slug: "louwailou",
       name: "Louwailou",
+      photo: { src: "/photos/hangzhou/louwailou.jpg", alt: "Louwailou, Hangzhou" },
       chineseName: "\u697c\u5916\u697c",
       category: "Classic Hangzhou",
       topPick: true,
@@ -370,6 +378,7 @@ export const hangzhouProfile: CityProfile = {
     {
       slug: "wushan-night-market",
       name: "Wushan Night Market",
+      photo: { src: "/photos/hangzhou/wushan-night-market.jpg", alt: "Wushan Night Market, Hangzhou" },
       chineseName: "\u5434\u5c71\u591c\u5e02",
       category: "Street Food & Snacks",
       topPick: true,
@@ -408,6 +417,7 @@ export const hangzhouProfile: CityProfile = {
     {
       slug: "xin-feng-xiao-chi",
       name: "Xin Feng Xiao Chi",
+      photo: { src: "/photos/hangzhou/xin-feng-xiao-chi.jpg", alt: "Xin Feng Xiao Chi, Hangzhou" },
       chineseName: "\u65b0\u4e30\u5c0f\u5403",
       category: "Street Food & Snacks",
       topPick: false,
@@ -448,6 +458,7 @@ export const hangzhouProfile: CityProfile = {
     {
       slug: "green-tea-restaurant",
       name: "Green Tea Restaurant (Lv Cha)",
+      photo: { src: "/photos/hangzhou/green-tea-restaurant.jpg", alt: "Green Tea Restaurant (Lv Cha), Hangzhou" },
       chineseName: "\u7eff\u8336\u9910\u5385",
       category: "Regional & Specialty",
       topPick: false,
@@ -467,6 +478,7 @@ export const hangzhouProfile: CityProfile = {
     {
       slug: "shan-wai-shan",
       name: "Shan Wai Shan",
+      photo: { src: "/photos/hangzhou/shan-wai-shan.jpg", alt: "Shan Wai Shan, Hangzhou" },
       chineseName: "\u5c71\u5916\u5c71",
       category: "Regional & Specialty",
       topPick: false,

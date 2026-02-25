@@ -107,6 +107,7 @@ export const suzhouProfile: CityProfile = {
     {
       slug: "humble-administrators-garden",
       name: "Humble Administrator's Garden (Zhuozheng Yuan)",
+      photo: { src: "/photos/suzhou/humble-administrators-garden.jpg", alt: "Humble Administrator's Garden (Zhuozheng Yuan), Suzhou" },
       topPick: true,
       description:
         "The largest and most celebrated of Suzhou's nine UNESCO classical gardens, built in 1509 by a retired Ming Dynasty official. A masterwork of Chinese landscape design -- winding paths reveal new vistas at every turn, with pavilions, bridges, lotus ponds, and carefully framed views that compress mountains, forests, and lakes into 12 acres. In October, osmanthus trees within the garden fill the air with sweet fragrance [5].",
@@ -125,6 +126,7 @@ export const suzhouProfile: CityProfile = {
     {
       slug: "master-of-nets-garden",
       name: "Master of Nets Garden (Wangshi Yuan)",
+      photo: { src: "/photos/suzhou/master-of-nets-garden.jpg", alt: "Master of Nets Garden (Wangshi Yuan), Suzhou" },
       topPick: true,
       description:
         "The most perfectly proportioned of Suzhou's gardens -- only one acre, yet feels vast through brilliant spatial illusion. A retired Song Dynasty official designed it as the ideal scholar's retreat. Every view is a composed painting. The garden is so admired that its殿春簃 (Late Spring Studio) courtyard was replicated in the Metropolitan Museum of Art in New York [6].",
@@ -143,6 +145,7 @@ export const suzhouProfile: CityProfile = {
     {
       slug: "lion-grove-garden",
       name: "Lion Grove Garden (Shizi Lin)",
+      photo: { src: "/photos/suzhou/lion-grove-garden.jpg", alt: "Lion Grove Garden (Shizi Lin), Suzhou" },
       topPick: false,
       description:
         "A 650-year-old garden famous for its extraordinary labyrinth of rockeries -- fantastically shaped Taihu limestone formations that create a maze of caves, tunnels, and hidden passages. Built by a Zen Buddhist monk in 1342, the rocks are said to resemble lions, giving the garden its name. The Qianlong Emperor was so enchanted he visited six times and built replicas in Beijing [7].",
@@ -160,6 +163,7 @@ export const suzhouProfile: CityProfile = {
     {
       slug: "suzhou-museum",
       name: "Suzhou Museum",
+      photo: { src: "/photos/suzhou/suzhou-museum.jpg", alt: "Suzhou Museum, Suzhou" },
       topPick: true,
       description:
         "Designed by I.M. Pei (a Suzhou native) as his final gift to his hometown. The building itself is the masterpiece -- a dialogue between traditional Suzhou garden architecture and bold modernism, with geometric white walls, reflecting pools, and a courtyard garden that reinterprets classical forms. The collection includes Song Dynasty ceramics, Ming paintings, and excavated artifacts from Suzhou's 2,500-year history [8].",
@@ -178,6 +182,7 @@ export const suzhouProfile: CityProfile = {
     {
       slug: "pingjiang-road-canal-walk",
       name: "Pingjiang Road Canal Walk",
+      photo: { src: "/photos/suzhou/pingjiang-road-canal-walk.jpg", alt: "Pingjiang Road Canal Walk, Suzhou" },
       topPick: true,
       description:
         "A 1.5 km stroll along Suzhou's best-preserved Song Dynasty canal street. Stone-paved path, arched bridges, whitewashed houses leaning over calm water, silk shops, teahouses, and calligraphy studios. Take a gondola-style boat ride through the narrow waterways for a water-level perspective of the old city [2].",
@@ -196,6 +201,7 @@ export const suzhouProfile: CityProfile = {
     {
       slug: "tiger-hill",
       name: "Tiger Hill (Huqiu)",
+      photo: { src: "/photos/suzhou/tiger-hill.jpg", alt: "Tiger Hill (Huqiu), Suzhou" },
       topPick: false,
       description:
         "A 2,500-year-old hilltop park crowned by the leaning Cloud Rock Pagoda (built 961 AD, leaning 3 degrees -- China's own Tower of Pisa). Legend holds that the King of Wu was buried here with 3,000 swords, and a white tiger appeared to guard his tomb. The Sword Testing Stone, Sword Pool, and thousand-year-old trees make the climb atmospheric and genuinely historical [9].",
@@ -214,6 +220,7 @@ export const suzhouProfile: CityProfile = {
     {
       slug: "silk-embroidery-workshop",
       name: "Silk Museum and Embroidery Workshop",
+      photo: { src: "/photos/suzhou/silk-embroidery-workshop.jpg", alt: "Silk Museum and Embroidery Workshop, Suzhou" },
       topPick: false,
       description:
         "Suzhou has been China's silk capital for over 2,000 years. The Suzhou Silk Museum traces the history from silkworm cultivation to imperial robes, while nearby workshops offer hands-on embroidery classes in the Suzhou style -- double-sided embroidery so fine that both sides of the fabric display different images. Watching master embroiderers work is mesmerizing [10].",
@@ -232,6 +239,7 @@ export const suzhouProfile: CityProfile = {
     {
       slug: "kunqu-opera-performance",
       name: "Kunqu Opera Performance",
+      photo: { src: "/photos/suzhou/kunqu-opera-performance.jpg", alt: "Kunqu Opera Performance, Suzhou" },
       topPick: false,
       description:
         "Kunqu opera originated in Suzhou's Kunshan district in the 14th century and is recognized by UNESCO as a Masterpiece of Oral and Intangible Heritage. Older and more refined than Peking opera, Kunqu features exquisite costumes, poetic lyrics, and delicate flute-led music. Suzhou is the best place in China to experience it in an intimate traditional setting [11].",
@@ -268,6 +276,7 @@ export const suzhouProfile: CityProfile = {
     {
       slug: "suzhou-cooking-class",
       name: "Suzhou Cuisine Cooking Class",
+      photo: { src: "/photos/suzhou/suzhou-cooking-class.jpg", alt: "Suzhou Cuisine Cooking Class, Suzhou" },
       topPick: false,
       description:
         "Hands-on class learning the refined techniques of Jiangnan cooking -- the emphasis on fresh ingredients, gentle seasoning, subtle sweetness, and beautiful presentation that defines Suzhou's culinary tradition. Classes typically include a market visit to source seasonal ingredients [13].",
@@ -291,6 +300,7 @@ export const suzhouProfile: CityProfile = {
     {
       slug: "songhelou",
       name: "Song He Lou",
+      photo: { src: "/photos/suzhou/songhelou.jpg", alt: "Song He Lou, Suzhou" },
       chineseName: "\u677e\u9e64\u697c",
       category: "Classic Suzhou",
       topPick: true,
@@ -351,6 +361,7 @@ export const suzhouProfile: CityProfile = {
     {
       slug: "tongdexing",
       name: "Tong De Xing",
+      photo: { src: "/photos/suzhou/tongdexing.jpg", alt: "Tong De Xing, Suzhou" },
       chineseName: "\u540c\u5f97\u5174",
       category: "Noodles",
       topPick: true,
@@ -391,6 +402,7 @@ export const suzhouProfile: CityProfile = {
     {
       slug: "huangtianyuan",
       name: "Huang Tian Yuan",
+      photo: { src: "/photos/suzhou/huangtianyuan.jpg", alt: "Huang Tian Yuan, Suzhou" },
       chineseName: "\u9ec4\u5929\u6e90",
       category: "Pastries & Sweets",
       topPick: false,
@@ -431,6 +443,7 @@ export const suzhouProfile: CityProfile = {
     {
       slug: "xin-ji",
       name: "Xin Ji",
+      photo: { src: "/photos/suzhou/xin-ji.jpg", alt: "Xin Ji, Suzhou" },
       chineseName: "\u65b0\u5b63",
       category: "Splurge",
       topPick: false,
@@ -453,6 +466,7 @@ export const suzhouProfile: CityProfile = {
     {
       slug: "ouxiangguan",
       name: "Ou Xiang Guan",
+      photo: { src: "/photos/suzhou/ouxiangguan.jpg", alt: "Ou Xiang Guan, Suzhou" },
       chineseName: "\u85d5\u9999\u9986",
       category: "Teahouse",
       topPick: false,
@@ -472,6 +486,7 @@ export const suzhouProfile: CityProfile = {
     {
       slug: "wang-si-jiu-jia",
       name: "Wang Si Jiu Jia",
+      photo: { src: "/photos/suzhou/wang-si-jiu-jia.jpg", alt: "Wang Si Jiu Jia, Suzhou" },
       chineseName: "\u738b\u56db\u9152\u5bb6",
       category: "Local Favorites",
       topPick: true,

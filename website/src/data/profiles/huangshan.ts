@@ -107,6 +107,7 @@ export const huangshanProfile: CityProfile = {
     {
       slug: "huangshan-summit-hike-with-overnight",
       name: "Huangshan Summit Hike with Overnight for Sunrise",
+      photo: { src: "/photos/huangshan/huangshan-summit-hike-with-overnight.jpg", alt: "Huangshan Summit Hike with Overnight for Sunrise, Huangshan" },
       topPick: true,
       description:
         "The definitive Huangshan experience: ascend the mountain (via cable car or on foot), spend the afternoon exploring summit trails past iconic pine trees and granite formations, overnight at a summit hotel, then wake before dawn to watch the sunrise paint the sea of clouds in gold and pink. The mountain has over 30 km of summit-area trails connecting major peaks and viewpoints [1].",
@@ -231,6 +232,7 @@ export const huangshanProfile: CityProfile = {
     {
       slug: "tunxi-old-street",
       name: "Tunxi Old Street \u2014 Food and Culture Walk",
+      photo: { src: "/photos/huangshan/tunxi-old-street.jpg", alt: "Tunxi Old Street \u2014 Food and Culture Walk, Huangshan" },
       topPick: false,
       description:
         "A 1.2 km Song Dynasty-era commercial street in Huangshan City lined with Huizhou-style buildings housing tea shops, ink-stone carvers, traditional pharmacies, and restaurants. Less polished than many \"old streets\" in China and retains genuine commercial life alongside tourist shops [5].",
@@ -307,6 +309,7 @@ export const huangshanProfile: CityProfile = {
     {
       slug: "lao-jie-di-yi-lou",
       name: "Lao Jie Di Yi Lou",
+      photo: { src: "/photos/huangshan/lao-jie-di-yi-lou.jpg", alt: "Lao Jie Di Yi Lou, Huangshan" },
       chineseName: "\u8001\u8857\u7B2C\u4E00\u697C",
       category: "Huizhou Cuisine",
       topPick: true,
@@ -368,6 +371,7 @@ export const huangshanProfile: CityProfile = {
     {
       slug: "summit-hotel-restaurants",
       name: "Summit Hotel Restaurants",
+      photo: { src: "/photos/huangshan/summit-hotel-restaurants.jpg", alt: "Summit Hotel Restaurants, Huangshan" },
       chineseName: undefined,
       category: "Summit Dining",
       topPick: false,
@@ -389,6 +393,7 @@ export const huangshanProfile: CityProfile = {
     {
       slug: "tunxi-tea-houses",
       name: "Tunxi Old Street Tea Houses",
+      photo: { src: "/photos/huangshan/tunxi-tea-houses.jpg", alt: "Tunxi Old Street Tea Houses, Huangshan" },
       chineseName: undefined,
       category: "Tea & Culture",
       topPick: false,

@@ -162,6 +162,7 @@ export const daliProfile: CityProfile = {
     {
       slug: "shaping-monday-market",
       name: "Shaping Monday Market",
+      photo: { src: "/photos/dali/shaping-monday-market.jpg", alt: "Shaping Monday Market, Dali" },
       topPick: true,
       description:
         "Every Monday, the village of Shaping transforms into a sprawling open-air market where Bai farmers from the surrounding countryside converge to buy, sell, and barter. This is not a tourist market \u2014 it\u2019s a genuine agricultural trading day with sections for produce, livestock, tie-dye textiles, handmade tools, medicinal herbs, and street food. Almost all the older vendors wear traditional Bai dress. The energy is electric and the photography is extraordinary [3].",
@@ -180,6 +181,7 @@ export const daliProfile: CityProfile = {
     {
       slug: "three-pagodas-chongsheng-temple",
       name: "Three Pagodas of Chongsheng Temple",
+      photo: { src: "/photos/dali/three-pagodas-chongsheng-temple.jpg", alt: "Three Pagodas of Chongsheng Temple, Dali" },
       topPick: false,
       description:
         "Dali\u2019s most iconic landmark: three Tang Dynasty pagodas (the tallest at 227 feet, dating to 836 AD) standing in formation against the Cangshan backdrop. Behind them, the reconstructed Chongsheng Temple complex climbs the mountainside through a series of grand halls and courtyards. The reflection pool in front of the pagodas provides the classic photograph \u2014 three white towers mirrored in still water with snow peaks behind [8].",
@@ -234,6 +236,7 @@ export const daliProfile: CityProfile = {
     {
       slug: "dali-old-town-evening-walk",
       name: "Dali Old Town Evening Walk",
+      photo: { src: "/photos/dali/dali-old-town-evening-walk.jpg", alt: "Dali Old Town Evening Walk, Dali" },
       topPick: false,
       description:
         "After dark, Dali Old Town reveals a different character. Red lanterns illuminate the cobblestone lanes, independent musicians perform in small bars along Renmin Road, and the south gate (Nancheng Gate) glows against the mountain silhouette. The creative community of artists, musicians, and writers who have relocated to Dali from across China give the evening scene an indie-bohemian energy unique in Yunnan [4].",
@@ -269,6 +272,7 @@ export const daliProfile: CityProfile = {
     {
       slug: "erhai-lake-boat-trip",
       name: "Erhai Lake Boat Trip",
+      photo: { src: "/photos/dali/erhai-lake-boat-trip.jpg", alt: "Erhai Lake Boat Trip, Dali" },
       topPick: false,
       description:
         "Erhai Lake (\u201cEar-Shaped Sea\u201d) is a 100-square-mile highland lake at 6,400 feet \u2014 the seventh-largest freshwater lake in China. Boat trips cross to the eastern shore, visiting small islands and fishing villages. The views back toward Cangshan\u2019s full range reflected in the lake are stunning on clear October mornings [6].",
@@ -287,6 +291,7 @@ export const daliProfile: CityProfile = {
     {
       slug: "dali-museum-and-catholic-cathedral",
       name: "Dali Museum and Catholic Cathedral",
+      photo: { src: "/photos/dali/dali-museum-and-catholic-cathedral.jpg", alt: "Dali Museum and Catholic Cathedral, Dali" },
       topPick: false,
       description:
         "The Dali Museum (inside the old town) covers the Nanzhao and Dali kingdoms (738-1253 AD) that ruled this region as independent states for over 500 years \u2014 a history largely unknown outside China. Nearby, the unexpected Dali Catholic Cathedral (built by French missionaries in 1927) blends European church architecture with Bai decorative elements, reflecting the region\u2019s complex cultural layers [4].",
@@ -326,6 +331,7 @@ export const daliProfile: CityProfile = {
     {
       slug: "xinghua-village-restaurant",
       name: "Xinghua Village Restaurant",
+      photo: { src: "/photos/dali/xinghua-village-restaurant.jpg", alt: "Xinghua Village Restaurant, Dali" },
       chineseName: "\u674f\u82b1\u6751\u996d\u5e97",
       category: "Bai Cuisine",
       topPick: true,
@@ -342,6 +348,7 @@ export const daliProfile: CityProfile = {
     {
       slug: "golden-flower-bai-cuisine",
       name: "Golden Flower Little Sister Bai Cuisine",
+      photo: { src: "/photos/dali/golden-flower-bai-cuisine.jpg", alt: "Golden Flower Little Sister Bai Cuisine, Dali" },
       chineseName: "\u91d1\u82b1\u5c0f\u59b9\u767d\u65cf\u83dc",
       category: "Bai Cuisine",
       topPick: false,
@@ -361,6 +368,7 @@ export const daliProfile: CityProfile = {
     {
       slug: "xizhou-baba-vendors",
       name: "Xizhou Baba Street Vendors",
+      photo: { src: "/photos/dali/xizhou-baba-vendors.jpg", alt: "Xizhou Baba Street Vendors, Dali" },
       chineseName: "\u559c\u6d32\u7c91\u7c91",
       category: "Street Food",
       topPick: true,
@@ -414,6 +422,7 @@ export const daliProfile: CityProfile = {
     {
       slug: "a-peng-bbq",
       name: "A Peng BBQ",
+      photo: { src: "/photos/dali/a-peng-bbq.jpg", alt: "A Peng BBQ, Dali" },
       chineseName: "\u963f\u9e4f\u70e7\u70e4",
       category: "Yunnan Regional",
       topPick: false,

@@ -107,6 +107,7 @@ export const xiamenProfile: CityProfile = {
     {
       slug: "gulangyu-island-exploration",
       name: "Gulangyu Island (UNESCO World Heritage)",
+      photo: { src: "/photos/xiamen/gulangyu-island-exploration.jpg", alt: "Gulangyu Island (UNESCO World Heritage), Xiamen" },
       topPick: true,
       description:
         "A car-free island of winding cobblestone paths, banyan-canopied lanes, and over 1,000 colonial-era villas in a remarkable mashup of European, Japanese, and Southeast Asian architectural styles. UNESCO-listed for its unique 'Historical International Settlement' that blended Chinese and foreign cultures from the 1840s-1940s. Beyond the main tourist drag, the backstreets reward aimless wandering [1].",
@@ -126,6 +127,7 @@ export const xiamenProfile: CityProfile = {
     {
       slug: "fujian-tulou-day-trip",
       name: "Fujian Tulou Day Trip (UNESCO World Heritage)",
+      photo: { src: "/photos/xiamen/fujian-tulou-day-trip.jpg", alt: "Fujian Tulou Day Trip (UNESCO World Heritage), Xiamen" },
       topPick: true,
       description:
         "Massive circular and rectangular earthen buildings constructed by Hakka and Minnan communities between the 12th and 20th centuries. Each tulou housed an entire clan -- up to 800 people -- in a self-contained fortress with thick rammed-earth walls (some 6 feet thick), a single entrance, and communal courtyards. The geometry is extraordinary: perfectly circular buildings up to five stories tall, visible from satellite imagery. The Nanjing County cluster (Tianluokeng, Taxia village) is the most photogenic [2].",
@@ -235,6 +237,7 @@ export const xiamenProfile: CityProfile = {
     {
       slug: "jimei-school-village",
       name: "Jimei School Village (Jiageng Architecture)",
+      photo: { src: "/photos/xiamen/jimei-school-village.jpg", alt: "Jimei School Village (Jiageng Architecture), Xiamen" },
       topPick: false,
       description:
         "A remarkable campus complex built by Tan Kah Kee (Chen Jiageng), the overseas Chinese rubber tycoon who poured his fortune into education. The architecture is a unique East-meets-West fusion: traditional Chinese upturned rooftops on European-style stone buildings. The Ao Yuan (Turtle Garden) memorial and Dragon Boat Pool are highlights [12].",
@@ -270,6 +273,7 @@ export const xiamenProfile: CityProfile = {
     {
       slug: "shapowei-art-district",
       name: "Shapowei Art District",
+      photo: { src: "/photos/xiamen/shapowei-art-district.jpg", alt: "Shapowei Art District, Xiamen" },
       topPick: false,
       description:
         "A former fishing harbor converted into Xiamen's creative arts hub. Old dockside warehouses now house galleries, design studios, independent bookshops, and craft coffee roasters. Retains some working fishing boats and a weathered waterfront atmosphere that hasn't been overly polished [14].",
@@ -371,6 +375,7 @@ export const xiamenProfile: CityProfile = {
     {
       slug: "xiaoyanting-seafood",
       name: "Xiao Yan Ting Seafood",
+      photo: { src: "/photos/xiamen/xiaoyanting-seafood.jpg", alt: "Xiao Yan Ting Seafood, Xiamen" },
       chineseName: "小眼亭海鲜大排档",
       category: "Seafood",
       topPick: true,
@@ -390,6 +395,7 @@ export const xiamenProfile: CityProfile = {
     {
       slug: "ajie-braised-noodles",
       name: "A Jie Braised Noodles",
+      photo: { src: "/photos/xiamen/ajie-braised-noodles.jpg", alt: "A Jie Braised Noodles, Xiamen" },
       chineseName: "阿杰卤面",
       category: "Local Classics",
       topPick: false,
@@ -430,6 +436,7 @@ export const xiamenProfile: CityProfile = {
     {
       slug: "1980-nanyang-restaurant",
       name: "1980 Nanyang Restaurant",
+      photo: { src: "/photos/xiamen/1980-nanyang-restaurant.jpg", alt: "1980 Nanyang Restaurant, Xiamen" },
       chineseName: "1980烧肉粽南洋餐厅",
       category: "Regional Fujianese",
       topPick: false,
@@ -449,6 +456,7 @@ export const xiamenProfile: CityProfile = {
     {
       slug: "hao-qing-xiang",
       name: "Hao Qing Xiang Restaurant",
+      photo: { src: "/photos/xiamen/hao-qing-xiang.jpg", alt: "Hao Qing Xiang Restaurant, Xiamen" },
       chineseName: "好清香大酒楼",
       category: "Regional Fujianese",
       topPick: false,
@@ -491,6 +499,7 @@ export const xiamenProfile: CityProfile = {
     {
       slug: "the-westin-seafood",
       name: "Xiamen Coastal Seafood Fine Dining",
+      photo: { src: "/photos/xiamen/the-westin-seafood.jpg", alt: "Xiamen Coastal Seafood Fine Dining, Xiamen" },
       chineseName: undefined,
       category: "Splurge",
       topPick: false,

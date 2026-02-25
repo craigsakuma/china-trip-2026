@@ -107,6 +107,7 @@ export const kunmingProfile: CityProfile = {
     {
       slug: "stone-forest-shilin",
       name: "Stone Forest (Shilin) — UNESCO World Heritage Site",
+      photo: { src: "/photos/kunming/stone-forest-shilin.jpg", alt: "Stone Forest (Shilin) — UNESCO World Heritage Site, Kunming" },
       topPick: true,
       description:
         "A 270-million-year-old landscape of towering limestone karst pillars — some reaching 30 meters — eroded into blade-like formations, natural bridges, caves, and labyrinthine corridors. The Major Stone Forest is the most famous section, but the Naigu Stone Forest (20 minutes further) sees a fraction of the visitors and has equally dramatic formations. The Sani people (a branch of the Yi ethnic group) have lived among these formations for centuries, and their cultural performances and embroidery are part of the experience [3].",
@@ -125,6 +126,7 @@ export const kunmingProfile: CityProfile = {
     {
       slug: "green-lake-park-morning-culture",
       name: "Green Lake Park — Morning Culture",
+      photo: { src: "/photos/kunming/green-lake-park-morning-culture.jpg", alt: "Green Lake Park — Morning Culture, Kunming" },
       topPick: true,
       description:
         "Kunming's answer to Beijing's Temple of Heaven park culture. Every morning, hundreds of locals converge on this beautiful urban lake park for tai chi, fan dancing, Yunnan opera singing, card games, and ballroom dancing. From late October, thousands of black-headed gulls migrate from Siberia to winter on the lake, creating a magical scene as locals feed them from the shore [4].",
@@ -143,6 +145,7 @@ export const kunmingProfile: CityProfile = {
     {
       slug: "yunnan-provincial-museum",
       name: "Yunnan Provincial Museum",
+      photo: { src: "/photos/kunming/yunnan-provincial-museum.jpg", alt: "Yunnan Provincial Museum, Kunming" },
       topPick: false,
       description:
         "One of China's most underrated provincial museums. The star collection is the Bronze Age Dian Kingdom artifacts (2,500 years old) — elaborate bronze drums, cowrie shell containers, and figurines depicting a sophisticated pre-Han civilization that most visitors have never heard of. The ethnic minority gallery showcases costumes, textiles, and ritual objects from Yunnan's 25 officially recognized minority groups [6].",
@@ -179,6 +182,7 @@ export const kunmingProfile: CityProfile = {
     {
       slug: "wild-mushroom-market-and-tasting",
       name: "Wild Mushroom Market and Tasting",
+      photo: { src: "/photos/kunming/wild-mushroom-market-and-tasting.jpg", alt: "Wild Mushroom Market and Tasting, Kunming" },
       topPick: true,
       description:
         "Yunnan produces over 800 species of edible wild mushrooms — more than any other province in China — and October is the tail end of peak mushroom season. The wholesale mushroom markets (especially Mushuihua Market) are extraordinary: stalls piled with porcini, matsutake, chanterelles, chicken-oil mushrooms, bamboo fungus, and dozens of species with no English name. Follow the market visit with a mushroom hotpot lunch [2].",
@@ -197,6 +201,7 @@ export const kunmingProfile: CityProfile = {
     {
       slug: "western-hills-and-dragon-gate",
       name: "Western Hills and Dragon Gate",
+      photo: { src: "/photos/kunming/western-hills-and-dragon-gate.jpg", alt: "Western Hills and Dragon Gate, Kunming" },
       topPick: false,
       description:
         "A forested mountain ridge on the western shore of Dianchi Lake with temples, grottoes, and the dramatic Dragon Gate — a series of tunnels, chambers, and shrines carved directly into the cliff face by a Qing Dynasty monk over 72 years (1781-1853). The cliffside walkway offers vertigo-inducing views 300 meters above Dianchi Lake [8].",
@@ -233,6 +238,7 @@ export const kunmingProfile: CityProfile = {
     {
       slug: "yunnan-nationalities-village",
       name: "Yunnan Nationalities Village",
+      photo: { src: "/photos/kunming/yunnan-nationalities-village.jpg", alt: "Yunnan Nationalities Village, Kunming" },
       topPick: false,
       description:
         "An open-air cultural park on the shore of Dianchi Lake showcasing reproductions of traditional architecture and cultural practices from 25 of Yunnan's ethnic minority groups. While it's essentially a theme park, the cultural performances, traditional crafts demonstrations, and architectural reconstructions provide useful context for understanding Yunnan's extraordinary ethnic diversity — especially if you won't visit remote minority villages [10].",
@@ -251,6 +257,7 @@ export const kunmingProfile: CityProfile = {
     {
       slug: "east-and-west-pagodas",
       name: "East and West Pagodas",
+      photo: { src: "/photos/kunming/east-and-west-pagodas.jpg", alt: "East and West Pagodas, Kunming" },
       topPick: false,
       description:
         "Two Tang Dynasty pagodas (originally built ~800-829 AD, rebuilt multiple times) standing about 2 km apart in the old city. The surrounding streets — particularly Jinbi Road between them — form one of Kunming's most atmospheric old neighborhoods, with tea shops, street food vendors, and evening markets. The West Pagoda area has a small temple complex that sees almost no tourists [5].",
@@ -268,6 +275,7 @@ export const kunmingProfile: CityProfile = {
     {
       slug: "yunnan-cuisine-cooking-class",
       name: "Yunnan Cuisine Cooking Class",
+      photo: { src: "/photos/kunming/yunnan-cuisine-cooking-class.jpg", alt: "Yunnan Cuisine Cooking Class, Kunming" },
       topPick: false,
       description:
         "Hands-on class learning to prepare Yunnan specialties — typically including crossing-the-bridge noodles, erkuai (Yunnan rice cakes), and stir-fried wild mushrooms. Most classes begin with a market visit to source ingredients, providing an immersive introduction to Yunnan's unique produce: fresh herbs, dried mushrooms, exotic peppers, and fermented ingredients [11].",
@@ -290,6 +298,7 @@ export const kunmingProfile: CityProfile = {
     {
       slug: "bridge-fragrance-garden",
       name: "Bridge Fragrance Garden",
+      photo: { src: "/photos/kunming/bridge-fragrance-garden.jpg", alt: "Bridge Fragrance Garden, Kunming" },
       chineseName: "桥香园",
       category: "Crossing-the-Bridge Noodles",
       topPick: true,
@@ -307,6 +316,7 @@ export const kunmingProfile: CityProfile = {
     {
       slug: "jianxin-garden-restaurant",
       name: "Jianxin Garden Restaurant",
+      photo: { src: "/photos/kunming/jianxin-garden-restaurant.jpg", alt: "Jianxin Garden Restaurant, Kunming" },
       chineseName: "建新园",
       category: "Crossing-the-Bridge Noodles",
       topPick: false,
@@ -343,6 +353,7 @@ export const kunmingProfile: CityProfile = {
     {
       slug: "fu-zhuan-yuan",
       name: "Fu Zhuan Yuan",
+      photo: { src: "/photos/kunming/fu-zhuan-yuan.jpg", alt: "Fu Zhuan Yuan, Kunming" },
       chineseName: "福照苑",
       category: "Wild Mushroom",
       topPick: false,
@@ -379,6 +390,7 @@ export const kunmingProfile: CityProfile = {
     {
       slug: "1910-train-restaurant",
       name: "1910 La Gare du Sud",
+      photo: { src: "/photos/kunming/1910-train-restaurant.jpg", alt: "1910 La Gare du Sud, Kunming" },
       chineseName: "1910火车南站",
       category: "Yunnan Regional",
       topPick: false,
@@ -453,6 +465,7 @@ export const kunmingProfile: CityProfile = {
     {
       slug: "lost-garden-kunming",
       name: "Lost Garden",
+      photo: { src: "/photos/kunming/lost-garden-kunming.jpg", alt: "Lost Garden, Kunming" },
       chineseName: "失落花园",
       category: "Splurge",
       topPick: false,

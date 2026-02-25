@@ -107,6 +107,7 @@ export const luoyangProfile: CityProfile = {
     {
       slug: "longmen-grottoes",
       name: "Longmen Grottoes (UNESCO World Heritage)",
+      photo: { src: "/photos/luoyang/longmen-grottoes.jpg", alt: "Longmen Grottoes (UNESCO World Heritage), Luoyang" },
       topPick: true,
       description:
         "Over 2,300 caves and 110,000 Buddhist statues carved into limestone cliffs flanking the Yi River, spanning 400 years from the Northern Wei Dynasty (493 AD) through the Tang Dynasty. The artistic evolution is extraordinary \u2014 from the austere, elongated figures of Northern Wei to the full-bodied, sensual forms of the Tang. The colossal Vairocana Buddha (17 meters tall, carved under Empress Wu Zetian\u2019s patronage) is one of the finest stone sculptures in the world [3].",
@@ -144,6 +145,7 @@ export const luoyangProfile: CityProfile = {
     {
       slug: "luoyang-museum",
       name: "Luoyang Museum",
+      photo: { src: "/photos/luoyang/luoyang-museum.jpg", alt: "Luoyang Museum, Luoyang" },
       topPick: true,
       description:
         "A world-class museum housing artifacts from Luoyang\u2019s extraordinary run as capital of 13 dynasties. Seven exhibition halls cover everything from Shang Dynasty bronze ritual vessels to Tang Dynasty tri-colored glazed pottery (sancai). The royal relics and calligraphy collections are exceptional. Free admission makes this one of the best value cultural experiences in all of China [10].",
@@ -162,6 +164,7 @@ export const luoyangProfile: CityProfile = {
     {
       slug: "sui-tang-dynasty-ruins-national-heritage-park",
       name: "Sui-Tang Dynasty Ruins National Heritage Park",
+      photo: { src: "/photos/luoyang/sui-tang-dynasty-ruins-national-heritage-park.jpg", alt: "Sui-Tang Dynasty Ruins National Heritage Park, Luoyang" },
       topPick: false,
       description:
         "A vast archaeological park built on the ruins of the Sui and Tang Dynasty imperial capital. The reconstructed Yingtianmen Gate (the main palace gate, rebuilt in 2019) stands 50 meters tall and houses an excellent museum inside. The Mingtang and Tiantang halls recreate the ceremonial heart of Empress Wu Zetian\u2019s court. On Friday and Saturday evenings, a dramatic 3D light projection show illuminates the ruins [13].",
@@ -198,6 +201,7 @@ export const luoyangProfile: CityProfile = {
     {
       slug: "old-town-night-market",
       name: "Old Town Night Market (Xinghua Street)",
+      photo: { src: "/photos/luoyang/old-town-night-market.jpg", alt: "Old Town Night Market (Xinghua Street), Luoyang" },
       topPick: true,
       description:
         "A 160-meter stretch of Xinghua Street in the Old Town transforms nightly into a buzzing food market hung with red lanterns. This is where locals eat \u2014 stalls serve bufantang (a hearty Luoyang soup), grilled skewers, peony cakes, water banquet dishes in small portions, and snacks from across China. The atmosphere is lively, affordable, and genuinely local [14].",
@@ -216,6 +220,7 @@ export const luoyangProfile: CityProfile = {
     {
       slug: "luoyi-ancient-city",
       name: "Luoyi Ancient City",
+      photo: { src: "/photos/luoyang/luoyi-ancient-city.jpg", alt: "Luoyi Ancient City, Luoyang" },
       topPick: false,
       description:
         "A reconstructed historical complex on the site of the ancient Zhou Dynasty capital (dating back over 3,000 years) on Luoyang\u2019s eastern outskirts. While partly a commercial development, the architecture is impressive and the site comes alive at dusk with dramatic illuminations. Popular with young Chinese visitors for Hanfu photography and cultural performances.",
@@ -233,6 +238,7 @@ export const luoyangProfile: CityProfile = {
     {
       slug: "morning-soup-culture-experience",
       name: "Morning Soup Culture Experience",
+      photo: { src: "/photos/luoyang/morning-soup-culture-experience.jpg", alt: "Morning Soup Culture Experience, Luoyang" },
       topPick: true,
       description:
         "Luoyang\u2019s morning soup tradition is as essential to the city\u2019s identity as Peking duck is to Beijing. By 6:00 AM, neighborhood soup shops are packed with locals hunching over steaming bowls of niurou tang (beef soup with flatbread), hulatang (pepper soup), and donkey meat soup. This is not a tourist activity \u2014 it is daily life, and joining in is the most authentic way to experience the city [7].",
@@ -251,6 +257,7 @@ export const luoyangProfile: CityProfile = {
     {
       slug: "yi-river-walk-and-longmen-bridge",
       name: "Yi River Walk and Longmen Bridge",
+      photo: { src: "/photos/luoyang/yi-river-walk-and-longmen-bridge.jpg", alt: "Yi River Walk and Longmen Bridge, Luoyang" },
       topPick: false,
       description:
         "The tree-lined riverside promenade along the Yi River connects the Longmen Grottoes area with scenic walking paths, traditional bridges, and views of the carved cliff faces from across the water. A peaceful counterpoint to the intensity of the grottoes themselves, and an excellent way to decompress after a morning of cave exploration.",
@@ -268,6 +275,7 @@ export const luoyangProfile: CityProfile = {
     {
       slug: "wangcheng-park",
       name: "Wangcheng Park",
+      photo: { src: "/photos/luoyang/wangcheng-park.jpg", alt: "Wangcheng Park, Luoyang" },
       topPick: false,
       description:
         "Luoyang\u2019s central public park, home to the annual Peony Festival (April-May) and a year-round gathering place for local life. In October the peonies are finished, but the park reveals Luoyang\u2019s daily rhythms \u2014 morning tai chi groups, elderly card players, families, and a small zoo. A slice of authentic urban Chinese park culture.",
@@ -290,6 +298,7 @@ export const luoyangProfile: CityProfile = {
     {
       slug: "zhen-bu-tong",
       name: "Zhen Bu Tong",
+      photo: { src: "/photos/luoyang/zhen-bu-tong.jpg", alt: "Zhen Bu Tong, Luoyang" },
       chineseName: "\u771f\u4e0d\u540c",
       category: "Water Banquet",
       topPick: true,
@@ -309,6 +318,7 @@ export const luoyangProfile: CityProfile = {
     {
       slug: "luoyang-shui-xi-yuan",
       name: "Luoyang Shui Xi Yuan (Water Banquet Garden)",
+      photo: { src: "/photos/luoyang/luoyang-shui-xi-yuan.jpg", alt: "Luoyang Shui Xi Yuan (Water Banquet Garden), Luoyang" },
       chineseName: "\u6d1b\u9633\u6c34\u5e2d\u56ed",
       category: "Water Banquet",
       topPick: false,
@@ -389,6 +399,7 @@ export const luoyangProfile: CityProfile = {
     {
       slug: "xigong-food-street",
       name: "Xigong Food Street",
+      photo: { src: "/photos/luoyang/xigong-food-street.jpg", alt: "Xigong Food Street, Luoyang" },
       chineseName: "\u897f\u5de5\u5c0f\u8857",
       category: "Local Specialties",
       topPick: true,
@@ -427,6 +438,7 @@ export const luoyangProfile: CityProfile = {
     {
       slug: "old-town-night-market-food",
       name: "Old Town Night Market Food Stalls",
+      photo: { src: "/photos/luoyang/old-town-night-market-food.jpg", alt: "Old Town Night Market Food Stalls, Luoyang" },
       chineseName: "\u8001\u57ce\u591c\u5e02",
       category: "Night Market",
       topPick: true,

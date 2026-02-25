@@ -108,6 +108,7 @@ export const chengduProfile: CityProfile = {
     {
       slug: "mount-qingcheng-day-hike",
       name: "Mount Qingcheng Day Hike (Front Mountain)",
+      photo: { src: "/photos/chengdu/mount-qingcheng-day-hike.jpg", alt: "Mount Qingcheng Day Hike (Front Mountain), Chengdu" },
       topPick: true,
       description:
         "The birthplace of Taoism and a UNESCO World Heritage site. The Front Mountain (Qian Shan) trail winds through ancient forests, past Taoist temples dating to the Jin Dynasty, and up stone staircases to Shangqing Palace at 1,600m elevation. The mountain is sacred to Taoism the way Mount Sinai is to Judaism — this is where Zhang Daoling founded the religion in 142 AD [3].",
@@ -126,6 +127,7 @@ export const chengduProfile: CityProfile = {
     {
       slug: "dujiangyan-irrigation-system",
       name: "Dujiangyan Irrigation System",
+      photo: { src: "/photos/chengdu/dujiangyan-irrigation-system.jpg", alt: "Dujiangyan Irrigation System, Chengdu" },
       topPick: false,
       description:
         "A 2,200-year-old hydraulic engineering marvel built in 256 BC by Li Bing that still irrigates the entire Chengdu Plain today — making Sichuan the \"Land of Abundance.\" No mortar, no dam, just brilliant use of natural water flow. UNESCO World Heritage alongside Mount Qingcheng [9].",
@@ -144,6 +146,7 @@ export const chengduProfile: CityProfile = {
     {
       slug: "chengdu-research-base-of-giant-panda-breeding",
       name: "Chengdu Research Base of Giant Panda Breeding",
+      photo: { src: "/photos/chengdu/chengdu-research-base-of-giant-panda-breeding.jpg", alt: "Chengdu Research Base of Giant Panda Breeding, Chengdu" },
       topPick: true,
       description:
         "The world's foremost giant panda conservation and breeding facility, home to over 200 giant pandas and 80+ red pandas in large semi-natural enclosures. October is ideal — the pandas are active in cooler weather and summer crowds have thinned. The new northern expansion area (opened 2023) dramatically increased space and reduced crowding [4].",
@@ -162,6 +165,7 @@ export const chengduProfile: CityProfile = {
     {
       slug: "peoples-park-teahouse-culture",
       name: "People's Park and Teahouse Culture",
+      photo: { src: "/photos/chengdu/peoples-park-teahouse-culture.jpg", alt: "People's Park and Teahouse Culture, Chengdu" },
       topPick: true,
       description:
         "The beating heart of Chengdu's public life. Heming Teahouse, operating since 1920 inside the park, is the single most iconic teahouse in China — hundreds of bamboo chairs under ancient trees where locals sip gaiwan (covered-bowl) jasmine tea, get their ears cleaned by roaming craftsmen, play mahjong, and read newspapers for entire afternoons [2].",
@@ -180,6 +184,7 @@ export const chengduProfile: CityProfile = {
     {
       slug: "sichuan-opera-face-changing",
       name: "Sichuan Opera Face-Changing (Bian Lian) Performance",
+      photo: { src: "/photos/chengdu/sichuan-opera-face-changing.jpg", alt: "Sichuan Opera Face-Changing (Bian Lian) Performance, Chengdu" },
       topPick: true,
       description:
         "Sichuan opera's signature art: performers change elaborately painted silk masks in fractions of a second using concealed mechanisms that remain a closely guarded secret. Combined with fire-breathing, shadow puppetry, and comedic interludes, it is the most visually spectacular traditional performance art in China [10].",
@@ -216,6 +221,7 @@ export const chengduProfile: CityProfile = {
     {
       slug: "wuhou-shrine-and-jinli-street",
       name: "Wuhou Shrine and Jinli Ancient Street",
+      photo: { src: "/photos/chengdu/wuhou-shrine-and-jinli-street.jpg", alt: "Wuhou Shrine and Jinli Ancient Street, Chengdu" },
       topPick: false,
       description:
         "The only shrine in China dedicated to both a ruler (Liu Bei) and his minister (Zhuge Liang) from the Three Kingdoms period (220-280 AD). The adjacent Jinli Ancient Street is touristy but worth a brief walk for the architecture and street snacks — particularly the legendary zhong shuijiao (sweet-water dumplings) and san da pao (glutinous rice balls) [11].",
@@ -234,6 +240,7 @@ export const chengduProfile: CityProfile = {
     {
       slug: "sichuan-cuisine-cooking-class",
       name: "Sichuan Cuisine Cooking Class",
+      photo: { src: "/photos/chengdu/sichuan-cuisine-cooking-class.jpg", alt: "Sichuan Cuisine Cooking Class, Chengdu" },
       topPick: false,
       description:
         "Hands-on class starting with a morning market visit to source Sichuan peppercorns, doubanjiang (fermented chili bean paste), and fresh ingredients, followed by cooking 4-5 signature Sichuan dishes. Learning the \"mala\" spice philosophy — the precise balance of numbing and heat — is a skill you bring home [12].",
@@ -252,6 +259,7 @@ export const chengduProfile: CityProfile = {
     {
       slug: "chengdu-museum-of-contemporary-art",
       name: "Chengdu Museum of Contemporary Art (MoCA)",
+      photo: { src: "/photos/chengdu/chengdu-museum-of-contemporary-art.jpg", alt: "Chengdu Museum of Contemporary Art (MoCA), Chengdu" },
       topPick: false,
       description:
         "Designed by Zaha Hadid Architects and opened in 2023, this striking building in the Tianfu Art Park complex houses rotating exhibitions of Chinese contemporary art with a strong focus on Sichuan's historically rebellious art scene — the province produced many of China's most important contemporary artists [13].",
@@ -270,6 +278,7 @@ export const chengduProfile: CityProfile = {
     {
       slug: "eastern-suburb-memory-art-district",
       name: "Eastern Suburb Memory (East Art District)",
+      photo: { src: "/photos/chengdu/eastern-suburb-memory-art-district.jpg", alt: "Eastern Suburb Memory (East Art District), Chengdu" },
       topPick: false,
       description:
         "A repurposed Soviet-era electronics factory turned creative district with independent galleries, live music venues, indie bookshops, and street art. Less polished than Beijing's 798 — more raw, more local, more genuinely Chengdu in spirit. The district also hosts regular outdoor concerts and cultural events [14].",
@@ -288,6 +297,7 @@ export const chengduProfile: CityProfile = {
     {
       slug: "hotpot-experience",
       name: "Sichuan Hotpot Experience",
+      photo: { src: "/photos/chengdu/hotpot-experience.jpg", alt: "Sichuan Hotpot Experience, Chengdu" },
       topPick: true,
       description:
         "Hotpot in Chengdu is not a meal — it is a ritual. A bubbling cauldron of chili oil, Sichuan peppercorns, and 30+ spices sits at the center of the table while you cook thinly sliced meats, vegetables, and offal tableside. The communal, interactive nature makes it the ideal group dining experience. Chengdu hotpot differs from Chongqing's — slightly less aggressive heat, more emphasis on dipping sauce customization [15].",
@@ -305,6 +315,7 @@ export const chengduProfile: CityProfile = {
     {
       slug: "qingyang-palace-taoist-temple",
       name: "Qingyang Palace (Green Ram Temple)",
+      photo: { src: "/photos/chengdu/qingyang-palace-taoist-temple.jpg", alt: "Qingyang Palace (Green Ram Temple), Chengdu" },
       topPick: false,
       description:
         "The oldest and most significant Taoist temple in western China, founded during the Zhou Dynasty (over 2,500 years ago). Still an active place of worship with resident Taoist monks. The temple's serene grounds include a traditional teahouse where monks and locals mingle over tea — one of the most peaceful spots in the city [16].",
@@ -328,6 +339,7 @@ export const chengduProfile: CityProfile = {
     {
       slug: "da-long-yi-hotpot",
       name: "Da Long Yi Hotpot",
+      photo: { src: "/photos/chengdu/da-long-yi-hotpot.jpg", alt: "Da Long Yi Hotpot, Chengdu" },
       chineseName: "大龙燚火锅",
       category: "Hotpot",
       topPick: true,
@@ -364,6 +376,7 @@ export const chengduProfile: CityProfile = {
     {
       slug: "chen-mapo-tofu",
       name: "Chen Mapo Tofu",
+      photo: { src: "/photos/chengdu/chen-mapo-tofu.jpg", alt: "Chen Mapo Tofu, Chengdu" },
       chineseName: "陈麻婆豆腐",
       category: "Sichuan Classics",
       topPick: true,
@@ -451,6 +464,7 @@ export const chengduProfile: CityProfile = {
     {
       slug: "yan-jianbing",
       name: "Yan Jianbing (Yan's Pancakes)",
+      photo: { src: "/photos/chengdu/yan-jianbing.jpg", alt: "Yan Jianbing (Yan's Pancakes), Chengdu" },
       chineseName: "严记煎饼",
       category: "Street Food",
       topPick: false,
@@ -502,6 +516,7 @@ export const chengduProfile: CityProfile = {
     {
       slug: "ming-ting-fandian",
       name: "Ming Ting",
+      photo: { src: "/photos/chengdu/ming-ting-fandian.jpg", alt: "Ming Ting, Chengdu" },
       chineseName: "明亭饭店",
       category: "Traditional Sichuan",
       topPick: false,

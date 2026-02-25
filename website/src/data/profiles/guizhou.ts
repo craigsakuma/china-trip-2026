@@ -144,6 +144,7 @@ export const guizhouProfile: CityProfile = {
     {
       slug: "zhaoxing-dong-village-exploration",
       name: "Zhaoxing Dong Village — Architecture and Music",
+      photo: { src: "/photos/guizhou/zhaoxing-dong-village-exploration.jpg", alt: "Zhaoxing Dong Village — Architecture and Music, Guizhou" },
       topPick: true,
       description:
         "Walk through China's most beautiful Dong village, organized around five clan drum towers that serve as community gathering halls, theaters, and dispute-resolution centers. The wind-and-rain bridges (covered wooden bridges with no nails) are architectural masterpieces. In the evenings, Dong grand choir singing — polyphonic harmonies developed over centuries and recognized by UNESCO — echoes through the valley [5].",
@@ -251,6 +252,7 @@ export const guizhouProfile: CityProfile = {
     {
       slug: "miao-silver-embroidery-workshop",
       name: "Miao Silver and Embroidery Workshop",
+      photo: { src: "/photos/guizhou/miao-silver-embroidery-workshop.jpg", alt: "Miao Silver and Embroidery Workshop, Guizhou" },
       topPick: false,
       description:
         "Miao silver work and embroidery are among the most sophisticated textile and metalwork traditions in Asia. A workshop visit reveals the extraordinary skill behind the massive silver headdresses, neck rings, and breastplates worn during festivals — hand-hammered from raw silver with designs encoding clan history and cosmology. Embroidery patterns similarly carry narrative meaning passed mother to daughter [9].",
@@ -287,6 +289,7 @@ export const guizhouProfile: CityProfile = {
     {
       slug: "guiyang-city-food-walk",
       name: "Guiyang City Food Walk",
+      photo: { src: "/photos/guizhou/guiyang-city-food-walk.jpg", alt: "Guiyang City Food Walk, Guizhou" },
       topPick: false,
       description:
         "The provincial capital is an underrated food city in its own right. The old streets around Qianling Park and the Erqi Lu night market district offer concentrated access to Guizhou's distinctive flavors — sour soup, mixian rice noodles with fermented chili, silk baby noodles (si wa wa), and the city's famous late-night barbecue culture [11].",
@@ -328,6 +331,7 @@ export const guizhouProfile: CityProfile = {
     {
       slug: "lao-suantang-yu",
       name: "Old Sour Soup Fish",
+      photo: { src: "/photos/guizhou/lao-suantang-yu.jpg", alt: "Old Sour Soup Fish, Guizhou" },
       chineseName: "\u8001\u9178\u6c64\u9c7c",
       category: "Sour Soup",
       topPick: true,
@@ -345,6 +349,7 @@ export const guizhouProfile: CityProfile = {
     {
       slug: "qianxi-suantang-niu",
       name: "Qianxi Sour Soup Beef",
+      photo: { src: "/photos/guizhou/qianxi-suantang-niu.jpg", alt: "Qianxi Sour Soup Beef, Guizhou" },
       chineseName: "\u9ed4\u897f\u9178\u6c64\u725b\u8089",
       category: "Sour Soup",
       topPick: false,
@@ -380,6 +385,7 @@ export const guizhouProfile: CityProfile = {
     {
       slug: "zhaoxing-dong-family-kitchen",
       name: "Zhaoxing Dong Family Kitchen",
+      photo: { src: "/photos/guizhou/zhaoxing-dong-family-kitchen.jpg", alt: "Zhaoxing Dong Family Kitchen, Guizhou" },
       chineseName: "\u4f97\u5bb6\u53a8\u623f",
       category: "Village Dining",
       topPick: true,
@@ -415,6 +421,7 @@ export const guizhouProfile: CityProfile = {
     {
       slug: "si-wa-wa-stall",
       name: "Si Wa Wa Street Stalls",
+      photo: { src: "/photos/guizhou/si-wa-wa-stall.jpg", alt: "Si Wa Wa Street Stalls, Guizhou" },
       chineseName: "\u4e1d\u5a03\u5a03",
       category: "Street Food",
       topPick: true,

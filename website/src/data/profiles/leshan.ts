@@ -107,6 +107,7 @@ export const leshanProfile: CityProfile = {
     {
       slug: "leshan-giant-buddha",
       name: "Leshan Giant Buddha (Da Fo)",
+      photo: { src: "/photos/leshan/leshan-giant-buddha.jpg", alt: "Leshan Giant Buddha (Da Fo), Leshan" },
       topPick: true,
       description:
         "The world's largest stone Buddha at 71 meters tall, carved into the cliff face where three rivers converge during the Tang Dynasty (713-803 AD). The scale is genuinely staggering \u2014 each ear is 7 meters long, each foot wide enough to seat 100 people. The Nine Turns Stairway descends along the cliff beside the statue from head to toe, offering an intimate perspective impossible from photographs. UNESCO World Heritage site since 1996 [2].",
@@ -125,6 +126,7 @@ export const leshanProfile: CityProfile = {
     {
       slug: "mount-emei-two-day-hike",
       name: "Mount Emei Two-Day Hike to Golden Summit",
+      photo: { src: "/photos/leshan/mount-emei-two-day-hike.jpg", alt: "Mount Emei Two-Day Hike to Golden Summit, Leshan" },
       topPick: true,
       description:
         "One of China's premier mountain treks: a two-day ascent of sacred Mount Emei (3,079m) through ancient forests draped in moss and mist, past working Buddhist monasteries where monks have practiced for over a millennium. The trail transitions from subtropical bamboo groves to subalpine meadows. October brings golden ginkgo, crimson maple, and the highest probability of witnessing the legendary 'Buddha light' at the summit \u2014 a circular rainbow halo cast by your own shadow into the clouds [1].",
@@ -143,6 +145,7 @@ export const leshanProfile: CityProfile = {
     {
       slug: "golden-summit-sunrise",
       name: "Golden Summit Sunrise and Temples",
+      photo: { src: "/photos/leshan/golden-summit-sunrise.jpg", alt: "Golden Summit Sunrise and Temples, Leshan" },
       topPick: true,
       description:
         "The climax of the Mount Emei experience. The Golden Summit (Jinding) at 3,079 meters features the 48-meter Samantabhadra Bodhisattva statue \u2014 the largest gold-plated Buddhist statue in China \u2014 surrounded by three temples. At dawn, the sea of clouds below ignites in gold and pink. On clear October mornings, you can see all the way to the snow-capped peaks of western Sichuan [5].",
@@ -161,6 +164,7 @@ export const leshanProfile: CityProfile = {
     {
       slug: "wannian-temple",
       name: "Wannian Temple (Ten Thousand Year Temple)",
+      photo: { src: "/photos/leshan/wannian-temple.jpg", alt: "Wannian Temple (Ten Thousand Year Temple), Leshan" },
       topPick: false,
       description:
         "Mount Emei's oldest and most important monastery, founded in the 4th century AD during the Jin Dynasty. The highlight is the Brick Hall (Beamless Hall), a domed brick structure housing a 62-ton bronze Samantabhadra Bodhisattva riding a six-tusked white elephant \u2014 cast in 980 AD during the Song Dynasty. One of the finest bronze Buddhist statues in China [4].",
@@ -197,6 +201,7 @@ export const leshanProfile: CityProfile = {
     {
       slug: "giant-buddha-river-boat-tour",
       name: "Giant Buddha River Boat Tour",
+      photo: { src: "/photos/leshan/giant-buddha-river-boat-tour.jpg", alt: "Giant Buddha River Boat Tour, Leshan" },
       topPick: false,
       description:
         "A 20-minute boat cruise on the Min River that provides the classic full-body frontal view of the Giant Buddha impossible to see from land. The boat pauses directly in front of the statue, revealing the full 71-meter scale against the cliff face. Best combined as a prelude to the cliff-side stairway visit [2].",
@@ -402,6 +407,7 @@ export const leshanProfile: CityProfile = {
     {
       slug: "emeishan-monastery-vegetarian",
       name: "Mount Emei Monastery Vegetarian Meals",
+      photo: { src: "/photos/leshan/emeishan-monastery-vegetarian.jpg", alt: "Mount Emei Monastery Vegetarian Meals, Leshan" },
       chineseName: "\u5c71\u4e0a\u7d20\u996e",
       category: "Buddhist Vegetarian",
       topPick: false,

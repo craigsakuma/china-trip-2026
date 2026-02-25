@@ -120,6 +120,7 @@ export const shanghaiProfile: CityProfile = {
     {
       slug: "the-bund-architectural-walk",
       name: "The Bund — Architectural Walking Tour",
+      photo: { src: "/photos/shanghai/the-bund-architectural-walk.jpg", alt: "The Bund — Architectural Walking Tour, Shanghai" },
       topPick: true,
       description:
         "A 1.5-km waterfront promenade lined with 52 buildings spanning Gothic, Baroque, Romanesque, Renaissance, and Art Deco styles — the most concentrated display of early-20th-century architecture in Asia. Each building tells a story of Shanghai's colonial banking and trading era. Across the river, Pudong's futuristic skyline creates the iconic contrast. Best experienced with a guide who can decode the history building by building [8].",
@@ -138,6 +139,7 @@ export const shanghaiProfile: CityProfile = {
     {
       slug: "jinze-water-town",
       name: "Jinze Water Town — Day Trip",
+      photo: { src: "/photos/shanghai/jinze-water-town.jpg", alt: "Jinze Water Town — Day Trip, Shanghai" },
       topPick: true,
       description:
         "The antidote to over-touristed water towns like Zhouzhuang. Jinze is a genuinely lived-in canal village 60 km southwest of central Shanghai with ancient stone bridges (some dating to the Song Dynasty), crumbling temples, and almost zero foreign tourists. Elderly residents fish from their doorsteps, neighborhood temples burn incense daily, and there is not a single souvenir shop. It requires effort to reach, which is precisely why it remains authentic [9].",
@@ -157,6 +159,7 @@ export const shanghaiProfile: CityProfile = {
     {
       slug: "m50-art-district",
       name: "M50 Art District (Moganshan Road)",
+      photo: { src: "/photos/shanghai/m50-art-district.jpg", alt: "M50 Art District (Moganshan Road), Shanghai" },
       topPick: true,
       description:
         "Shanghai's original contemporary art hub — a cluster of converted 1930s cotton mills and textile warehouses along Suzhou Creek, now housing 100+ working artist studios, galleries, and creative spaces. Unlike Beijing's 798, M50 retains a raw, uncommercial character — you're as likely to find an artist mid-painting as a polished gallery opening. ShanghART Gallery, one of China's most important contemporary art galleries, is the anchor [2].",
@@ -175,6 +178,7 @@ export const shanghaiProfile: CityProfile = {
     {
       slug: "power-station-of-art",
       name: "Power Station of Art",
+      photo: { src: "/photos/shanghai/power-station-of-art.jpg", alt: "Power Station of Art, Shanghai" },
       topPick: true,
       description:
         "China's first state-run contemporary art museum, housed in the magnificent 1897 Nanshi Power Station with its iconic 165-meter smokestack. Hosts the Shanghai Biennale and large-scale exhibitions in soaring industrial spaces. Entirely free admission — a remarkable commitment to public art access that puts many Western cities to shame [2].",
@@ -193,6 +197,7 @@ export const shanghaiProfile: CityProfile = {
     {
       slug: "old-city-backstreet-food-walk",
       name: "Old City Backstreet Food Deep-Dive",
+      photo: { src: "/photos/shanghai/old-city-backstreet-food-walk.jpg", alt: "Old City Backstreet Food Deep-Dive, Shanghai" },
       topPick: true,
       description:
         "Leave the manicured Yu Garden tourist zone and plunge into the surrounding Old City backstreets — a dense web of narrow lanes where family-run dumpling shops, wet markets overflowing with live seafood, noodle stalls, and neighborhood breakfast joints operate exactly as they have for decades. This is the Shanghai that most visitors never see, and the food is extraordinary [6].",
@@ -212,6 +217,7 @@ export const shanghaiProfile: CityProfile = {
     {
       slug: "french-concession-lane-house-walk",
       name: "French Concession Lane House Walk",
+      photo: { src: "/photos/shanghai/french-concession-lane-house-walk.jpg", alt: "French Concession Lane House Walk, Shanghai" },
       topPick: false,
       description:
         "A self-guided or guided walk through the longtang (lane houses) and tree-lined streets of the Former French Concession — Shanghai's most architecturally rich neighborhood. Art deco apartments, Spanish villas, shikumen stone-gate houses, and hidden courtyard gardens reveal themselves around every corner. The neighborhood's layered history (French colonial, wartime refuge, Communist era, contemporary gentrification) is visible in a single block [4].",
@@ -230,6 +236,7 @@ export const shanghaiProfile: CityProfile = {
     {
       slug: "yu-garden-and-city-god-temple",
       name: "Yu Garden and City God Temple",
+      photo: { src: "/photos/shanghai/yu-garden-and-city-god-temple.jpg", alt: "Yu Garden and City God Temple, Shanghai" },
       topPick: false,
       description:
         "A 400-year-old classical Chinese garden (Ming Dynasty, 1559) with rockeries, pavilions, dragon walls, and koi ponds packed into just five acres. The surrounding bazaar area is heavily touristed but the garden interior, especially early morning, retains genuine beauty. The adjacent City God Temple (Chenghuang Miao) is an active Taoist temple worth a quiet visit [10].",
@@ -248,6 +255,7 @@ export const shanghaiProfile: CityProfile = {
     {
       slug: "west-bund-museum-mile",
       name: "West Bund Museum Mile",
+      photo: { src: "/photos/shanghai/west-bund-museum-mile.jpg", alt: "West Bund Museum Mile, Shanghai" },
       topPick: false,
       description:
         "Shanghai's answer to Museum Island — a string of major art institutions along a scenic Huangpu River waterfront promenade. Long Museum West Bund (Chinese contemporary and revolutionary art in dramatic concrete architecture), West Bund Museum (Centre Pompidou partnership), and Tank Shanghai (converted aviation fuel tanks) are all within a 20-minute walk of each other [7].",
@@ -266,6 +274,7 @@ export const shanghaiProfile: CityProfile = {
     {
       slug: "shanghai-propaganda-poster-art-centre",
       name: "Shanghai Propaganda Poster Art Centre",
+      photo: { src: "/photos/shanghai/shanghai-propaganda-poster-art-centre.jpg", alt: "Shanghai Propaganda Poster Art Centre, Shanghai" },
       topPick: false,
       description:
         "A hidden gem in a French Concession apartment building basement — one man's extraordinary private collection of over 6,000 original Chinese propaganda posters from the 1950s through 1980s. The posters are vivid, historically revealing, and artistically fascinating. Finding it feels like uncovering a secret [11].",
@@ -284,6 +293,7 @@ export const shanghaiProfile: CityProfile = {
     {
       slug: "shanghai-museum",
       name: "Shanghai Museum (People's Square)",
+      photo: { src: "/photos/shanghai/shanghai-museum.jpg", alt: "Shanghai Museum (People's Square), Shanghai" },
       topPick: false,
       description:
         "One of China's finest museums with world-class collections of ancient Chinese bronzes, ceramics, calligraphy, painting, jade, and furniture. The bronze collection alone is considered among the best in the world. Recently renovated with excellent English labeling throughout [12].",
@@ -302,6 +312,7 @@ export const shanghaiProfile: CityProfile = {
     {
       slug: "tianzifang",
       name: "Tianzifang",
+      photo: { src: "/photos/shanghai/tianzifang.jpg", alt: "Tianzifang, Shanghai" },
       topPick: false,
       description:
         "A maze of narrow shikumen lane houses converted into galleries, craft shops, cafes, and studios. More commercialized than M50 but the architectural setting — walking through the interior lanes of a living shikumen block — gives a tangible sense of how Shanghai's lane-house neighborhoods functioned. Best in the morning before the crowds build [13].",
@@ -320,6 +331,7 @@ export const shanghaiProfile: CityProfile = {
     {
       slug: "huangpu-river-ferry",
       name: "Huangpu River Ferry Crossing",
+      photo: { src: "/photos/shanghai/huangpu-river-ferry.jpg", alt: "Huangpu River Ferry Crossing, Shanghai" },
       topPick: false,
       description:
         "Skip the expensive tourist river cruises and take the local commuter ferry between the Bund (Puxi) and Pudong — a 5-minute crossing that delivers the same iconic skyline views for a fraction of the price. The Dongchang Road ferry terminal to the Bund is the classic route [14].",
@@ -343,6 +355,7 @@ export const shanghaiProfile: CityProfile = {
     {
       slug: "jia-jia-tang-bao",
       name: "Jia Jia Tang Bao",
+      photo: { src: "/photos/shanghai/jia-jia-tang-bao.jpg", alt: "Jia Jia Tang Bao, Shanghai" },
       chineseName: "佳家汤包",
       category: "Xiaolongbao",
       topPick: true,
@@ -383,6 +396,7 @@ export const shanghaiProfile: CityProfile = {
     {
       slug: "fu-1088",
       name: "Fu 1088",
+      photo: { src: "/photos/shanghai/fu-1088.jpg", alt: "Fu 1088, Shanghai" },
       chineseName: "福1088",
       category: "Shanghainese",
       topPick: true,
@@ -402,6 +416,7 @@ export const shanghaiProfile: CityProfile = {
     {
       slug: "jesse-restaurant",
       name: "Jesse Restaurant",
+      photo: { src: "/photos/shanghai/jesse-restaurant.jpg", alt: "Jesse Restaurant, Shanghai" },
       chineseName: "吉士酒家",
       category: "Shanghainese",
       topPick: true,
@@ -421,6 +436,7 @@ export const shanghaiProfile: CityProfile = {
     {
       slug: "chun-restaurant",
       name: "Chun Restaurant",
+      photo: { src: "/photos/shanghai/chun-restaurant.jpg", alt: "Chun Restaurant, Shanghai" },
       chineseName: "春餐厅",
       category: "Shanghainese",
       topPick: false,
@@ -442,6 +458,7 @@ export const shanghaiProfile: CityProfile = {
     {
       slug: "wei-xiang-zhai",
       name: "Wei Xiang Zhai",
+      photo: { src: "/photos/shanghai/wei-xiang-zhai.jpg", alt: "Wei Xiang Zhai, Shanghai" },
       chineseName: "味香斋",
       category: "Street Food",
       topPick: false,
@@ -461,6 +478,7 @@ export const shanghaiProfile: CityProfile = {
     {
       slug: "da-hu-chun",
       name: "Da Hu Chun",
+      photo: { src: "/photos/shanghai/da-hu-chun.jpg", alt: "Da Hu Chun, Shanghai" },
       chineseName: "大壶春",
       category: "Street Food",
       topPick: false,
@@ -544,6 +562,7 @@ export const shanghaiProfile: CityProfile = {
     {
       slug: "di-shui-dong",
       name: "Di Shui Dong",
+      photo: { src: "/photos/shanghai/di-shui-dong.jpg", alt: "Di Shui Dong, Shanghai" },
       chineseName: "滴水洞",
       category: "Regional Chinese",
       topPick: false,
@@ -563,6 +582,7 @@ export const shanghaiProfile: CityProfile = {
     {
       slug: "yang-s-fried-dumplings",
       name: "Yang's Fried Dumplings",
+      photo: { src: "/photos/shanghai/yang-s-fried-dumplings.jpg", alt: "Yang's Fried Dumplings, Shanghai" },
       chineseName: "小杨生煎",
       category: "Street Food",
       topPick: true,

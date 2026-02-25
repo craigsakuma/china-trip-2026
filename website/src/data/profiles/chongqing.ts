@@ -197,6 +197,7 @@ export const chongqingProfile: CityProfile = {
     {
       slug: "huguang-guild-hall",
       name: "Huguang Guild Hall",
+      photo: { src: "/photos/chongqing/huguang-guild-hall.jpg", alt: "Huguang Guild Hall, Chongqing" },
       topPick: false,
       description:
         "A beautifully restored Qing Dynasty (1759) guild hall complex documenting the massive Huguang Filling Sichuan migration \u2014 when millions of settlers from Hubei and Hunan repopulated Sichuan after 17th-century wars devastated the region. Ornate theaters, ancestral halls, and a museum explaining this population movement that shaped modern Chongqing's culture, dialect, and cuisine [7].",
@@ -287,6 +288,7 @@ export const chongqingProfile: CityProfile = {
     {
       slug: "eling-park-wartime-history",
       name: "Eling Park and Wartime History Walk",
+      photo: { src: "/photos/chongqing/eling-park-wartime-history.jpg", alt: "Eling Park and Wartime History Walk, Chongqing" },
       topPick: false,
       description:
         "Eling Park occupies a hilltop overlooking both rivers and was the political heart of wartime China (1937-1945) when Chongqing served as the national capital during the Japanese invasion. The park and surrounding area contain Chiang Kai-shek's wartime residence, the Stilwell Museum (General Joseph Stilwell's headquarters), and panoramic views. A walking route through the surrounding hillside connects to remnants of the old city [9].",
@@ -433,6 +435,7 @@ export const chongqingProfile: CityProfile = {
     {
       slug: "liu-yi-shou-hotpot",
       name: "Liu Yi Shou Hotpot",
+      photo: { src: "/photos/chongqing/liu-yi-shou-hotpot.jpg", alt: "Liu Yi Shou Hotpot, Chongqing" },
       chineseName: "\u5218\u4e00\u624b\u706b\u9505",
       category: "Hotpot",
       topPick: false,
@@ -450,6 +453,7 @@ export const chongqingProfile: CityProfile = {
     {
       slug: "zhongshan-teahouse",
       name: "Zhongshan Teahouse",
+      photo: { src: "/photos/chongqing/zhongshan-teahouse.jpg", alt: "Zhongshan Teahouse, Chongqing" },
       chineseName: "\u4e2d\u5c71\u8336\u9986",
       category: "Traditional Chongqing",
       topPick: false,

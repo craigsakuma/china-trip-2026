@@ -107,6 +107,7 @@ export const quanzhouProfile: CityProfile = {
     {
       slug: "kaiyuan-temple",
       name: "Kaiyuan Temple",
+      photo: { src: "/photos/quanzhou/kaiyuan-temple.jpg", alt: "Kaiyuan Temple, Quanzhou" },
       topPick: true,
       description:
         "Quanzhou's crown jewel — a sprawling Buddhist monastery founded in 686 AD, famous for its twin stone pagodas (East and West Pagodas) that are among the tallest stone towers in China. The main hall contains extraordinary Hindu-influenced stone carvings on its columns — evidence of the Indian traders who once lived in Quanzhou. The compound includes the ancient mulberry tree that, according to legend, bloomed lotus flowers and inspired the temple's founding [2].",
@@ -125,6 +126,7 @@ export const quanzhouProfile: CityProfile = {
     {
       slug: "qingjing-mosque",
       name: "Qingjing Mosque (Ashab Mosque)",
+      photo: { src: "/photos/quanzhou/qingjing-mosque.jpg", alt: "Qingjing Mosque (Ashab Mosque), Quanzhou" },
       topPick: true,
       description:
         "One of China's oldest mosques, built in 1009 AD by Arab merchants during the Song Dynasty, modeled on a mosque in Damascus. The roofless stone walls of the original prayer hall create an atmospheric ruin unlike any other religious site in China. Adjacent to the intact Ming-era prayer hall still used by Quanzhou's Muslim community today [2].",
@@ -143,6 +145,7 @@ export const quanzhouProfile: CityProfile = {
     {
       slug: "caoan-manichaean-temple",
       name: "Cao'an Manichaean Temple",
+      photo: { src: "/photos/quanzhou/caoan-manichaean-temple.jpg", alt: "Cao'an Manichaean Temple, Quanzhou" },
       topPick: true,
       description:
         "The only surviving Manichaean temple in the world. Manichaeism, a 3rd-century Persian religion that once spread from Rome to China, has vanished everywhere else — except this modest hilltop shrine in Quanzhou's outskirts. Inside is a carved stone relief of Mani, the religion's prophet, repurposed as a Buddha figure by locals who unknowingly preserved it for centuries. A profoundly rare cultural artifact [8].",
@@ -161,6 +164,7 @@ export const quanzhouProfile: CityProfile = {
     {
       slug: "old-city-heritage-walk",
       name: "Old City Heritage Walk (West Street to Zhongshan Road)",
+      photo: { src: "/photos/quanzhou/old-city-heritage-walk.jpg", alt: "Old City Heritage Walk (West Street to Zhongshan Road), Quanzhou" },
       topPick: true,
       description:
         "A self-guided or guided walk through Quanzhou's living old city, connecting the major UNESCO heritage sites along a Z-shaped route: start at Kaiyuan Temple on West Street, walk through the clock tower intersection, south along Zhongshan Road's covered arcades past the Confucius Temple, ending at Qingjing Mosque and Tumen Street. The entire route is flanked by Minnan-style architecture, street food vendors, puppet workshops, and neighborhood life [5].",
@@ -179,6 +183,7 @@ export const quanzhouProfile: CityProfile = {
     {
       slug: "quanzhou-maritime-museum",
       name: "Quanzhou Maritime Museum",
+      photo: { src: "/photos/quanzhou/quanzhou-maritime-museum.jpg", alt: "Quanzhou Maritime Museum, Quanzhou" },
       topPick: false,
       description:
         "China's premier museum of maritime trade history, documenting Quanzhou's role as the world's largest port. Highlights include a full-size replica of a Song-dynasty trading ship, collections of religious artifacts from the city's diverse faith communities, and stone anchors and navigation instruments recovered from the seabed. The museum brings the Maritime Silk Road to life [9].",
@@ -215,6 +220,7 @@ export const quanzhouProfile: CityProfile = {
     {
       slug: "luoyang-bridge",
       name: "Luoyang Bridge",
+      photo: { src: "/photos/quanzhou/luoyang-bridge.jpg", alt: "Luoyang Bridge, Quanzhou" },
       topPick: false,
       description:
         "China's oldest surviving cross-sea stone bridge, built in 1053 AD under the direction of scholar-official Cai Xiang. The bridge stretches 834 meters across the Luo River estuary with 45 boat-shaped stone piers. Most remarkably, the foundation stones were anchored using cultivated oyster colonies — an ingenious biological engineering technique devised nearly a millennium ago. A UNESCO World Heritage component site [10].",
@@ -383,6 +389,7 @@ export const quanzhouProfile: CityProfile = {
     {
       slug: "chunsheng-restaurant",
       name: "Chunsheng Restaurant",
+      photo: { src: "/photos/quanzhou/chunsheng-restaurant.jpg", alt: "Chunsheng Restaurant, Quanzhou" },
       chineseName: "春生饭店",
       category: "Regional Fujianese",
       topPick: false,
@@ -401,6 +408,7 @@ export const quanzhouProfile: CityProfile = {
     {
       slug: "green-island-seafood-restaurant",
       name: "Green Island Seafood Restaurant",
+      photo: { src: "/photos/quanzhou/green-island-seafood-restaurant.jpg", alt: "Green Island Seafood Restaurant, Quanzhou" },
       chineseName: "绿岛海鲜酒楼",
       category: "Splurge",
       topPick: false,
@@ -419,6 +427,7 @@ export const quanzhouProfile: CityProfile = {
     {
       slug: "zhong-ji-salt-roasted-duck",
       name: "Zhong Ji Salt-Roasted Duck",
+      photo: { src: "/photos/quanzhou/zhong-ji-salt-roasted-duck.jpg", alt: "Zhong Ji Salt-Roasted Duck, Quanzhou" },
       chineseName: "钟记盐烧鸭",
       category: "Street Food",
       topPick: false,

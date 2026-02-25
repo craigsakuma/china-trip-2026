@@ -161,6 +161,7 @@ export const zhangjiajieProfile: CityProfile = {
     {
       slug: "tianmen-mountain",
       name: "Tianmen Mountain and Glass Skywalk",
+      photo: { src: "/photos/zhangjiajie/tianmen-mountain.jpg", alt: "Tianmen Mountain and Glass Skywalk, Zhangjiajie" },
       topPick: true,
       description:
         "A separate mountain park closer to Zhangjiajie city, famous for the world's longest passenger cable car (7,455 meters), a glass-bottomed skywalk bolted to a sheer 4,700-foot cliff face, and the natural Tianmen Cave — a massive hole through the mountain reached by climbing 999 steps. The cable car ride alone, soaring over the city and then up through cloud layers, is one of China's most dramatic transport experiences [2].",
@@ -198,6 +199,7 @@ export const zhangjiajieProfile: CityProfile = {
     {
       slug: "baofeng-lake",
       name: "Baofeng Lake",
+      photo: { src: "/photos/zhangjiajie/baofeng-lake.jpg", alt: "Baofeng Lake, Zhangjiajie" },
       topPick: false,
       description:
         "A serene lake nestled in a deep canyon surrounded by towering sandstone walls and subtropical vegetation. Reached by a short hike and then explored by guided wooden boat. The reflections of the pillar formations in the still water create mirror-image compositions. Tujia boatmen sometimes sing folk songs that echo off the canyon walls [9].",
@@ -216,6 +218,7 @@ export const zhangjiajieProfile: CityProfile = {
     {
       slug: "zhangjiajie-grand-canyon-glass-bridge",
       name: "Zhangjiajie Grand Canyon and Glass Bridge",
+      photo: { src: "/photos/zhangjiajie/zhangjiajie-grand-canyon-glass-bridge.jpg", alt: "Zhangjiajie Grand Canyon and Glass Bridge, Zhangjiajie" },
       topPick: false,
       description:
         "A deep canyon with waterfalls, cave passages, and a hiking trail, plus the world's highest and longest glass-bottomed pedestrian bridge — 430 meters long, suspended 300 meters above the canyon floor. The bridge is an engineering marvel and the canyon hike below it passes through genuinely dramatic terrain with far fewer visitors than the pillar formations [10].",
@@ -234,6 +237,7 @@ export const zhangjiajieProfile: CityProfile = {
     {
       slug: "tujia-minority-village-visit",
       name: "Tujia Minority Village Visit",
+      photo: { src: "/photos/zhangjiajie/tujia-minority-village-visit.jpg", alt: "Tujia Minority Village Visit, Zhangjiajie" },
       topPick: true,
       description:
         "The Tujia people are one of China's largest minority groups, with a distinct language, architectural tradition (stilted wooden houses called diaojiaolou), textile arts (brocade weaving called xilankapu), and cuisine. Villages around the park — particularly in the Yongding and Sangzhi county areas — retain genuine cultural practices rather than staged tourist performances. A visit with a local guide reveals fermented food traditions, harvest rituals, and folk songs passed down through oral tradition [11].",
@@ -252,6 +256,7 @@ export const zhangjiajieProfile: CityProfile = {
     {
       slug: "dayong-old-town",
       name: "Dayong Old Town (Zhangjiajie Old Town)",
+      photo: { src: "/photos/zhangjiajie/dayong-old-town.jpg", alt: "Dayong Old Town (Zhangjiajie Old Town), Zhangjiajie" },
       topPick: false,
       description:
         "The ancient town center of what was historically called Dayong, with a few blocks of surviving Tujia-style stilted wooden architecture along the Lishui River. Partially reconstructed but retains pockets of genuine local life — morning market vendors, elderly residents playing cards, and small family-run Hunanese restaurants. The Puguang Buddhist Temple (dating to the 15th century) anchors the southern end [12].",
@@ -270,6 +275,7 @@ export const zhangjiajieProfile: CityProfile = {
     {
       slug: "zhangjiajie-cooking-experience",
       name: "Hunanese Cooking Experience",
+      photo: { src: "/photos/zhangjiajie/zhangjiajie-cooking-experience.jpg", alt: "Hunanese Cooking Experience, Zhangjiajie" },
       topPick: false,
       description:
         "Hands-on cooking session learning to prepare Hunan and Tujia mountain dishes — smoked pork with dried chilies, sour fish soup (suanyu), and the beloved sanxiaguo (three-ingredient wok). Typically hosted in a local home kitchen or small cooking school, starting with a visit to the morning wet market to select ingredients [3].",
@@ -293,6 +299,7 @@ export const zhangjiajieProfile: CityProfile = {
     {
       slug: "fu-zheng-yu",
       name: "Fu Zheng Yu",
+      photo: { src: "/photos/zhangjiajie/fu-zheng-yu.jpg", alt: "Fu Zheng Yu, Zhangjiajie" },
       chineseName: "\u5bcc\u6b63\u6bc5",
       category: "Hunanese",
       topPick: true,
@@ -344,6 +351,7 @@ export const zhangjiajieProfile: CityProfile = {
     {
       slug: "hunan-taste-restaurant",
       name: "Hunan Taste Restaurant",
+      photo: { src: "/photos/zhangjiajie/hunan-taste-restaurant.jpg", alt: "Hunan Taste Restaurant, Zhangjiajie" },
       chineseName: "\u6e58\u91cc\u4eba\u5bb6",
       category: "Hunanese",
       topPick: false,
@@ -362,6 +370,7 @@ export const zhangjiajieProfile: CityProfile = {
     {
       slug: "wulingyuan-night-market",
       name: "Wulingyuan Night Market Street",
+      photo: { src: "/photos/zhangjiajie/wulingyuan-night-market.jpg", alt: "Wulingyuan Night Market Street, Zhangjiajie" },
       chineseName: "\u6eaa\u5e03\u8857\u591c\u5e02",
       category: "Street Food",
       topPick: true,
@@ -379,6 +388,7 @@ export const zhangjiajieProfile: CityProfile = {
     {
       slug: "sisters-rice-noodles",
       name: "Sisters Rice Noodles",
+      photo: { src: "/photos/zhangjiajie/sisters-rice-noodles.jpg", alt: "Sisters Rice Noodles, Zhangjiajie" },
       chineseName: "\u59d0\u59b9\u7c73\u7c89",
       category: "Street Food",
       topPick: false,
@@ -397,6 +407,7 @@ export const zhangjiajieProfile: CityProfile = {
     {
       slug: "tujia-farmhouse-restaurant",
       name: "Tujia Farmhouse Restaurant",
+      photo: { src: "/photos/zhangjiajie/tujia-farmhouse-restaurant.jpg", alt: "Tujia Farmhouse Restaurant, Zhangjiajie" },
       chineseName: "\u571f\u5bb6\u519c\u5bb6\u4e50",
       category: "Tujia Specialties",
       topPick: true,

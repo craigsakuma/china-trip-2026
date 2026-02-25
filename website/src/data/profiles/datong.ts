@@ -93,6 +93,7 @@ export const datongProfile: CityProfile = {
     {
       slug: "yungang-grottoes",
       name: "Yungang Grottoes (UNESCO World Heritage Site)",
+      photo: { src: "/photos/datong/yungang-grottoes.jpg", alt: "Yungang Grottoes (UNESCO World Heritage Site), Datong" },
       topPick: true,
       description:
         "One of China's three greatest Buddhist cave art sites, with 51,000 statues across 252 caves carved into a kilometer-long sandstone cliff between 460-525 AD during the Northern Wei Dynasty. The scale is staggering \u2014 Cave 20's seated Buddha is 45 feet tall, now dramatically open to the sky after its front wall collapsed centuries ago. Caves 5-6 contain the most elaborate interiors with floor-to-ceiling carved narratives of the Buddha's life. Caves 9-13, the 'Five Magnificent Caves,' retain original painted colors [6].",
@@ -111,6 +112,7 @@ export const datongProfile: CityProfile = {
     {
       slug: "hanging-monastery",
       name: "Hanging Monastery (Xuankong Si)",
+      photo: { src: "/photos/datong/hanging-monastery.jpg", alt: "Hanging Monastery (Xuankong Si), Datong" },
       topPick: true,
       description:
         "A gravity-defying 1,500-year-old temple built into a sheer cliff face 165 feet above the ground, supported by wooden beams embedded in the rock. Originally constructed in 491 AD during the Northern Wei Dynasty, it is the only surviving temple in China that houses Buddhism, Taoism, and Confucianism under one roof. The engineering is astonishing \u2014 27 horizontal beams of durable iron pine wood anchor the structure to the cliff [2].",
@@ -129,6 +131,7 @@ export const datongProfile: CityProfile = {
     {
       slug: "huayan-temple",
       name: "Huayan Temple",
+      photo: { src: "/photos/datong/huayan-temple.jpg", alt: "Huayan Temple, Datong" },
       topPick: true,
       description:
         "The largest and most perfectly preserved Liao and Jin dynasty Buddhist temple complex in China, founded in 1038. The Mahavira Hall (Daxiongbao Dian) is one of the two largest surviving wooden Buddhist halls in China. The Sutra Hall houses the beloved 'Smiling Bodhisattva' \u2014 a graceful figure with parted lips that has become Datong's unofficial icon. The recently added Huayan Pagoda offers panoramic city views [3].",
@@ -146,6 +149,7 @@ export const datongProfile: CityProfile = {
     {
       slug: "nine-dragon-screen",
       name: "Nine Dragon Screen",
+      photo: { src: "/photos/datong/nine-dragon-screen.jpg", alt: "Nine Dragon Screen, Datong" },
       topPick: false,
       description:
         "The oldest and largest of China's three surviving Nine Dragon Screens (the others are in Beijing's Forbidden City and Beihai Park). Built in 1392 during the Ming Dynasty, this 150-foot-long, 26-foot-high glazed-tile wall depicts nine dragons in vivid colored relief. It originally served as the spirit wall for the residence of the 13th son of Ming Dynasty founder Zhu Yuanzhang [7].",
@@ -163,6 +167,7 @@ export const datongProfile: CityProfile = {
     {
       slug: "datong-city-wall",
       name: "Datong Ancient City Wall",
+      photo: { src: "/photos/datong/datong-city-wall.jpg", alt: "Datong Ancient City Wall, Datong" },
       topPick: false,
       description:
         "A magnificently restored Ming Dynasty city wall with a total circumference of 7.4 km (4.6 miles). The wall features imposing watchtowers, corner towers, and gate towers. Walking or cycling the full circuit offers panoramic views over both the historic old town and the modern city beyond. The wall is particularly atmospheric at dusk when the lanterns are lit [5].",
@@ -181,6 +186,7 @@ export const datongProfile: CityProfile = {
     {
       slug: "shanhua-temple",
       name: "Shanhua Temple",
+      photo: { src: "/photos/datong/shanhua-temple.jpg", alt: "Shanhua Temple, Datong" },
       topPick: false,
       description:
         "One of China's most intact Liao and Jin dynasty temple complexes, originally founded in 713 AD during the Tang Dynasty. The massive Mahavira Hall and Hall of the Three Saints contain impressive Buddhist statuary. Covering nearly 14,000 square meters, the temple feels grand yet peaceful \u2014 far quieter than Huayan Temple and rarely visited by tourists [8].",
@@ -198,6 +204,7 @@ export const datongProfile: CityProfile = {
     {
       slug: "datong-museum",
       name: "Datong Museum",
+      photo: { src: "/photos/datong/datong-museum.jpg", alt: "Datong Museum, Datong" },
       topPick: false,
       description:
         "A well-curated museum tracing Datong's history from the Northern Wei dynasty through its centuries as a strategic frontier garrison town. Excellent exhibits on the city's role as the Northern Wei capital (398-494 AD), when it was the political center from which the Yungang Grottoes were commissioned. The building itself is modern and architecturally striking.",
@@ -234,6 +241,7 @@ export const datongProfile: CityProfile = {
     {
       slug: "knife-cut-noodle-experience",
       name: "Knife-Cut Noodle Experience",
+      photo: { src: "/photos/datong/knife-cut-noodle-experience.jpg", alt: "Knife-Cut Noodle Experience, Datong" },
       topPick: true,
       description:
         "Datong is the birthplace and undisputed capital of daoxiao mian (knife-cut noodles). Watch noodle masters shave thick, irregular ribbons from a block of dough held above their heads, sending them flying directly into a pot of boiling water. The technique produces noodles with one smooth side and one rough side that grip sauce differently \u2014 yielding a texture impossible to replicate by machine. A self-guided noodle crawl across several local shops is one of the most memorable food experiences in all of Shanxi [4].",
@@ -275,6 +283,7 @@ export const datongProfile: CityProfile = {
     {
       slug: "lao-datong-restaurant",
       name: "Lao Datong Restaurant",
+      photo: { src: "/photos/datong/lao-datong-restaurant.jpg", alt: "Lao Datong Restaurant, Datong" },
       chineseName: "\u8001\u5927\u540c\u996d\u5e97",
       category: "Noodles",
       topPick: true,
@@ -313,6 +322,7 @@ export const datongProfile: CityProfile = {
     {
       slug: "feng-lin-ge",
       name: "Feng Lin Ge Restaurant",
+      photo: { src: "/photos/datong/feng-lin-ge.jpg", alt: "Feng Lin Ge Restaurant, Datong" },
       chineseName: "\u51e4\u4e34\u9601",
       category: "Traditional Shanxi",
       topPick: false,
@@ -334,6 +344,7 @@ export const datongProfile: CityProfile = {
     {
       slug: "datong-instant-boiled-mutton",
       name: "Datong Instant-Boiled Mutton Restaurant",
+      photo: { src: "/photos/datong/datong-instant-boiled-mutton.jpg", alt: "Datong Instant-Boiled Mutton Restaurant, Datong" },
       chineseName: "\u5927\u540c\u6d8e\u7f8a\u8089",
       category: "Lamb",
       topPick: false,
@@ -352,6 +363,7 @@ export const datongProfile: CityProfile = {
     {
       slug: "datong-grilled-lamb-chops",
       name: "Grilled Lamb Chop Restaurants",
+      photo: { src: "/photos/datong/datong-grilled-lamb-chops.jpg", alt: "Grilled Lamb Chop Restaurants, Datong" },
       chineseName: "\u5927\u540c\u70e4\u7f8a\u6392",
       category: "Lamb",
       topPick: false,
@@ -372,6 +384,7 @@ export const datongProfile: CityProfile = {
     {
       slug: "cais-restaurant",
       name: "Cai's Restaurant",
+      photo: { src: "/photos/datong/cais-restaurant.jpg", alt: "Cai's Restaurant, Datong" },
       chineseName: "\u8521\u6c0f\u996d\u5e97",
       category: "Specialties",
       topPick: false,
@@ -390,6 +403,7 @@ export const datongProfile: CityProfile = {
     {
       slug: "old-town-street-snacks",
       name: "Old Town Street Snacks",
+      photo: { src: "/photos/datong/old-town-street-snacks.jpg", alt: "Old Town Street Snacks, Datong" },
       chineseName: undefined,
       category: "Street Food",
       topPick: false,
