@@ -179,7 +179,7 @@ export function CityItemSections({
     return (
       <section className="mx-auto max-w-4xl px-4 py-12">
         <h2 className="mb-6 text-2xl font-bold tracking-tight">{title}</h2>
-        <div className="grid gap-4 sm:grid-cols-2">
+        <div className="space-y-3">
           {sorted.map((item) => {
             const label = consensusLabel(item.slug, section);
             return (
