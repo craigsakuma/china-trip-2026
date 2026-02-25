@@ -4,7 +4,7 @@
 
 - **[beijing.md](beijing.md)** — Full city profile with executive summary, October weather, neighborhoods, activities, restaurants, practical tips, and sourced references. Primary planning document.
 
-- **[nyt-36-hours-beijing.md](nyt-36-hours-beijing.md)** — "36 Hours in Beijing" by Justin Bergman (NYT, Feb 2015). Weekend itinerary covering Lama Temple, hutong breweries, Dashilar, 798 Art District, roast duck at Duck de Chine, Summer Palace, and dim sum at Jing Yaa Tang.
+- **[nyt-36-hours-beijing.md](nyt-36-hours-beijing.md)** — "36 Hours in Beijing" by Justin Bergman (NYT, Feb 2015). Weekend itinerary: Lama Temple (雍和宫), Baochao Hutong craft beer (Great Leap, Slow Boat), Sichuan at Chuan Ban, Dashilar neighborhood, zha jiang mian, Three Shadows + Red Brick art museums, Duck de Chine, Capital Spirits baijiu bar, Summer Palace, Jing Yaa Tang dim sum. Original: [original-source/nyt-36-hours-beijing.md](original-source/nyt-36-hours-beijing.md).
 
 - **[fabio-nodari-beijing-3-days.md](fabio-nodari-beijing-3-days.md)** — "Beijing in Three Days" by Fabio Nodari (fabionodariphoto.com, Jan 2025). Photographer based in China. 3-day itinerary with Forbidden City ticketing tips, Jinshanling Great Wall, 798 Art District, Temple of Heaven, Summer Palace, Lama Temple, Beihai Park. Subway directions and Chinese names throughout.
 
