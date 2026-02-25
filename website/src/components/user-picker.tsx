@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useRef, useEffect } from "react";
 import { useUser } from "@/lib/user-context";
 
 export function UserPickerOverlay() {
@@ -41,37 +42,57 @@ export function UserPickerOverlay() {
 
 export function UserAvatar() {
   const { user, setUser, allUsers } = useUser();
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    if (!open) return;
+    function handleClick(e: MouseEvent) {
+      if (ref.current && !ref.current.contains(e.target as Node)) {
+        setOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClick);
+    return () => document.removeEventListener("mousedown", handleClick);
+  }, [open]);
 
   if (!user) return null;
 
   return (
-    <div className="relative group">
+    <div ref={ref} className="relative">
       <button
+        onClick={() => setOpen(!open)}
         className="flex h-8 w-8 items-center justify-center rounded-full text-sm font-bold text-white transition-transform hover:scale-110"
         style={{ backgroundColor: user.color }}
-        aria-label={`Logged in as ${user.displayName}`}
+        aria-label={`Logged in as ${user.displayName}. Click to switch.`}
       >
         {user.displayName[0]}
       </button>
-      <div className="invisible absolute right-0 top-full z-[100] mt-2 w-40 rounded-lg border bg-white py-1 shadow-lg group-hover:visible">
-        {allUsers.map((u) => (
-          <button
-            key={u.id}
-            onClick={() => setUser(u)}
-            className="flex w-full items-center gap-2 px-3 py-2 text-sm hover:bg-stone-50"
-          >
-            <span
-              className="flex h-6 w-6 items-center justify-center rounded-full text-xs font-bold text-white"
-              style={{ backgroundColor: u.color }}
+      {open && (
+        <div className="absolute right-0 top-full z-[100] mt-2 w-40 rounded-lg border bg-white py-1 shadow-lg">
+          {allUsers.map((u) => (
+            <button
+              key={u.id}
+              onClick={() => {
+                setUser(u);
+                setOpen(false);
+              }}
+              className="flex w-full items-center gap-2 px-3 py-2 text-sm hover:bg-stone-50"
             >
-              {u.displayName[0]}
-            </span>
-            <span className={user.id === u.id ? "font-semibold" : ""}>
-              {u.displayName}
-            </span>
-          </button>
-        ))}
-      </div>
+              <span
+                className="flex h-6 w-6 items-center justify-center rounded-full text-xs font-bold text-white"
+                style={{ backgroundColor: u.color }}
+              >
+                {u.displayName[0]}
+              </span>
+              <span className={user.id === u.id ? "font-semibold" : ""}>
+                {u.displayName}
+              </span>
+            </button>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
