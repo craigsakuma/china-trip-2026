@@ -1,6 +1,14 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import {
+  createContext,
+  useContext,
+  useState,
+  useEffect,
+  useCallback,
+  useRef,
+  type ReactNode,
+} from "react";
 import ItemCard from "@/components/item-card";
 import ReviewPanel from "@/components/review-panel";
 import { useUser } from "@/lib/user-context";
@@ -12,24 +20,34 @@ interface Favorite {
   itemSlug: string;
   section: string;
   color: string;
+  displayName: string;
 }
 
 type Section = "neighborhood" | "activity" | "restaurant";
 
-interface CitySectionsProps {
-  citySlug: string;
-  neighborhoods: Neighborhood[];
-  activities: Activity[];
-  restaurants: Restaurant[];
+/* ── Favorites context ──────────────────────────────────────── */
+interface FavCtx {
+  favorites: Favorite[];
+  fetchFavorites: () => void;
 }
 
-export default function CitySections({
+const FavoritesContext = createContext<FavCtx>({
+  favorites: [],
+  fetchFavorites: () => {},
+});
+
+export function useFavorites() {
+  return useContext(FavoritesContext);
+}
+
+/* ── Provider wraps the whole city page client boundary ────── */
+export function CityInteractiveProvider({
   citySlug,
-  neighborhoods,
-  activities,
-  restaurants,
-}: CitySectionsProps) {
-  const { user } = useUser();
+  children,
+}: {
+  citySlug: string;
+  children: ReactNode;
+}) {
   const [favorites, setFavorites] = useState<Favorite[]>([]);
 
   const fetchFavorites = useCallback(async () => {
@@ -41,28 +59,99 @@ export default function CitySections({
     fetchFavorites();
   }, [fetchFavorites]);
 
+  return (
+    <FavoritesContext.Provider value={{ favorites, fetchFavorites }}>
+      {children}
+    </FavoritesContext.Provider>
+  );
+}
+
+/* ── Review panel slot (between hero and overview) ──────────── */
+export function CityReviewSlot({
+  citySlug,
+  neighborhoods,
+  activities,
+  restaurants,
+}: {
+  citySlug: string;
+  neighborhoods: Neighborhood[];
+  activities: Activity[];
+  restaurants: Restaurant[];
+}) {
+  const { favorites } = useFavorites();
+  return (
+    <ReviewPanel
+      citySlug={citySlug}
+      neighborhoods={neighborhoods}
+      activities={activities}
+      restaurants={restaurants}
+      favorites={favorites}
+    />
+  );
+}
+
+/* ── Item sections slot (after weather) ─────────────────────── */
+export function CityItemSections({
+  citySlug,
+  neighborhoods,
+  activities,
+  restaurants,
+}: {
+  citySlug: string;
+  neighborhoods: Neighborhood[];
+  activities: Activity[];
+  restaurants: Restaurant[];
+}) {
+  const { user } = useUser();
+  const { favorites, fetchFavorites } = useFavorites();
+  // Lock sort order after initial load so toggling a heart doesn't shuffle the grid
+  const sortOrderRef = useRef<Record<string, string[]>>({});
+  const initialSortDone = useRef(false);
+
+  useEffect(() => {
+    if (!user || favorites.length === 0 || initialSortDone.current) return;
+    initialSortDone.current = true;
+
+    function computeOrder<T extends { slug: string }>(items: T[], section: Section) {
+      const copy = [...items];
+      copy.sort((a, b) => {
+        const aFav = favorites.some(
+          (f) => f.itemSlug === a.slug && f.section === section && f.userId === user!.id
+        );
+        const bFav = favorites.some(
+          (f) => f.itemSlug === b.slug && f.section === section && f.userId === user!.id
+        );
+        if (aFav && !bFav) return -1;
+        if (!aFav && bFav) return 1;
+        return 0;
+      });
+      return copy.map((i) => i.slug);
+    }
+
+    sortOrderRef.current = {
+      neighborhood: computeOrder(neighborhoods, "neighborhood"),
+      activity: computeOrder(activities, "activity"),
+      restaurant: computeOrder(restaurants, "restaurant"),
+    };
+  }, [user, favorites, neighborhoods, activities, restaurants]);
+
   function favoritedBy(itemSlug: string, section: Section) {
     return favorites
       .filter((f) => f.itemSlug === itemSlug && f.section === section)
       .map((f) => ({ userId: f.userId, color: f.color }));
   }
 
-  function sortByFavorites<T extends { slug: string }>(
+  function sortByInitialOrder<T extends { slug: string }>(
     items: T[],
     section: Section
   ): T[] {
-    if (!user) return items;
+    const order = sortOrderRef.current[section];
+    if (!order) return items;
     const copy = [...items];
     copy.sort((a, b) => {
-      const aFav = favorites.some(
-        (f) => f.itemSlug === a.slug && f.section === section && f.userId === user.id
-      );
-      const bFav = favorites.some(
-        (f) => f.itemSlug === b.slug && f.section === section && f.userId === user.id
-      );
-      if (aFav && !bFav) return -1;
-      if (!aFav && bFav) return 1;
-      return 0;
+      const ai = order.indexOf(a.slug);
+      const bi = order.indexOf(b.slug);
+      return (ai === -1 ? 999 : ai) - (bi === -1 ? 999 : bi);
     });
     return copy;
   }
@@ -70,7 +159,6 @@ export default function CitySections({
   function consensusLabel(itemSlug: string, section: Section): string | null {
     const users = favoritedBy(itemSlug, section);
     if (users.length < 2) return null;
-    // Resolve display names from the known users list
     const names: Record<string, string> = {
       craig: "Craig",
       kiran: "Kiran",
@@ -87,7 +175,7 @@ export default function CitySections({
     title: string
   ) {
     if (items.length === 0) return null;
-    const sorted = sortByFavorites(items, section);
+    const sorted = sortByInitialOrder(items, section);
     return (
       <section className="mx-auto max-w-4xl px-4 py-12">
         <h2 className="mb-6 text-2xl font-bold tracking-tight">{title}</h2>
@@ -97,7 +185,7 @@ export default function CitySections({
             return (
               <div key={item.slug}>
                 {label && (
-                  <div className="mb-1 rounded-t-md bg-amber-50 px-3 py-1 text-xs font-medium text-amber-700 border border-b-0 border-amber-200">
+                  <div className="mb-1 rounded-t-md border border-b-0 border-amber-200 bg-amber-50 px-3 py-1 text-xs font-medium text-amber-700">
                     {label}
                   </div>
                 )}
@@ -121,7 +209,6 @@ export default function CitySections({
       {renderSection(neighborhoods, "neighborhood", "Where to Stay")}
       {renderSection(activities, "activity", "Activities")}
       {renderSection(restaurants, "restaurant", "Restaurants")}
-      <ReviewPanel citySlug={citySlug} />
     </>
   );
 }

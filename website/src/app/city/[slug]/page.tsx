@@ -5,8 +5,12 @@ import { cities, getCityBySlug } from "@/data/cities";
 import { getProfile } from "@/data/profiles";
 import WeatherTable from "@/components/weather-table";
 import HeroImage from "@/components/hero-image";
-import CitySections from "@/components/city-sections";
 import { CityRatings } from "@/components/city-ratings";
+import {
+  CityInteractiveProvider,
+  CityReviewSlot,
+  CityItemSections,
+} from "@/components/city-sections";
 
 /* ── Static params for all city slugs ─────────────────────── */
 export function generateStaticParams() {
@@ -93,47 +97,60 @@ export default async function CityPage(props: {
         </div>
       </section>
 
-      {/* ── Executive Summary ─────────────────────────────── */}
-      <section className="mx-auto max-w-3xl px-4 py-12">
-        <h2 className="mb-4 text-2xl font-bold tracking-tight">Overview</h2>
-        <div className="space-y-4 text-muted-foreground leading-relaxed">
-          {profile.executiveSummary.map((para, i) => (
-            <p key={i}>{para}</p>
-          ))}
-        </div>
+      {/* ── Client interactive boundary ───────────────────── */}
+      <CityInteractiveProvider citySlug={slug}>
+        {/* Notes, Favorites & Reviews — between hero and overview */}
+        <CityReviewSlot
+          citySlug={slug}
+          neighborhoods={profile.neighborhoods}
+          activities={profile.activities}
+          restaurants={profile.restaurants}
+        />
 
-        {/* Why it fits callout */}
-        <div className="mt-6 rounded-lg border-l-4 border-primary bg-muted/50 p-4">
-          <h3 className="mb-2 font-semibold">Why it fits us</h3>
-          <ul className="list-inside list-disc space-y-1 text-sm text-muted-foreground">
-            {profile.whyItFits.map((reason, i) => (
-              <li key={i}>{reason}</li>
+        {/* ── Executive Summary ───────────────────────────── */}
+        <section className="mx-auto max-w-3xl px-4 py-12">
+          <h2 className="mb-4 text-2xl font-bold tracking-tight">Overview</h2>
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
+            {profile.executiveSummary.map((para, i) => (
+              <p key={i}>{para}</p>
             ))}
-          </ul>
-        </div>
-      </section>
+          </div>
 
-      {/* ── Weather ───────────────────────────────────────── */}
-      <section className="mx-auto max-w-4xl px-4 py-12">
-        <h2 className="mb-4 text-2xl font-bold tracking-tight">
-          October Weather
-        </h2>
-        <WeatherTable rows={profile.weather} />
-        {profile.whatToPack && (
-          <p className="mt-4 text-sm text-muted-foreground">
-            <span className="font-medium text-foreground">What to pack:</span>{" "}
-            {profile.whatToPack}
-          </p>
-        )}
-      </section>
+          {/* Why it fits callout */}
+          <div className="mt-6 rounded-lg border-l-4 border-primary bg-muted/50 p-4">
+            <h3 className="mb-2 font-semibold">Why it fits us</h3>
+            <ul className="list-inside list-disc space-y-1 text-sm text-muted-foreground">
+              {profile.whyItFits.map((reason, i) => (
+                <li key={i}>{reason}</li>
+              ))}
+            </ul>
+          </div>
+        </section>
 
-      {/* ── Neighborhoods / Activities / Restaurants / Reviews ── */}
-      <CitySections
-        citySlug={slug}
-        neighborhoods={profile.neighborhoods}
-        activities={profile.activities}
-        restaurants={profile.restaurants}
-      />
+        {/* ── Weather ─────────────────────────────────────── */}
+        <section className="mx-auto max-w-4xl px-4 py-12">
+          <h2 className="mb-4 text-2xl font-bold tracking-tight">
+            October Weather
+          </h2>
+          <WeatherTable rows={profile.weather} />
+          {profile.whatToPack && (
+            <p className="mt-4 text-sm text-muted-foreground">
+              <span className="font-medium text-foreground">
+                What to pack:
+              </span>{" "}
+              {profile.whatToPack}
+            </p>
+          )}
+        </section>
+
+        {/* ── Neighborhoods / Activities / Restaurants ─────── */}
+        <CityItemSections
+          citySlug={slug}
+          neighborhoods={profile.neighborhoods}
+          activities={profile.activities}
+          restaurants={profile.restaurants}
+        />
+      </CityInteractiveProvider>
 
       {/* ── Practical Tips ────────────────────────────────── */}
       {Object.keys(profile.practicalTips).length > 0 && (

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { ChevronDown } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
@@ -111,16 +111,35 @@ export default function ItemCard({
 }: ItemCardProps) {
   const [open, setOpen] = useState(false);
   const photo = getPhoto(item, type);
+  const cardId = citySlug ? `${type}-${item.slug}` : undefined;
+
+  // Listen for "open-item-card" events dispatched from favorites summary links
+  useEffect(() => {
+    if (!cardId) return;
+    function handler(e: Event) {
+      const detail = (e as CustomEvent).detail;
+      if (detail?.id === cardId) {
+        setOpen(true);
+        // Small delay to let the DOM update before scrolling
+        setTimeout(() => {
+          document.getElementById(cardId!)?.scrollIntoView({ behavior: "smooth", block: "center" });
+        }, 100);
+      }
+    }
+    window.addEventListener("open-item-card", handler);
+    return () => window.removeEventListener("open-item-card", handler);
+  }, [cardId]);
 
   return (
     <Card
+      id={cardId}
       className={`overflow-hidden py-0 ${
         item.topPick ? "border-l-4 border-l-amber-400" : ""
       }`}
     >
       <Collapsible open={open} onOpenChange={setOpen}>
-        <CollapsibleTrigger className="w-full text-left">
-          <CardContent className="flex items-center gap-3 p-4">
+        <CardContent className="flex items-center gap-3 p-4">
+          <CollapsibleTrigger className="flex min-w-0 flex-1 items-center gap-3 text-left">
             {/* Thumbnail */}
             {photo && <Thumbnail photo={photo} />}
 
@@ -143,25 +162,23 @@ export default function ItemCard({
               </p>
             </div>
 
-            {citySlug && (
-              <div onClick={(e) => e.stopPropagation()}>
-                <FavoriteButton
-                  citySlug={citySlug}
-                  itemSlug={item.slug}
-                  section={type}
-                  favoritedBy={favoritedBy}
-                  onToggle={() => onFavoriteToggle?.()}
-                />
-              </div>
-            )}
-
             <ChevronDown
               className={`size-4 shrink-0 text-muted-foreground transition-transform ${
                 open ? "rotate-180" : ""
               }`}
             />
-          </CardContent>
-        </CollapsibleTrigger>
+          </CollapsibleTrigger>
+
+          {citySlug && (
+            <FavoriteButton
+              citySlug={citySlug}
+              itemSlug={item.slug}
+              section={type}
+              favoritedBy={favoritedBy}
+              onToggle={() => onFavoriteToggle?.()}
+            />
+          )}
+        </CardContent>
 
         <CollapsibleContent>
           <CardContent className="space-y-3 border-t px-4 pb-4 pt-3">

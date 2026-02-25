@@ -1,9 +1,10 @@
 "use client";
 
 import { useState, useEffect, useRef, useCallback } from "react";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Heart } from "lucide-react";
 import StarRating from "@/components/star-rating";
 import { useUser, type UserInfo } from "@/lib/user-context";
+import type { Neighborhood, Activity, Restaurant } from "@/types";
 
 interface Review {
   userId: string;
@@ -13,17 +14,48 @@ interface Review {
   notes: string | null;
 }
 
-interface ReviewPanelProps {
+interface Favorite {
+  userId: string;
   citySlug: string;
+  itemSlug: string;
+  section: string;
+  color: string;
+  displayName: string;
 }
 
+interface NamedItem {
+  slug: string;
+  name: string;
+}
+
+interface ReviewPanelProps {
+  citySlug: string;
+  neighborhoods: Neighborhood[];
+  activities: Activity[];
+  restaurants: Restaurant[];
+  favorites: Favorite[];
+}
+
+// Kiran first, Hernan second, Craig last
 const ALL_USERS: UserInfo[] = [
-  { id: "craig", displayName: "Craig", color: "#3b82f6" },
   { id: "kiran", displayName: "Kiran", color: "#22c55e" },
   { id: "hernan", displayName: "Hernan", color: "#f97316" },
+  { id: "craig", displayName: "Craig", color: "#3b82f6" },
 ];
 
-export default function ReviewPanel({ citySlug }: ReviewPanelProps) {
+const SECTION_LABELS: Record<string, string> = {
+  neighborhood: "Where to Stay",
+  activity: "Activities",
+  restaurant: "Restaurants",
+};
+
+export default function ReviewPanel({
+  citySlug,
+  neighborhoods,
+  activities,
+  restaurants,
+  favorites,
+}: ReviewPanelProps) {
   const { user } = useUser();
   const [reviews, setReviews] = useState<Review[]>([]);
   const [open, setOpen] = useState(false);
@@ -32,8 +64,7 @@ export default function ReviewPanel({ citySlug }: ReviewPanelProps) {
   const fetchReviews = useCallback(async () => {
     const res = await fetch(`/api/reviews?city=${citySlug}`);
     if (res.ok) {
-      const data = await res.json();
-      setReviews(data);
+      setReviews(await res.json());
       setLoaded(true);
     }
   }, [citySlug]);
@@ -42,7 +73,6 @@ export default function ReviewPanel({ citySlug }: ReviewPanelProps) {
     fetchReviews();
   }, [fetchReviews]);
 
-  // Merge fetched reviews with all users so everyone always shows
   const merged = ALL_USERS.map((u) => {
     const r = reviews.find((rev) => rev.userId === u.id);
     return {
@@ -67,39 +97,62 @@ export default function ReviewPanel({ citySlug }: ReviewPanelProps) {
     fetchReviews();
   }
 
+  // Build favorites summary grouped by section
+  const itemMap: Record<string, NamedItem> = {};
+  for (const n of neighborhoods) itemMap[`neighborhood:${n.slug}`] = n;
+  for (const a of activities) itemMap[`activity:${a.slug}`] = a;
+  for (const r of restaurants) itemMap[`restaurant:${r.slug}`] = r;
+
+  type FavGroup = {
+    section: string;
+    itemSlug: string;
+    name: string;
+    users: { userId: string; color: string }[];
+  };
+
+  const favGroups: FavGroup[] = [];
+  const seen = new Map<string, FavGroup>();
+  for (const f of favorites) {
+    const key = `${f.section}:${f.itemSlug}`;
+    const item = itemMap[key];
+    if (!item) continue;
+    let group = seen.get(key);
+    if (!group) {
+      group = { section: f.section, itemSlug: f.itemSlug, name: item.name, users: [] };
+      seen.set(key, group);
+      favGroups.push(group);
+    }
+    group.users.push({ userId: f.userId, color: f.color });
+  }
+  // Sort: most favorites first, then alphabetical
+  favGroups.sort((a, b) => b.users.length - a.users.length || a.name.localeCompare(b.name));
+
+  // Group by section for display
+  const favsBySection: Record<string, FavGroup[]> = {};
+  for (const g of favGroups) {
+    if (!favsBySection[g.section]) favsBySection[g.section] = [];
+    favsBySection[g.section].push(g);
+  }
+
   return (
-    <section className="mx-auto max-w-3xl px-4 py-12">
+    <section className="mx-auto mt-6 max-w-4xl px-4">
+      {/* Collapsed bar */}
       <button
         onClick={() => setOpen(!open)}
-        className="flex w-full items-center justify-between rounded-lg border p-4 text-left transition-colors hover:bg-muted/50"
+        className="flex w-full items-center justify-between rounded-lg border px-4 py-2.5 text-left transition-colors hover:bg-muted/50"
       >
-        <div>
-          <h2 className="text-lg font-semibold">Our Reviews</h2>
-          {loaded && (
-            <div className="mt-1 flex gap-3">
-              {merged.map((r) => (
-                <span key={r.userId} className="flex items-center gap-1 text-sm">
-                  <span
-                    className="inline-block h-3 w-3 rounded-full"
-                    style={{ backgroundColor: r.color }}
-                  />
-                  {r.stars !== null && r.stars > 0
-                    ? `${"★".repeat(r.stars)}${"☆".repeat(3 - r.stars)}`
-                    : "—"}
-                </span>
-              ))}
-            </div>
-          )}
-        </div>
+        <span className="text-sm font-semibold">Notes, Favorites &amp; Reviews</span>
         <ChevronDown
-          className={`size-5 shrink-0 text-muted-foreground transition-transform ${
+          className={`size-4 shrink-0 text-muted-foreground transition-transform ${
             open ? "rotate-180" : ""
           }`}
         />
       </button>
 
+      {/* Expanded content */}
       {open && (
-        <div className="mt-4 space-y-6">
+        <div className="rounded-b-lg border border-t-0 bg-stone-50 p-4 space-y-4">
+          {/* User review cards */}
           {merged.map((r) => (
             <UserReviewCard
               key={r.userId}
@@ -108,6 +161,54 @@ export default function ReviewPanel({ citySlug }: ReviewPanelProps) {
               onSave={(stars, notes) => saveReview(r.userId, stars, notes)}
             />
           ))}
+
+          {/* Favorites summary */}
+          {favGroups.length > 0 && (
+            <div className="rounded-lg border bg-white p-4">
+              <h3 className="mb-3 text-sm font-semibold">Favorited Items</h3>
+              {(["neighborhood", "activity", "restaurant"] as const).map((sec) => {
+                const items = favsBySection[sec];
+                if (!items || items.length === 0) return null;
+                return (
+                  <div key={sec} className="mb-3 last:mb-0">
+                    <p className="mb-1 text-xs font-medium uppercase tracking-wide text-muted-foreground/70">
+                      {SECTION_LABELS[sec]}
+                    </p>
+                    <ul className="space-y-1">
+                      {items.map((g) => (
+                        <li key={g.itemSlug} className="flex items-center gap-2 text-sm">
+                          <span className="flex gap-0.5">
+                            {g.users.map((u) => (
+                              <Heart
+                                key={u.userId}
+                                size={12}
+                                className="fill-current"
+                                style={{ color: u.color }}
+                              />
+                            ))}
+                          </span>
+                          <a
+                            href={`#${sec}-${g.itemSlug}`}
+                            onClick={() => {
+                              // Dispatch event to open the target card
+                              window.dispatchEvent(
+                                new CustomEvent("open-item-card", {
+                                  detail: { id: `${sec}-${g.itemSlug}` },
+                                })
+                              );
+                            }}
+                            className="text-primary underline-offset-2 hover:underline"
+                          >
+                            {g.name}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                );
+              })}
+            </div>
+          )}
         </div>
       )}
     </section>
@@ -126,7 +227,6 @@ function UserReviewCard({
   const [notes, setNotes] = useState(review.notes ?? "");
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  // Sync external changes
   useEffect(() => {
     setNotes(review.notes ?? "");
   }, [review.notes]);
@@ -148,7 +248,7 @@ function UserReviewCard({
 
   return (
     <div
-      className="rounded-lg border p-4"
+      className="rounded-lg border bg-white p-4"
       style={{ borderLeftWidth: 4, borderLeftColor: review.color }}
     >
       <div className="flex items-center justify-between">
