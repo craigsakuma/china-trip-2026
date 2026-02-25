@@ -13,6 +13,7 @@ Curated for our travel profile: authentic experiences, hiking, great food, cultu
 ### Relevant Videos
 
 **"DEEP Chinese Street Food Tour in Beijing, China | BEST Unknown Street Foods + PEKING DUCK"**
+🔗 https://www.youtube.com/watch?v=jKXOh5wrzK4
 `Beijing` - 5.78M views
 - Explores hidden street food in Beijing's hutong alleyways with local friend "Chuchu"
 - Features Beijing jianbing (egg crepe), sesame butter millet porridge, fermented green bean porridge
@@ -21,6 +22,7 @@ Curated for our travel profile: authentic experiences, hiking, great food, cultu
 - Focuses on off-the-beaten-path hutong stalls rather than tourist zones
 
 **"Most EXTREME Chinese Street Food Tour of Chengdu, China - 16 Hour SPICY Street Food Tour!"**
+🔗 https://www.youtube.com/watch?v=ZmctVn-s6CE *(unverified)*
 `Chengdu`
 - 16-hour marathon eating day across Chengdu's neighborhoods
 - Features "slapping noodles" (hand-slapped preparation), fiery Sichuan street lunches
@@ -28,6 +30,7 @@ Curated for our travel profile: authentic experiences, hiking, great food, cultu
 - Shows the incredible depth and variety of Sichuan street food from breakfast through late night
 
 **"EXTREME Chinese Street Food - Duck HOT TUB and Market Tour in Chengdu, China + SPICY Dan Dan Noodles"**
+🔗 https://www.youtube.com/watch?v=63yxOF3cf3U
 `Chengdu`
 - Tours Supo Farmers Market (Supo Nongmao Shichang) - his favorite local farmers' market
 - Deep-fried duck cooked in a pressure deep fryer ("duck hot tub")
@@ -35,6 +38,7 @@ Curated for our travel profile: authentic experiences, hiking, great food, cultu
 - Great look at Sichuan market produce and prepared food stalls
 
 **"Chinese Street Food DAN DAN NOODLE Tour in Sichuan, China | INSANELY GOOD and SPICY Szechuan Noodles"**
+🔗 https://www.youtube.com/watch?v=UvDGBIkJaqQ *(unverified)*
 `Chengdu`
 - Tries 4 different variations of Dan Dan noodles across neighborhoods
 - Visits Chunyangguan noodle spot (Kuixinglou Street No. 10) - his stated favorite
@@ -42,6 +46,7 @@ Curated for our travel profile: authentic experiences, hiking, great food, cultu
 - Shows diversity of noodle preparation styles across different neighborhoods
 
 **"Surviving SICHUAN!!! 500 Hours of EXTREME Chinese Street Food! The ULTIMATE Sichuan Food Documentary"**
+🔗 https://www.youtube.com/watch?v=2sSADpmM-L4 *(unverified)*
 `Sichuan`
 - Extended documentary compiling extensive Sichuan eating
 - Covers traditional Dan Dan noodles, visits to spice markets
@@ -49,6 +54,7 @@ Curated for our travel profile: authentic experiences, hiking, great food, cultu
 - Panoramic survey of the region's cuisine
 
 **"SICHUAN'S TIBETAN STREET FOOD!"**
+🔗 https://www.youtube.com/watch?v=0HetkjwBu-k *(unverified — full title: "STREET FOOD Journey into RARELY Seen China! SICHUAN'S TIBETAN STREET FOOD!")*
 `Western Sichuan (Tibetan areas)`
 - Explores Tibetan food culture in the Sichuan-Tibet borderlands
 - Tibetan street food traditions in ethnically Tibetan areas of Sichuan province
@@ -56,18 +62,21 @@ Curated for our travel profile: authentic experiences, hiking, great food, cultu
 - Relevant if we visit Shangri-La or consider Tibetan areas
 
 **"The BEST Noodles in the WORLD!!! Chinese FIRE NOODLE + Street Food Tour of Chongqing"**
+🔗 https://www.youtube.com/watch?v=XKrpbSG_27Q *(unverified)*
 `Chongqing`
 - Features Chongqing's famous "fire noodles" (ranmian-style)
 - Street food tour of this mountainous megacity
 - Local noodle culture and chili-heavy preparations
 
 **"NUCLEAR Chinese Street Food NOODLE Tour of Chongqing, China - 5 INSANE SPICY + Chinese Noodles!!"**
+🔗 https://www.youtube.com/watch?v=VKyCW70oLgk
 `Chongqing`
 - Tries 5 different bowls of intensely spicy Chongqing noodles
 - Features Chongqing Xiaomian (small noodles) - the city's signature breakfast noodle
 - Explores Chongqing's distinct noodle culture (related to but different from Sichuan)
 
 **Guilin Street Food Tour**
+🔗 https://www.youtube.com/watch?v=h_qrDLZv-yU *(unverified — best match from search)*
 `Guilin / Guangxi`
 - Features Guilin rice noodles (mifen) - the city's most famous dish with 2,000 years of history
 - Oil tea (youcha) - traditional warm beverage from ethnic minority groups
@@ -75,6 +84,7 @@ Curated for our travel profile: authentic experiences, hiking, great food, cultu
 - Bamboo tube rice and intersection of Han and minority food cultures
 
 **"INSANE Chinese Street Food in Canton, China | BEST Street Food in China + RARE Chinese Sashimi!"**
+🔗 https://www.youtube.com/watch?v=8RT99hfmZw0
 `Guangzhou / Shunde`
 - Travels to Shunde, the culinary heart of Cantonese cuisine
 - Features Cantonese roast goose, Chinese grass carp sashimi
@@ -82,6 +92,7 @@ Curated for our travel profile: authentic experiences, hiking, great food, cultu
 - Visit to a famous Shunde restaurant kitchen to observe Cantonese chef techniques
 
 **"Muslim Chinese Street Food Tour in Islamic China | BEST Halal Food and Islam Food in China"**
+🔗 https://www.youtube.com/watch?v=ETkZpJcZhkI
 `Lanzhou` - 17M views (one of his most popular)
 - Lanzhou hand-pulled beef noodles at Wumulei Penghui Niurou Mian restaurant
 - Zhengning Night Market - biggest street night market in Lanzhou
@@ -89,12 +100,14 @@ Curated for our travel profile: authentic experiences, hiking, great food, cultu
 - Demonstrates China's rich and often unknown Islamic food tradition
 
 **Hong Kong Food Tour**
+🔗 https://www.youtube.com/watch?v=HWMga1ULQEU *(unverified)*
 `Hong Kong`
 - Curated list of 49 best restaurants in Hong Kong (compiled over 13+ years)
 - Hidden dim sum restaurants, Cantonese seafood, local street stalls
 - Written guide on thefoodranger.com covers roast goose to wonton noodles
 
 **"Amazing Street Food Along the Ancient Tea Horse Route in Sichuan Province"**
+🔗 *URL not confirmed — search "STREET FOOD Adventure to UNSEEN CHINA! TEA HORSE ROAD Tibetan Street Food!" on YouTube*
 `Sichuan (Ancient Tea Horse Road)`
 - Epic culinary journey along the historic Tea Horse Road trade route
 - Street food discoveries in scenic mountain areas
@@ -110,6 +123,7 @@ Curated for our travel profile: authentic experiences, hiking, great food, cultu
 ### Relevant Videos
 
 **"Extreme Chinese Street Food - JACUZZI CHICKEN and Market Tour in Kunming! | Yunnan, China Day 4"**
+🔗 https://www.youtube.com/watch?v=3w6UuOARJxs
 `Kunming` - 23M+ views (his most-viewed video ever)
 - Massive tour through Kunming's largest wet market (Zhuanxin Market)
 - Sweet rice pudding, sesame rice balls, pickled pears, dumplings
@@ -118,6 +132,7 @@ Curated for our travel profile: authentic experiences, hiking, great food, cultu
 - Concludes with Yunnanese barbecue with local guides
 
 **"Chinese Food Tour in Yunnan - AMAZING STREET FOOD and Ethnic Feast! | Yunnan, China Day 1"**
+🔗 https://www.youtube.com/watch?v=K69xU0cFES8 *(unverified)*
 `Dali / Xizhou`
 - Drives from Dali Old Town to Xizhou for street food
 - Thick pea porridge and pea pudding salad from a grandmother using traditional family recipes
@@ -126,6 +141,7 @@ Curated for our travel profile: authentic experiences, hiking, great food, cultu
 - Duan's Kitchen in Dali Old Town: chicken with pu'er tea (180 RMB)
 
 **"Chinese Street Food - ENTIRE BOWL ONE-NOODLE and Halal Beef Salad! | Yunnan, China Day 2"**
+🔗 *search on channel: https://www.youtube.com/@MarkWiens*
 `Donglianhua Village (near Dali)`
 - Visits well-preserved ancient Muslim Hui minority village on the old tea and horse route
 - Famous Yunnanese one-noodle dish - entire bowl from a single hand-pulled noodle
@@ -134,6 +150,7 @@ Curated for our travel profile: authentic experiences, hiking, great food, cultu
 - Cultural exploration of Hui Muslim history along the ancient trade route
 
 **"Street Food in Tibet - ULTIMATE TIBETAN FOOD TOUR + Amazing Potala Palace in Lhasa!"**
+🔗 *search on channel: https://www.youtube.com/@MarkWiens*
 `Lhasa`
 - Visits Potala Palace and Jokhang Temple
 - Yak noodles at a Tibetan tea house, laping cold mung bean noodles with chili oil
@@ -142,12 +159,14 @@ Curated for our travel profile: authentic experiences, hiking, great food, cultu
 - Tea house lunch shared with local Tibetan gentleman
 
 **"Huge Tibetan Food - 11 Traditional Dishes in Lhasa, Tibet!"**
+🔗 *search on channel: https://www.youtube.com/@MarkWiens*
 `Lhasa`
 - Visits a Tibetan family home where Uncle Mingmar prepares 10-11 traditional dishes
 - Butter tea, tsampa (roasted barley flour), yak meat preparations
 - Documents food culture traditions "unchanged for centuries"
 
 **"4,500 Meter VILLAGE FOOD - Heavenly Yamdrok Lake, Tibet!"**
+🔗 *search on channel: https://www.youtube.com/@MarkWiens*
 `Yamdrok Lake, Tibet`
 - Drive from Lhasa to one of Tibet's most sacred lakes
 - Lunch at a local family home at extreme altitude (4,500m)
@@ -155,6 +174,7 @@ Curated for our travel profile: authentic experiences, hiking, great food, cultu
 - Ingredients limited to what grows at altitude: Tibetan barley, yak, radish
 
 **"Best HONG KONG Street Food!! 19 Meals - Ultimate Hong Kong Food Tour [Full Documentary]"**
+🔗 *search on channel: https://www.youtube.com/@MarkWiens*
 `Hong Kong` - July 2024
 - Comprehensive documentary covering 19 meals in a single marathon tour
 - Dim sum, roast meats, wonton noodles, dai pai dong stalls, seafood, desserts, milk tea
@@ -162,6 +182,7 @@ Curated for our travel profile: authentic experiences, hiking, great food, cultu
 - Functions as a complete food guide to the city
 
 **"The Best Restaurant in Hong Kong! $200 FLOWER CRAB You Don't Want to Miss!"**
+🔗 *search on channel: https://www.youtube.com/@MarkWiens*
 `Hong Kong` - May 2024
 - Shrimp wonton noodles at Lau Sum Kee (48 HKD)
 - The Chairman Restaurant (ranked #4 Asia's 50 Best) - $200 flower crab dish
@@ -169,18 +190,21 @@ Curated for our travel profile: authentic experiences, hiking, great food, cultu
 - Great range from cheap eats to high-end dining
 
 **"Incredible Crispy Roast Goose and Claypot Rice in Hong Kong"**
+🔗 *search on channel: https://www.youtube.com/@MarkWiens*
 `Hong Kong`
 - Yat Lok Roast Goose in Central (Michelin-starred)
 - Claypot rice at Four Seasons Clay Pot Rice in Yau Ma Tei
 - Must-eat dishes combined with neighborhood exploration
 
 **"Hong Kong Food Tour - Breakfast, Bamboo Noodles Won Ton, and Chinese Dai Pai Dong Feast!"**
+🔗 *search on channel: https://www.youtube.com/@MarkWiens*
 `Hong Kong`
 - Traditional breakfast at cha chaan teng (tea restaurants)
 - Bamboo noodle wontons at classic shops (e.g., Kwan Kee in Cheung Sha Wan)
 - Full dai pai dong feast at one of HK's remaining open-air food stalls
 
 **"China Street Food Heaven!! 14-Hour CHINESE FOOD TOUR in Xi'an, China!!"**
+🔗 https://www.youtube.com/watch?v=OjEa9jmi4T0 *(unverified)*
 `Xi'an` - November 2024
 - 14-hour marathon with local expert through Xi'an
 - Xiaonanmen Morning Market: spicy tofu, pork burger, sticky rice dessert
@@ -189,6 +213,7 @@ Curated for our travel profile: authentic experiences, hiking, great food, cultu
 - Covers Muslim Quarter and ancient market areas
 
 **"48-Hours Eating Spicy Chinese Street Food in Chongqing"**
+🔗 *search on channel: https://www.youtube.com/@MarkWiens*
 `Chongqing` - February 2025
 - Used China's 240-hour visa-free transit policy
 - Chongqing's lava-spicy numbing hotpot, noodles, hidden delicacies
@@ -196,6 +221,7 @@ Curated for our travel profile: authentic experiences, hiking, great food, cultu
 - Documents modern development of "New Chongqing"
 
 **Guilin / Yangshuo Blog Content (Migrationology)**
+🔗 *written guide only — see migrationology.com (no video)*
 `Guilin / Yangshuo`
 - Spent one month living in Yangshuo - documented 27 dishes
 - Guilin rice noodles in pork/beef/horse broth with pickled bamboo shoots and peanuts
@@ -213,6 +239,7 @@ Curated for our travel profile: authentic experiences, hiking, great food, cultu
 ### Relevant Videos
 
 **"The Life of Chilli"**
+🔗 https://www.youtube.com/watch?v=CKJIYsnNQy4 *(unverified)*
 `Sichuan`
 - Growing chili peppers through the season
 - Different preservation methods: drying, pickling, making chili oil, chili paste (doubanjiang)
@@ -220,12 +247,14 @@ Curated for our travel profile: authentic experiences, hiking, great food, cultu
 - Essential viewing before visiting Chengdu/Sichuan
 
 **"Hot Pot on a Snowy Day"**
+🔗 *search on channel: https://www.youtube.com/@LiZiqi*
 `Sichuan`
 - Preparing full Sichuan-style hotpot from scratch
 - Making broth, preparing ingredients, setting the table
 - Showcases China's communal dining culture and Sichuan's most iconic dish
 
 **"7 Things That Matter in People's Daily Lives: Firewood, Rice, Oil, Salt, Soy Sauce, Vinegar, and Tea"**
+🔗 *search on channel: https://www.youtube.com/@LiZiqi*
 `Sichuan`
 - Based on the traditional saying (seven essentials to start a day)
 - Demonstrates traditional methods for producing each from scratch
@@ -233,12 +262,14 @@ Curated for our travel profile: authentic experiences, hiking, great food, cultu
 - Beautiful primer before the trip
 
 **"From Soybeans to Soy Sauce: The Traditional Chinese Way"**
+🔗 *search on channel: https://www.youtube.com/@LiZiqi*
 `Sichuan`
 - Growing soybeans from seed to harvest
 - Traditional soy sauce fermentation (takes months)
 - Ancient condiment production central to Chinese cuisine
 
 **"Lanzhou Beef Noodles" (Her viral breakthrough video)**
+🔗 *search on channel: https://www.youtube.com/@LiZiqi (search: "Li Ziqi Lanzhou beef noodles")*
 `Gansu Province`
 - Learning to hand-pull Lanzhou-style noodles from masters
 - Making the signature beef broth
@@ -246,6 +277,7 @@ Curated for our travel profile: authentic experiences, hiking, great food, cultu
 - One of China's most iconic regional street foods
 
 **"Traditional Lacquerware Art" (November 2024 comeback)**
+🔗 *search on channel: https://www.youtube.com/@LiZiqi (posted November 12, 2024)*
 `Sichuan`
 - Harvesting raw lacquer sap by climbing trees and slicing bark with shell blades
 - Applying 70+ layers of lacquer, polishing, and burnishing over three months
@@ -253,18 +285,21 @@ Curated for our travel profile: authentic experiences, hiking, great food, cultu
 - Designated Chinese intangible cultural heritage
 
 **"Shu Embroidery"**
+🔗 *search on channel: https://www.youtube.com/@LiZiqi (posted August 9, 2019)*
 `Sichuan`
 - Self-taught one of China's four great embroidery traditions over half a year
 - Dyeing threads with natural materials, embroidering the final piece (one year to complete)
 - Important intangible cultural heritage textile art
 
 **"The Scholar's Four Treasures of the Study"**
+🔗 *search on channel: https://www.youtube.com/@LiZiqi*
 `Sichuan`
 - Making traditional brush, ink stick, paper, and ink stone entirely from scratch
 - Spent over a year recreating the ancient production process
 - Connects to China's "Four Great Inventions" traditions
 
 **"The Life of Cotton"**
+🔗 *search on channel: https://www.youtube.com/@LiZiqi*
 `Sichuan`
 - From planting cotton seeds to hand-harvesting bolls over 25+ weeks
 - Processing raw cotton into fiber using traditional methods
@@ -272,6 +307,7 @@ Curated for our travel profile: authentic experiences, hiking, great food, cultu
 - Moving portrait of rural intergenerational care
 
 **Chinese New Year / Spring Festival Dinner**
+🔗 *search on channel: https://www.youtube.com/@LiZiqi (search: "Li Ziqi Spring Festival")*
 `Sichuan`
 - Preparing a full traditional New Year's Eve feast
 - Chinese paper-cutting, Spring Festival snacks and decorations
@@ -308,12 +344,14 @@ Her content is organized seasonally rather than by titled episodes. Key themes:
 ### Relevant Videos
 
 **"Our Shocking Arrival in CHINA - Everything was a lie..."**
+🔗 https://www.youtube.com/watch?v=BXk6mgHQ-N8
 `General China`
 - Viral arrival video challenging Western preconceptions about China
 - Genuine first impressions and culture shock
 - Sets the tone for honest, unfiltered exploration
 
 **Hangzhou Episode**
+🔗 https://www.youtube.com/watch?v=QgSqNYpQ7KE *(unverified — may be series episode, not specifically Hangzhou)*
 `Hangzhou`
 - High-speed railway experience to Hangzhou
 - Southern Song Imperial Street exploration
@@ -321,6 +359,7 @@ Her content is organized seasonally rather than by titled episodes. Key themes:
 - Good preview of Hangzhou if we add it to the itinerary
 
 **Two-Month China Series**
+🔗 *multi-episode series — browse channel: https://www.youtube.com/@TwoMadExplorers*
 `Multiple cities`
 - Sustained multi-episode coverage of diverse destinations
 - Couple-travel perspective
@@ -336,24 +375,28 @@ Her content is organized seasonally rather than by titled episodes. Key themes:
 ### Relevant Videos
 
 **"Guilin, The Most Lovely and Famous Guangxi City of China"**
+🔗 *search on channel: https://www.youtube.com/@walkeast*
 `Guilin` - 1:50:04
 - Full walking tour through Guilin's streets and neighborhoods
 - Ambient sounds and real street atmosphere
 - Great preview of the city's layout and vibe
 
 **"Fenghuang (Phoenix) Ancient Town, Most Beautiful Town in China | 4K HDR"**
+🔗 *search on channel: https://www.youtube.com/@walkeast*
 `Fenghuang` - 3:03:16
 - Complete walking tour of the riverside ancient town
 - Stilted wooden buildings, covered bridges, river views
 - Preview the town's scale and atmosphere before deciding to visit
 
 **"Beijing Walking Tour, The Capital Of China | From CBD Area To Olympic Park"**
+🔗 *search on channel: https://www.youtube.com/@walkeast*
 `Beijing` - 1:54:05
 - Modern Beijing from the business district to Olympic Park
 - Street-level perspective of the capital
 - Useful for understanding Beijing's scale and neighborhoods
 
 **"Discover Old Town of Lijiang: The CRAZIEST UNREAL Town in China"**
+🔗 *search on channel: https://www.youtube.com/@walkeast*
 `Lijiang` - 3:55:55
 - Complete walking tour of Lijiang's old town
 - Naxi architecture, canals, and cobblestone streets
@@ -369,6 +412,7 @@ Her content is organized seasonally rather than by titled episodes. Key themes:
 ### Relevant Videos
 
 **2,000km Zhejiang Province Environmental Bike Tour (2023)**
+🔗 *search on channel: https://www.youtube.com/@KatherinesJourneyToTheEast (search: "Katherine bike tour Zhejiang")*
 `Zhejiang Province`
 - Cycled the entire province documenting environmental changes
 - Visited a once-polluted lake in Wenzhou now clean enough for swimming
@@ -376,6 +420,7 @@ Her content is organized seasonally rather than by titled episodes. Key themes:
 - Combines cycling adventure with environmental journalism
 
 **Rural Village Life in Baizhang**
+🔗 *search on channel: https://www.youtube.com/@KatherinesJourneyToTheEast (search: "Katherine Baizhang village")*
 `Baizhang, Zhejiang (near Hangzhou)`
 - Daily life in her village - two-bedroom bungalow with bamboo yard
 - Authentic interactions with local villagers and farming communities
@@ -392,6 +437,7 @@ Her content is organized seasonally rather than by titled episodes. Key themes:
 ### Relevant Videos
 
 **Miao Culture in Kaili**
+🔗 *search on channel: https://www.youtube.com/@indigotrekker23 (search: "Indigo Trekker Kaili Guizhou")*
 `Kaili, Guizhou`
 - Immersion in Miao ethnic minority culture
 - Visits to traditional villages and cultural sites
@@ -399,17 +445,20 @@ Her content is organized seasonally rather than by titled episodes. Key themes:
 - Highly relevant if we add Guizhou to the itinerary
 
 **Lijiang River in Yangshuo**
+🔗 *search on channel: https://www.youtube.com/@indigotrekker23 (search: "Indigo Trekker Yangshuo")*
 `Yangshuo, Guangxi`
 - The iconic karst landscape from a traveler's perspective
 - On-the-ground experience rather than drone-heavy tourism footage
 
 **Tianmen Mountain in Zhangjiajie**
+🔗 *search on channel: https://www.youtube.com/@indigotrekker23 (search: "Indigo Trekker Zhangjiajie")*
 `Zhangjiajie, Hunan`
 - Trekking content in the "Avatar Mountains"
 - Dramatic cliff-side walkways and natural scenery
 - Good preview if we consider adding Zhangjiajie
 
 **Muslim Street Food in Xi'an**
+🔗 *search on channel: https://www.youtube.com/@indigotrekker23 (search: "Indigo Trekker Xi'an Muslim")*
 `Xi'an`
 - Muslim Quarter food culture exploration
 - Cross-cultural connections and street food discovery
@@ -424,16 +473,19 @@ Her content is organized seasonally rather than by titled episodes. Key themes:
 ### Relevant Videos
 
 **Chengdu Episode**
+🔗 https://www.youtube.com/watch?v=-76Lj2ho1NI
 `Chengdu`
 - Trying on Hanfu (traditional Han clothing) - cultural immersion
 - City exploration and food scene
 
 **Guilin Episode**
+🔗 *search on channel: https://www.youtube.com/c/alinamcleod (search: "Alina McLeod Guilin")*
 `Guilin, Guangxi`
 - Wearing Miao ethnic costumes, interacting with minority culture
 - Karst landscape and local experiences
 
 **Zhangjiajie National Forest Park**
+🔗 *search on channel: https://www.youtube.com/c/alinamcleod (search: "Alina McLeod Zhangjiajie Avatar Mountains")*
 `Zhangjiajie, Hunan`
 - One of her stated favorite destinations - the "Avatar Mountains"
 - Trekking and dramatic natural scenery
@@ -448,6 +500,7 @@ Her content is organized seasonally rather than by titled episodes. Key themes:
 ### Relevant Videos
 
 **Yunnan Province Series (~10 days)**
+🔗 *search on channel: https://www.youtube.com/channel/UCtzKfl7mVo9Bi-DzGMFmnqg (search: "Flora and Note Yunnan")*
 `Yunnan (Dali, Shangri-La, and surroundings)`
 - Fairyland-like destinations including Shangri-La
 - Erhai Lake near Dali
@@ -455,6 +508,7 @@ Her content is organized seasonally rather than by titled episodes. Key themes:
 - Great preview if we do the Yunnan circuit
 
 **Guangxi and Zhejiang Episodes**
+🔗 *search on channel: https://www.youtube.com/channel/UCtzKfl7mVo9Bi-DzGMFmnqg (search: "Flora and Note Yangshuo Guilin")*
 `Guangxi / Zhejiang`
 - Regional exploration and cultural content
 - High-speed train logistics between cities
@@ -469,6 +523,7 @@ Her content is organized seasonally rather than by titled episodes. Key themes:
 ### Relevant Videos
 
 **Chongqing Hotpot Episode**
+🔗 *search on channel: https://www.youtube.com/channel/UCm4tDRXMhE4UVPZ_9-QPiPw (search: "China Traveller Chongqing hotpot")*
 `Chongqing` - 400K views
 - Sampling Chongqing's famous spicy hotpot
 - Local food culture from a long-term resident's perspective
@@ -484,11 +539,13 @@ Her content is organized seasonally rather than by titled episodes. Key themes:
 ### Relevant Videos
 
 **Beijing and Shanghai Coverage**
+🔗 *search on channel: https://www.youtube.com/channel/UCHza0GAxOvBOeLKkMeL8EcQ (search: "Ken Abroad Beijing")*
 `Beijing / Shanghai`
 - Urban exploration and street-level food content
 - Daily life perspective
 
 **Urumqi/Xinjiang Video**
+🔗 https://www.youtube.com/watch?v=4ruu_dQAYZg
 `Urumqi, Xinjiang` - 800K+ views
 - Mosques, local Muslim communities, daily life
 - Rarely covered region - interesting cultural content
