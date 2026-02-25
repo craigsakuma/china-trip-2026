@@ -1,12 +1,12 @@
 # Website Build Plan — China Trip 2026
 
-> Living document. Check off tasks as completed. Last updated: 2026-02-24.
+> Living document. Check off tasks as completed. Last updated: 2026-02-25.
 
 ---
 
 ## Overview
 
-A collaborative trip-planning website where Craig, Kiran, and Hernane can browse city profiles, rate destinations, favorite activities/restaurants/neighborhoods, and leave notes for each other.
+A collaborative trip-planning website where Craig, Kiran, and Hernan can browse city profiles, rate destinations, favorite activities/restaurants/neighborhoods, and leave notes for each other.
 
 **MVP (Phases 1–5):** Static browsable site with homepage, map, and city profile pages. Deployed to Vercel.
 **Full Build (Phases 6–8):** Ratings, favorites, reviews, real-time collaboration, curated images.
@@ -83,7 +83,7 @@ china-trip-2026/
     │   │   ├── star-rating.tsx      # 0-3 star rating component
     │   │   ├── favorite-button.tsx  # Heart toggle
     │   │   ├── review-panel.tsx     # Collapsible review/notes panel
-    │   │   ├── user-picker.tsx      # Name selection (Craig/Kiran/Hernane)
+    │   │   ├── user-picker.tsx      # Name selection (Craig/Kiran/Hernan)
     │   │   └── group-consensus.tsx  # "2+ people favorited" highlights
     │   │
     │   ├── data/
@@ -137,7 +137,7 @@ china-trip-2026/
 
 - [ ] **Verify deployment pipeline**
   - Make a small change, push, confirm Vercel rebuilds automatically
-  - Share preview URL with Kiran and Hernane
+  - Share preview URL with Kiran and Hernan
 
 ---
 
@@ -266,124 +266,107 @@ china-trip-2026/
 
 ---
 
-## Phase 6: Database & User System
+## Phase 6: Database & User System ✅
 
 > Add Neon Postgres for persisting ratings, favorites, and reviews. Add cookie-based user identification.
 
 ### Database Setup
-- [ ] **Neon Postgres via Vercel Marketplace**
-  - Add Neon integration from Vercel dashboard (free tier)
-  - Vercel auto-injects `DATABASE_URL` into environment
-  - Pull env vars locally: `vercel env pull .env.local`
+- [x] **Neon Postgres database** ✅
+  - Neon serverless Postgres with `DATABASE_URL` in `.env.local`
+  - Lazy-initialized connection (`src/lib/db.ts`) to avoid build-time crashes on Vercel
 
-- [ ] **Install database dependencies**
-  - `pnpm add drizzle-orm @neondatabase/serverless`
-  - `pnpm add -D drizzle-kit`
+- [x] **Install database dependencies** ✅
+  - `drizzle-orm`, `@neondatabase/serverless`, `drizzle-kit`
 
-- [ ] **Database connection** (`src/lib/db.ts`)
-  - Drizzle + Neon serverless driver
-  - Connection via `DATABASE_URL` environment variable
+- [x] **Database connection** (`src/lib/db.ts`) ✅
+  - Drizzle + Neon serverless HTTP driver
+  - Proxy-based lazy init so module evaluation doesn't require DATABASE_URL
 
-- [ ] **Schema** (`src/lib/schema.ts`)
-  ```
-  users (3 rows — seeded once)
-  ├── id: text (primary key: "craig", "kiran", "hernane")
-  ├── display_name: text ("Craig", "Kiran", "Hernane")
-  └── color: text (hex color for avatar/UI accents)
+- [x] **Schema** (`src/lib/schema.ts`) ✅
+  - `users` — id (text PK: "craig"/"kiran"/"hernan"), displayName, color
+  - `reviews` — userId → users, citySlug, stars (0-3), notes, timestamps. Unique on (userId, citySlug)
+  - `favorites` — userId → users, citySlug, itemSlug, section (pgEnum), createdAt. Unique on (userId, citySlug, itemSlug, section)
 
-  reviews (1 per user per city)
-  ├── id: serial (primary key)
-  ├── user_id: text → users.id
-  ├── city_slug: text
-  ├── stars: integer (0-3, nullable)
-  ├── notes: text (markdown bullet points)
-  ├── created_at: timestamp
-  └── updated_at: timestamp
-
-  favorites (1 per user per item)
-  ├── id: serial (primary key)
-  ├── user_id: text → users.id
-  ├── city_slug: text
-  ├── item_slug: text
-  ├── section: text ("neighborhood" | "activity" | "restaurant")
-  └── created_at: timestamp
-  ```
-
-- [ ] **Run initial migration**
-  - `pnpm drizzle-kit generate`
-  - `pnpm drizzle-kit migrate`
-  - Seed the 3 user rows
+- [x] **Run initial migration** ✅
+  - `drizzle-kit generate` + `drizzle-kit push`
+  - Seed script (`src/lib/seed.ts`) inserts 3 users
 
 ### API Routes
-- [ ] **Reviews API** (`src/app/api/reviews/route.ts`)
-  - `GET /api/reviews?city=beijing` — returns all 3 users' reviews for a city
-  - `POST /api/reviews` — upsert a review (stars and/or notes)
+- [x] **Reviews API** (`src/app/api/reviews/route.ts`) ✅
+  - `GET ?city=slug` — returns reviews with joined user data
+  - `POST` — upserts review (insert on conflict update)
 
-- [ ] **Favorites API** (`src/app/api/favorites/route.ts`)
-  - `GET /api/favorites?city=beijing` — returns all 3 users' favorites for a city
-  - `POST /api/favorites` — toggle a favorite on/off
-  - `GET /api/favorites?user=craig` — returns all of a user's favorites across all cities (for homepage card ratings)
+- [x] **Favorites API** (`src/app/api/favorites/route.ts`) ✅
+  - `GET ?city=slug` or `GET ?user=id` — returns favorites with user data
+  - `POST` — toggles favorite (insert or delete)
+
+- [x] **All Reviews API** (`src/app/api/reviews/all/route.ts`) ✅
+  - `GET` — returns all reviews and favorites across all cities (for feedback page)
 
 ### User Identification
-- [ ] **User picker component** (`src/components/user-picker.tsx`)
-  - Three buttons: Craig, Kiran, Hernane (each with unique color)
-  - Shown on first visit (no cookie set)
-  - Selection stored in cookie (`china-trip-user`)
-  - Small avatar in header showing current user, click to switch
+- [x] **User picker component** (`src/components/user-picker.tsx`) ✅
+  - Three colored buttons: Craig (blue), Kiran (green), Hernan (orange)
+  - Full-screen overlay on first visit (no cookie), z-[100] to render above map
+  - Click-based avatar dropdown in header for switching users
+  - Click-outside-to-close behavior
 
-- [ ] **User context provider**
-  - React context providing current user ID throughout the app
-  - Read from cookie on page load
-  - Used by star-rating, favorite-button, and review-panel components
+- [x] **User context provider** (`src/lib/user-context.tsx`) ✅
+  - React context with cookie persistence (`china-trip-user`)
+  - `useUser()` hook provides `{ user, setUser, allUsers }`
 
 ---
 
-## Phase 7: Interactive Features
+## Phase 7: Interactive Features ✅
 
 > Make the site collaborative: ratings, favorites, reviews visible across all 3 users.
 
 ### Star Ratings
-- [ ] **Star rating component** (`src/components/star-rating.tsx`)
+- [x] **Star rating component** (`src/components/star-rating.tsx`) ✅
   - 0-3 stars, click to rate (your own), display-only for others
-  - Shows on: homepage city cards (all 3 users) and city page hero (all 3 users)
-  - POST to `/api/reviews` on change
+  - Click same star to toggle off (set to 0)
+  - `UserStars` compact display: colored avatar + stars for one user
+  - Shows on: homepage city cards and city page hero via `CityRatings` component
 
 ### Favorites
-- [ ] **Favorite button component** (`src/components/favorite-button.tsx`)
+- [x] **Favorite button component** (`src/components/favorite-button.tsx`) ✅
   - Heart icon toggle (filled = favorited, outline = not)
-  - Each user's heart is their unique color (Craig = blue, Kiran = green, Hernane = orange)
+  - Each user's heart in their unique color
   - Shows on every item card (neighborhoods, activities, restaurants)
   - POST to `/api/favorites` on toggle
 
-- [ ] **Favorites float to top**
-  - Items favorited by the current user sort to top of their section
-  - Items favorited by 2+ users get a subtle highlight
+- [x] **Favorites sort to top on page load** ✅
+  - Items favorited by current user sorted to top on initial load
+  - Sort order locked after first load to prevent grid shuffle on toggle
 
-- [ ] **Group consensus component** (`src/components/group-consensus.tsx`)
-  - Auto-highlights items favorited by 2+ people
-  - "Craig & Kiran both favorited this" label
-  - Shown at top of each section as a summary row
+- [x] **Group consensus highlights** ✅
+  - Inline in `city-sections.tsx` — banner above items favorited by 2+ people
+  - "Craig & Kiran both favorited this" / "Everyone favorited this!" labels
 
 ### Reviews Panel
-- [ ] **Review panel component** (`src/components/review-panel.tsx`)
-  - Collapsible section at bottom of each city page
-  - **Collapsed:** Shows 3 user names, their star ratings, and favorite count
-  - **Expanded:** Full notes + favorites table for each user
-  - Each user's panel shows:
-    - Star rating (editable if current user)
-    - Bullet-point notes (editable textarea if current user, read-only for others)
-    - Favorites table: auto-populated from hearts, grouped by section
+- [x] **Review panel component** (`src/components/review-panel.tsx`) ✅
+  - Collapsible "Notes, Favorites & Reviews" bar between hero and overview
+  - Light gray (`bg-stone-50`) expanded background with white cards inside
+  - User order: Kiran first, Hernan second, Craig last
+  - Each user card: colored left border, avatar, star rating (editable if current user), notes
+  - Favorited items summary at bottom: grouped by section, color-coded hearts, multi-favorited first
+  - Jump links scroll to and open the target item card
 
-- [ ] **Inline notes editor**
-  - Textarea with markdown support (bullets auto-format)
-  - Auto-saves on blur or after 2 seconds of no typing
+- [x] **Inline notes editor** ✅
+  - Textarea with auto-save on blur or after 2 seconds of no typing
   - POST to `/api/reviews` on save
 
 ### Homepage Ratings Integration
-- [ ] **City card ratings**
-  - Fetch all ratings for featured cities on homepage load
-  - Show 3 small avatars + stars below each card
-  - Cards sort by: Must Visit tier first, then average star rating, then alphabetical
+- [x] **City card ratings** (`src/components/city-ratings.tsx`) ✅
+  - Fetches ratings per city, shows colored avatar + stars for each user
+  - Hidden when no ratings exist (replaces "Not yet rated" placeholder)
+
+### Consolidated Feedback Page
+- [x] **Feedback page** (`/feedback`) ✅
+  - Shows only cities with feedback (stars, notes, or favorites)
+  - Sorted by total stars descending, tiebreaker by tier strength
+  - Collapsed: hero thumbnail, city name, description, total stars
+  - Expanded: per-user review cards + favorited items with color-coded hearts
+  - "Feedback" link in header navigation
 
 ---
 
