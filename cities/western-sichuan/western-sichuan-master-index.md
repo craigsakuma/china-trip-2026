@@ -1,0 +1,7 @@
+# Western Sichuan (川西) — Reference Index
+
+## Articles & Guides
+
+- **[fabio-nodari-western-sichuan-guide.md](fabio-nodari-western-sichuan-guide.md)** — "Exploring Western Sichuan: Travel Guide" by Fabio Nodari (fabionodariphoto.com, Jan 2026). Covers Tibetan Plateau itinerary from Chengdu through Four Sisters Mountain, Danba villages (Zhonglu, Yinke), Longdeng Grassland, Tagong (Lhagang and Muya monasteries), and Litang. Includes agency vs DIY advice and altitude preparation.
+- **[travel-bunny-sichuan-qinghai-itinerary.md](travel-bunny-sichuan-qinghai-itinerary.md)** — "Off the Beaten Path China Itinerary: Two Weeks in Sichuan & Qinghai" by Suzanne Jones (thetravelbunny.com, Dec 2025/Feb 2026). Week 1 of a 13-day road trip with Eastogo Travel through Garze Prefecture: Chengdu, Wolong pandas, Zhonglu village, Tagong grassland (nomadic yak herder day), Litang, Changquingchunkeer Monastery, Batang, Baiyu. Avoids TAR permits. Altitude and cultural immersion focus.
+- **[travel-bunny-tibetan-plateau-road-trip.md](travel-bunny-tibetan-plateau-road-trip.md)** — "Tibetan Plateau Road Trip: Sichuan to Qinghai (Week 2)" by Suzanne Jones (thetravelbunny.com, Feb 2026). Baiyu to Dege (270 km, Dzogchen Monastery vegetarian lunch with monks), Dege Parkhang printing house, across Qinghai border to Yushu (Jiana Mani Stone City, Jiegu Monastery), wildlife safari to Maduo, Ta'er/Kumbum Monastery, Xining night market. Very few international tourists.
