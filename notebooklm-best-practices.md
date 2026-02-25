@@ -10,33 +10,18 @@ Derived from experience building the Beijing notebook.
 ### Use Context-Dense Markdown Format
 Raw blog articles (narrative prose, day-by-day itineraries, listicles) perform poorly as NLM sources. They bury actionable information in filler text that dilutes RAG retrieval quality.
 
-**Convert all sources to context-dense format before uploading:**
-- H2 sections organized by topic/venue (not by day or time)
-- Entity-rich headers: `## Peking Duck — Siji Minfu (四季民福) Wangfujing` not `## Dinner`
-- Chinese characters co-located with English names throughout
-- Practical details (prices, hours, transit, booking lead times) embedded in the relevant section — not separated into a generic tips appendix
+**Full formatting specification:** See [`context-dense-markdown-guide.md`](context-dense-markdown-guide.md) for the complete standard including formatting principles, naming conventions, the quality checklist, and worked examples. The guide is the authoritative reference — use it when converting any source.
+
+Key principles at a glance:
+- H2 sections organized by topic/venue (not by day or time), each self-contained
+- Entity-rich headers with proper names and Chinese characters: `## Peking Duck — Siji Minfu (四季民福) Wangfujing`
+- Practical details (prices, hours, transit, booking lead times) co-located with the venue they describe
 - Strip SEO filler, affiliate disclaimers, and generic scene-setting prose
-- End each file with `## Quick Facts` and `## Practical Tips`
+- Frontmatter block with source, author, date, URL, and credentials
+- End with `## Quick Facts` (top) and `## Practical Tips` (bottom)
 
 **Original source archiving:**
-If an original article exists in non-context-dense format (e.g., a narrative NYT 36 Hours piece), move it to an `original-source/` subfolder and create a converted version at the top level. Reference the original in the frontmatter:
-
-```
-original: original-source/nyt-36-hours-beijing.md
-```
-
-### Frontmatter Every File
-```yaml
----
-source: Publication Name — "Article Title"
-author: Author Name
-date: Month Year
-url: https://...
-original: original-source/filename.md  # if applicable
----
-```
-
-This lets NLM attribute claims to named sources correctly rather than citing vague "one source" references.
+If an article exists in non-context-dense format, archive it in `original-source/` and create a converted version at the top level. See the guide for the full archiving pattern.
 
 ---
 

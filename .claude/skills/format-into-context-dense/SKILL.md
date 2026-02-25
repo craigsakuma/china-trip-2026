@@ -9,6 +9,8 @@ argument-hint: <url> [city-slug]
 
 Convert web content from a URL into RAG-optimized markdown. The output is designed for ingestion by NotebookLM, vector databases, or any retrieval-augmented generation system.
 
+> **Formatting standard:** Follow `context-dense-markdown-guide.md` in the project root for the full specification including principles, examples, naming conventions, and the quality checklist.
+
 ## Arguments
 
 - `$ARGUMENTS` — The URL to convert, optionally followed by a city slug (e.g., `beijing`, `hong-kong`). If no city slug is provided, infer it from the article content.
