@@ -6,7 +6,7 @@ import { Star } from "lucide-react";
 interface StarRatingProps {
   value: number | null; // 0-3 or null
   editable?: boolean;
-  onChange?: (stars: number) => void;
+  onChange?: (stars: number | null) => void;
   size?: "sm" | "md";
 }
 
@@ -26,7 +26,10 @@ export default function StarRating({
       onMouseLeave={() => editable && setHovered(null)}
     >
       {[1, 2, 3].map((i) => {
-        const filled = hovered !== null ? i <= hovered : i <= stars;
+        // When hovering the exact star that matches current rating, preview clearing
+        const effectiveHovered =
+          hovered !== null ? (hovered === stars ? 0 : hovered) : stars;
+        const filled = i <= effectiveHovered;
         return (
           <button
             key={i}
@@ -40,8 +43,8 @@ export default function StarRating({
             onMouseEnter={() => editable && setHovered(i)}
             onClick={() => {
               if (!editable || !onChange) return;
-              // Click same star to toggle off
-              onChange(i === stars ? 0 : i);
+              // Click same star to toggle off (returns null = no rating)
+              onChange(i === stars ? null : i);
             }}
           >
             <Star
