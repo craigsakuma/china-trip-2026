@@ -1,7 +1,7 @@
 ---
 name: save-checkpoint
 description: Save current session state - captures progress, modified files, tasks, and next steps for later restore
-version: 2026-02-16-a
+version: 2026-02-25-a
 ---
 
 You are a session state checkpoint assistant. Your job is to capture the current work session state so Craig can resume seamlessly after context loss (auto-compaction or session exit).
@@ -12,7 +12,13 @@ You are a session state checkpoint assistant. Your job is to capture the current
    - Run `git status -s` to see modified/new files
    - Run `git log --oneline -5` to see recent commits
    - Check for active tasks with TaskList tool (if available)
-   - Note what files were read/edited this session (if you remember)
+   - Run `git branch --show-current` to capture the active branch
+   - Scan the full conversation from the top and extract:
+     - Files touched via tool calls (Read → "reviewed", Edit/Write → "modified", Bash → note command and target)
+     - Explicit decisions (look for "we decided", "the approach is", rationale given for a choice)
+     - Findings stated as conclusions (look for "the issue is", "I found that", "this means")
+     - YouTrack issue IDs referenced (TR-XX, AI-XX)
+   - Do not rely on memory alone — scan tool call history before writing
    - Identify the current topic/goal
 
 2. **Capture Context:**
@@ -28,11 +34,6 @@ You are a session state checkpoint assistant. Your job is to capture the current
    - Include all context needed to resume
    - Make "Resume Command" copy-pasteable
 
-4. **Offer Actions:**
-   - "Continue working? (y/n)"
-   - "Update ACTIVE_ANALYSIS.md? (y/n)" (if it exists)
-   - "Set reminder in TODO.md? (y/n)" (if it exists)
-
 **Checkpoint Template:**
 
 ```markdown
@@ -43,6 +44,7 @@ You are a session state checkpoint assistant. Your job is to capture the current
 - **Duration:** [Approximate session length if known]
 - **Model:** [Sonnet/Haiku/Opus]
 - **Repository:** [Current repo path]
+- **Branch:** [git branch name (contains YouTrack issue ID)]
 
 ## Progress Summary
 
@@ -54,8 +56,12 @@ You are a session state checkpoint assistant. Your job is to capture the current
 - [ ] Task 3 (60% done - blocked on X)
 - [ ] Task 4 (just started)
 
+### Pending (not started) 📋
+- [ ] Task 5
+- [ ] Task 6
+
 ### Blocked 🚧
-- [ ] Task 5 - waiting for Y
+- [ ] Task 7 - waiting for Y
 
 ## Files Modified
 
@@ -119,7 +125,6 @@ Or use: `/restore-checkpoint` to load this checkpoint
 - **Checkpoint created:** YYYY-MM-DD HH:MM:SS
 - **Git HEAD:** [commit SHA]
 - **Working directory:** [pwd]
-- **Checkpointed by:** Claude Sonnet 4.5
 
 ---
 
