@@ -242,8 +242,18 @@ function UserReviewCard({
     }
   });
 
+  function normalizeNotes(value: string): string {
+    return value
+      .split("\n")
+      .map((line) => {
+        if (line.startsWith("• ")) return line;
+        if (line.startsWith("•")) return "• " + line.slice(1);
+        return "• " + line;
+      })
+      .join("\n");
+  }
+
   function notesOrNull(value: string) {
-    // Treat notes that contain only bullets and whitespace as empty
     return value.replace(/^•\s*/gm, "").trim() || null;
   }
 
@@ -255,26 +265,84 @@ function UserReviewCard({
   }
 
   function handleNotesChange(value: string) {
-    setNotes(value);
-    scheduleSave(value);
+    const normalized = normalizeNotes(value);
+    setNotes(normalized);
+    scheduleSave(normalized);
   }
 
   function handleNotesFocus() {
     if (!notes) {
       setNotes("• ");
+    } else {
+      const normalized = normalizeNotes(notes);
+      if (normalized !== notes) setNotes(normalized);
     }
   }
 
   function handleNotesKeyDown(e: React.KeyboardEvent<HTMLTextAreaElement>) {
+    const el = e.currentTarget;
+    const { selectionStart, selectionEnd, value } = el;
+
     if (e.key === "Enter") {
       e.preventDefault();
-      const el = e.currentTarget;
-      const { selectionStart, selectionEnd, value } = el;
       const newValue =
         value.substring(0, selectionStart) + "\n• " + value.substring(selectionEnd);
-      cursorRef.current = selectionStart + 3; // length of "\n• "
+      cursorRef.current = selectionStart + 3;
       setNotes(newValue);
       scheduleSave(newValue);
+      return;
+    }
+
+    // Only handle single-cursor (no selection) key presses below
+    if (selectionStart !== selectionEnd) return;
+
+    const lineStart = value.lastIndexOf("\n", selectionStart - 1) + 1;
+    const posInLine = selectionStart - lineStart;
+
+    if (e.key === "Backspace") {
+      if (posInLine > 2) return; // Normal backspace, allow
+      e.preventDefault();
+
+      if (posInLine === 2) {
+        // Cursor is right after "• " — remove the line if it's empty
+        const lineEnd = value.indexOf("\n", lineStart);
+        const lineContent = value.substring(
+          lineStart + 2,
+          lineEnd === -1 ? value.length : lineEnd
+        );
+        if (lineContent.trim() !== "") return; // Has content, just block backspace
+
+        if (lineStart === 0 && lineEnd === -1) return; // Only line, keep it
+
+        let newValue: string;
+        let newCursor: number;
+        if (lineStart === 0) {
+          newValue = value.substring(lineEnd + 1);
+          newCursor = 0;
+        } else {
+          const removeUntil = lineEnd === -1 ? value.length : lineEnd;
+          newValue = value.substring(0, lineStart - 1) + value.substring(removeUntil);
+          newCursor = lineStart - 1;
+        }
+        cursorRef.current = newCursor;
+        setNotes(newValue);
+        scheduleSave(newValue);
+      }
+      // posInLine 0 or 1: cursor inside bullet prefix — already prevented
+      return;
+    }
+
+    if (e.key === "Delete") {
+      // Prevent deleting the bullet prefix characters
+      if (posInLine < 2) {
+        e.preventDefault();
+        return;
+      }
+      // Prevent merging this line into the next (would expose next bullet prefix)
+      const lineEnd = value.indexOf("\n", lineStart);
+      if (lineEnd !== -1 && selectionStart === lineEnd) {
+        e.preventDefault();
+      }
     }
   }
 
@@ -321,9 +389,18 @@ function UserReviewCard({
         />
       ) : (
         review.notes && (
-          <p className="mt-3 whitespace-pre-wrap text-sm text-muted-foreground">
-            {review.notes}
-          </p>
+          <ul className="mt-3 space-y-0.5 text-sm text-muted-foreground">
+            {review.notes.split("\n").map((line, i) => {
+              const content = line.replace(/^•\s*/, "").trim();
+              if (!content) return null;
+              return (
+                <li key={i} className="flex gap-1.5">
+                  <span className="mt-px shrink-0 text-stone-400">•</span>
+                  <span>{content}</span>
+                </li>
+              );
+            })}
+          </ul>
         )
       )}
     </div>
