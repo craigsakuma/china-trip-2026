@@ -15,7 +15,11 @@ Convert web content from a URL into RAG-optimized markdown. The output is design
 
 - `$ARGUMENTS` — The URL to convert, optionally followed by a city slug (e.g., `beijing`, `hong-kong`). If no city slug is provided, infer it from the article content.
 
+**For YouTube URLs**, skip directly to Step 1b — use transcript extraction instead of WebFetch.
+
 ## Step 1: Extract Content
+
+### 1a. Web articles (non-YouTube)
 
 Fetch the full text content from the URL.
 
@@ -36,6 +40,31 @@ Fetch the full text content from the URL.
    "
    ```
 3. If both fail, report the issue and stop.
+
+### 1b. YouTube videos
+
+Extract the transcript using `youtube-transcript-api` (installed):
+
+```bash
+python3 -c "
+from youtube_transcript_api import YouTubeTranscriptApi
+import re, sys
+
+url = '<youtube-url>'
+video_id = re.search(r'(?:v=|youtu\.be/)([^&?/]+)', url).group(1)
+try:
+    transcript = YouTubeTranscriptApi.get_transcript(video_id, languages=['en', 'en-US'])
+except Exception:
+    # Fall back to any available language
+    transcript = YouTubeTranscriptApi.get_transcript(video_id)
+text = ' '.join(chunk['text'] for chunk in transcript)
+print(text)
+"
+```
+
+Also fetch the video page with `WebFetch` to extract the video title, channel name, upload date, and video description — these are needed for the extended frontmatter.
+
+Apply the **Transcript Sources** rules from `context-dense-markdown-guide.md` throughout Steps 2–3: strip speech filler, camera directions, and video filler; preserve first-person logistics and crowd observations; add `filmed`, `media-type`, and `transcript-quality` fields to frontmatter; add a Recency Note if the video is 2+ years old.
 
 ## Step 2: Identify Metadata
 
