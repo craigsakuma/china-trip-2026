@@ -230,7 +230,8 @@ function UserReviewCard({
   const textareaRef = useRef<HTMLTextAreaElement | null>(null);
 
   useEffect(() => {
-    setNotes(review.notes ?? "");
+    const raw = review.notes ?? "";
+    setNotes(raw ? normalizeNotes(raw) : "");
   }, [review.notes]);
 
   // Restore cursor position after state update (needed for mid-text Enter)
@@ -254,7 +255,9 @@ function UserReviewCard({
   }
 
   function notesOrNull(value: string) {
-    return value.replace(/^•\s*/gm, "").trim() || null;
+    // Return null only if there's no real content; preserve bullets in the saved value
+    const content = value.replace(/^•\s*/gm, "").trim();
+    return content ? value : null;
   }
 
   function scheduleSave(value: string) {
@@ -348,8 +351,14 @@ function UserReviewCard({
 
   function handleNotesBlur() {
     if (timerRef.current) clearTimeout(timerRef.current);
-    if (notes !== (review.notes ?? "")) {
-      onSave(review.stars, notesOrNull(notes));
+    // Remove blank lines (only bullets/spaces) on blur
+    const cleaned = notes
+      .split("\n")
+      .filter((line) => line.replace(/^•\s*/, "").trim() !== "")
+      .join("\n");
+    if (cleaned !== notes) setNotes(cleaned);
+    if (cleaned !== (review.notes ?? "")) {
+      onSave(review.stars, notesOrNull(cleaned));
     }
   }
 
