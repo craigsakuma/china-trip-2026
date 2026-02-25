@@ -5,6 +5,7 @@
  *
  * Usage:
  *   node scripts/curate-photos.mjs search "Forbidden City Beijing" --source wikimedia
+ *   node scripts/curate-photos.mjs search "Peking opera" --source wikipedia
  *   node scripts/curate-photos.mjs search "Peking duck" --source unsplash
  *   node scripts/curate-photos.mjs download --city beijing --slug the-forbidden-city-palace-museum --pick 3
  *   node scripts/curate-photos.mjs status beijing
@@ -177,6 +178,153 @@ function stripHtml(s) {
   return s.replace(/<[^>]+>/g, "").trim();
 }
 
+const UA = "ChinaTripPlanner/1.0 (trip planning; craigsakuma@gmail.com)";
+
+// ── Search: Wikipedia Article Images ────────────────────────────────
+
+async function searchWikipediaArticles(query, limit = 5) {
+  const params = new URLSearchParams({
+    action: "query",
+    list: "search",
+    srsearch: query,
+    srlimit: String(limit),
+    format: "json",
+    origin: "*",
+  });
+
+  const res = await fetch(`https://en.wikipedia.org/w/api.php?${params}`, {
+    headers: { "User-Agent": UA },
+  });
+  if (!res.ok) throw new Error(`Wikipedia API error: ${res.status}`);
+  const data = await res.json();
+  return data.query?.search || [];
+}
+
+async function getWikipediaPageImages(title) {
+  const images = [];
+  let continueToken = null;
+
+  do {
+    const params = new URLSearchParams({
+      action: "query",
+      titles: title,
+      prop: "images",
+      imlimit: "500",
+      format: "json",
+      origin: "*",
+    });
+    if (continueToken) params.set("imcontinue", continueToken);
+
+    const res = await fetch(`https://en.wikipedia.org/w/api.php?${params}`, {
+      headers: { "User-Agent": UA },
+    });
+    if (!res.ok) throw new Error(`Wikipedia API error: ${res.status}`);
+    const data = await res.json();
+
+    for (const page of Object.values(data.query?.pages || {})) {
+      if (page.images) {
+        images.push(...page.images.map((img) => img.title));
+      }
+    }
+    continueToken = data.continue?.imcontinue || null;
+  } while (continueToken);
+
+  // Keep only real photos — skip SVGs, icons, logos, flags, maps, UI elements
+  const EXCLUDE = [
+    "icon", "logo", "flag", "symbol", "edit-clear", "commons-logo",
+    "wikidata", "wikiquote", "wikisource", "wikivoyage", "question_book",
+    "ambox", "padlock", "map", "locator", "location_dot", "red_pog",
+    "increase", "decrease", "steady2", "gnome", "crystal_clear", "nuvola",
+    "stub", "disambig", "folder_hexagon",
+  ];
+
+  return images.filter((t) => {
+    const lower = t.toLowerCase();
+    if (!lower.endsWith(".jpg") && !lower.endsWith(".jpeg") && !lower.endsWith(".png"))
+      return false;
+    return !EXCLUDE.some((ex) => lower.includes(ex));
+  });
+}
+
+async function getCommonsImageInfo(fileTitles) {
+  const results = [];
+
+  for (let i = 0; i < fileTitles.length; i += 50) {
+    const batch = fileTitles.slice(i, i + 50);
+    const params = new URLSearchParams({
+      action: "query",
+      titles: batch.join("|"),
+      prop: "imageinfo",
+      iiprop: "url|size|extmetadata|mime",
+      iiurlwidth: "1600",
+      format: "json",
+      origin: "*",
+    });
+
+    const res = await fetch(`https://commons.wikimedia.org/w/api.php?${params}`, {
+      headers: { "User-Agent": UA },
+    });
+    if (!res.ok) throw new Error(`Commons API error: ${res.status}`);
+    const data = await res.json();
+
+    for (const page of Object.values(data.query?.pages || {})) {
+      const info = page.imageinfo?.[0];
+      if (!info) continue;
+      if (info.width < 1200 || info.width < info.height) continue;
+
+      const meta = info.extmetadata || {};
+      results.push({
+        source: "wikipedia",
+        title: page.title?.replace("File:", "") || "",
+        width: info.width,
+        height: info.height,
+        author: stripHtml(meta.Artist?.value || "Unknown"),
+        license: meta.LicenseShortName?.value || "Unknown",
+        license_url: meta.LicenseUrl?.value || "",
+        description: stripHtml(meta.ImageDescription?.value || "").slice(0, 120),
+        page_url: `https://commons.wikimedia.org/wiki/${encodeURIComponent(page.title)}`,
+        download_url: info.thumburl || info.url,
+        thumb_url: info.thumburl,
+      });
+    }
+
+    if (i + 50 < fileTitles.length) {
+      await new Promise((r) => setTimeout(r, 1000));
+    }
+  }
+
+  return results.sort((a, b) => b.width * b.height - a.width * a.height);
+}
+
+async function searchWikipedia(query) {
+  console.log(`  Searching Wikipedia for articles matching: "${query}"`);
+  const articles = await searchWikipediaArticles(query);
+
+  if (articles.length === 0) {
+    console.log("  No Wikipedia articles found.");
+    return [];
+  }
+
+  console.log(`  Found ${articles.length} articles:`);
+  articles.forEach((a, i) => {
+    console.log(`    ${i + 1}. ${a.title}`);
+  });
+
+  const article = articles[0];
+  console.log(`\n  Using: "${article.title}"`);
+  console.log(`  https://en.wikipedia.org/wiki/${encodeURIComponent(article.title)}\n`);
+
+  const imageFiles = await getWikipediaPageImages(article.title);
+  console.log(`  Found ${imageFiles.length} image files on the page`);
+
+  if (imageFiles.length === 0) return [];
+
+  console.log(`  Fetching metadata from Wikimedia Commons...\n`);
+  const results = await getCommonsImageInfo(imageFiles);
+
+  return results;
+}
+
 // ── Commands ─────────────────────────────────────────────────────────
 
 let lastSearchResults = [];
@@ -190,8 +338,10 @@ async function cmdSearch(query, source) {
     results = await searchWikimedia(query);
   } else if (source === "unsplash") {
     results = await searchUnsplash(query);
+  } else if (source === "wikipedia") {
+    results = await searchWikipedia(query);
   } else {
-    console.error(`Unknown source: ${source}. Use "wikimedia" or "unsplash".`);
+    console.error(`Unknown source: ${source}. Use "wikimedia", "wikipedia", or "unsplash".`);
     process.exit(1);
   }
 
@@ -362,17 +512,23 @@ if (!command || command === "--help" || command === "-h") {
 Photo Curation Pipeline
 
 Usage:
-  node scripts/curate-photos.mjs search "<query>" --source wikimedia|unsplash
+  node scripts/curate-photos.mjs search "<query>" --source wikimedia|wikipedia|unsplash
   node scripts/curate-photos.mjs download --city <city> --slug <slug> --pick <n>
   node scripts/curate-photos.mjs status [city]
 
 Commands:
-  search    Search Wikimedia Commons or Unsplash for photo candidates
+  search    Search for photo candidates from various sources
   download  Download a photo from the last search results
   status    Show which items have photos and which need them
 
+Sources:
+  wikimedia   Search Wikimedia Commons directly by keyword (default)
+  wikipedia   Search Wikipedia articles by keyword, then collect all photos from the page
+  unsplash    Search Unsplash by keyword
+
 Examples:
   node scripts/curate-photos.mjs search "Forbidden City Beijing" --source wikimedia
+  node scripts/curate-photos.mjs search "Peking opera" --source wikipedia
   node scripts/curate-photos.mjs search "Peking duck carving" --source unsplash
   node scripts/curate-photos.mjs download --city beijing --slug siji-minfu --pick 2
   node scripts/curate-photos.mjs status beijing
@@ -384,7 +540,7 @@ Examples:
 if (command === "search") {
   const query = args[1];
   if (!query) {
-    console.error('Usage: search "<query>" --source wikimedia|unsplash');
+    console.error('Usage: search "<query>" --source wikimedia|wikipedia|unsplash');
     process.exit(1);
   }
   const sourceIdx = args.indexOf("--source");

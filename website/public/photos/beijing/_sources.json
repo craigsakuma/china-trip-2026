@@ -9,12 +9,12 @@
     "status": "needs-review"
   },
   "the-forbidden-city-palace-museum.jpg": {
-    "title": "Beijing architecture and palace courtyard",
-    "author": "Unsplash",
-    "source": "https://unsplash.com/photos/1599571234909-29ed5d1321d6",
-    "license": "Unsplash License",
-    "license_url": "https://unsplash.com/license",
-    "alt": "Forbidden City courtyard with red walls",
+    "title": "Hall of Supreme Harmony (20241127120000).jpg",
+    "author": "N509FZ",
+    "source": "https://commons.wikimedia.org/wiki/File%3AHall%20of%20Supreme%20Harmony%20(20241127120000).jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "alt": "12:00 sharp!",
     "status": "needs-review"
   },
   "great-wall-at-jinshanling.jpg": {
@@ -27,12 +27,174 @@
     "status": "needs-review"
   },
   "summer-palace-and-longevity-hill.jpg": {
-    "title": "Classical Chinese garden with pagoda",
-    "author": "Pexels",
-    "source": "https://www.pexels.com/photo/2846076/",
-    "license": "Pexels License",
-    "license_url": "https://www.pexels.com/license/",
-    "alt": "Summer Palace marble boat and lake view",
+    "title": "Seventeen-Arch Bridge of Summer Palace.JPG",
+    "author": "Zcm11",
+    "source": "https://commons.wikimedia.org/wiki/File%3ASeventeen-Arch%20Bridge%20of%20Summer%20Palace.JPG",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "alt": "The Seventeen-Arch Bridge (十七孔桥) of the Summer Palace (颐和园).",
+    "status": "needs-review"
+  },
+  "gulou-drum-tower-nanluoguxiang-area.jpg": {
+    "title": "The Drum Tower in Beijing.jpg",
+    "author": "Czzhermit",
+    "source": "https://commons.wikimedia.org/wiki/File%3AThe%20Drum%20Tower%20in%20Beijing.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "alt": "The Drum Tower in Beijing, photo by Chen Yihan, see http://chenyihan.smugmug.com",
+    "status": "needs-review"
+  },
+  "dongsi-central-dongcheng.jpg": {
+    "title": "View W along Dongsi Street, Beijing.jpg",
+    "author": "Daniel Case",
+    "source": "https://commons.wikimedia.org/wiki/File%3AView%20W%20along%20Dongsi%20Street%2C%20Beijing.jpg",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "alt": "Looking west along Dongsi Street, Beijing, from a pedestrian bridge. It becomes Wusi Street at the next intersection (Wa",
+    "status": "needs-review"
+  },
+  "qianmen-dashilar.jpg": {
+    "title": "Qianmen Dajie Walking Street and Qianmen Gate (9870535414).jpg",
+    "author": "Gary Todd from Xinzheng, China",
+    "source": "https://commons.wikimedia.org/wiki/File%3AQianmen%20Dajie%20Walking%20Street%20and%20Qianmen%20Gate%20(9870535414).jpg",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "alt": "Beijing. Complete indexed photo collection at WorldHistoryPics.com.",
+    "status": "needs-review"
+  },
+  "wudaoying-yonghegong-area.jpg": {
+    "title": "Gfp-china-beijing-worshipping-at-lama-temple.jpg",
+    "author": "Yinan Chen",
+    "source": "https://commons.wikimedia.org/wiki/File%3AGfp-china-beijing-worshipping-at-lama-temple.jpg",
+    "license": "Public Domain",
+    "license_url": "https://web.archive.org/web/20230926203737/https://creativecommons.org/licenses/publicdomain/",
+    "alt": "Palaces, avenues, buildings, parks, and scenery around China's Capital\nBurning Incense to Buddhist Dieties at Lama  Temp",
+    "status": "needs-review"
+  },
+  "beihai-park.jpg": {
+    "title": "White pagoda, beihai park, beijing, china.jpg",
+    "author": "Czzhermit",
+    "source": "https://commons.wikimedia.org/wiki/File%3AWhite%20pagoda%2C%20beihai%20park%2C%20beijing%2C%20china.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "alt": "The white pagoda in Beihai Park, Beijing, China, photo by Chen Yihan, see http://chenyihan.smugmug.com",
+    "status": "needs-review"
+  },
+  "lama-temple-and-guozijian-street.jpg": {
+    "title": "Gfp-china-beijing-largest-temple-at-lama-temple.jpg",
+    "author": "Yinan Chen",
+    "source": "https://commons.wikimedia.org/wiki/File%3AGfp-china-beijing-largest-temple-at-lama-temple.jpg",
+    "license": "Public Domain",
+    "license_url": "https://web.archive.org/web/20230926203737/https://creativecommons.org/licenses/publicdomain/",
+    "alt": "Palaces, avenues, buildings, parks, and scenery around China's Capital\nThe largest temple structure at Lama Temple",
+    "status": "needs-review"
+  },
+  "gubeikou-to-jinshanling-wild-wall-hike.jpg": {
+    "title": "Hiking on the wall (7991900707).jpg",
+    "author": "Caitriana Nicholson from 北京 ~ Beijing, 中国 ~ China",
+    "source": "https://commons.wikimedia.org/wiki/File%3AHiking%20on%20the%20wall%20(7991900707).jpg",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "alt": "Wohu Great Wall / 卧虎长城",
+    "status": "needs-review"
+  },
+  "fragrant-hills-park.jpg": {
+    "title": "香山红叶区 - Red Leaves Area of Fragnant Hills Park - 2012.11 - panoramio.jpg",
+    "author": "rheins",
+    "source": "https://commons.wikimedia.org/wiki/File%3A%E9%A6%99%E5%B1%B1%E7%BA%A2%E5%8F%B6%E5%8C%BA%20-%20Red%20Leaves%20Area%20of%20Fragnant%20Hills%20Park%20-%202012.11%20-%20panoramio.jpg",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "alt": "香山红叶区 - Red Leaves Area of Fragnant Hills Park - 2012.11",
+    "status": "needs-review"
+  },
+  "temple-of-heaven-and-morning-park-culture.jpg": {
+    "title": "Temple of Heaven, Beijing - February 2024.jpg",
+    "author": "Lloyd Tudor",
+    "source": "https://commons.wikimedia.org/wiki/File%3ATemple%20of%20Heaven%2C%20Beijing%20-%20February%202024.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "alt": "The Temple of Heaven in Beijing, China",
+    "status": "needs-review"
+  },
+  "jingshan-park.jpg": {
+    "title": "Jingshanpic4.jpg",
+    "author": "harryalverson",
+    "source": "https://commons.wikimedia.org/wiki/File%3AJingshanpic4.jpg",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "alt": "The Jingshan Park in Beijing",
+    "status": "needs-review"
+  },
+  "798-art-district.jpg": {
+    "title": "Beijing 798 Art District.jpg",
+    "author": "Cory M. Grenier",
+    "source": "https://commons.wikimedia.org/wiki/File%3ABeijing%20798%20Art%20District.jpg",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "alt": "798 Art Zone (Chinese: 798艺术区; pinyin: 798 Yìshùqū), or Dashanzi Art District in Beijing, China.",
+    "status": "needs-review"
+  },
+  "panjiayuan-antique-market.jpg": {
+    "title": "Panjiayuan Market Beijing China.jpg",
+    "author": "Ben Tilley",
+    "source": "https://commons.wikimedia.org/wiki/File%3APanjiayuan%20Market%20Beijing%20China.jpg",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "alt": "Panjiayuan Market Beijing China",
+    "status": "needs-review"
+  },
+  "wudaoying-hutong.jpg": {
+    "title": "Beijing hutong Wudaoying 2.jpg",
+    "author": "Andrzej Otrębski",
+    "source": "https://commons.wikimedia.org/wiki/File%3ABeijing%20hutong%20Wudaoying%202.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "alt": "Beijing - Wudaoying Hutong",
+    "status": "needs-review"
+  },
+  "deep-hutong-walking-tour.jpg": {
+    "title": "Beijing Shichahai 1.jpg",
+    "author": "FANG Chen",
+    "source": "https://commons.wikimedia.org/wiki/File%3ABeijing%20Shichahai%201.jpg",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "alt": "The Shichahai lake area in Beijing",
+    "status": "needs-review"
+  },
+  "peking-opera-performance.jpg": {
+    "title": "Li Cunxiao Peking opera 16.jpg",
+    "author": "陈文  https://www.flickr.com/people/univers-finder/",
+    "source": "https://commons.wikimedia.org/wiki/File%3ALi%20Cunxiao%20Peking%20opera%2016.jpg",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "alt": "A en:Peking opera performance in en:Tianchan Theatre by en:Shanghai Jingju Theatre Company. Wang Xilong (王玺龙) stars as e",
+    "status": "needs-review"
+  },
+  "traditional-tea-ceremony.jpg": {
+    "title": "Teochew Kanghu tea preparation.jpg",
+    "author": "James Creegan",
+    "source": "https://commons.wikimedia.org/wiki/File%3ATeochew%20Kanghu%20tea%20preparation.jpg",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "alt": "An unscheduled stop at the bottom of Lao Shan mountain, a woman poured me 4 different kinds of pretty over-priced green ",
+    "status": "needs-review"
+  },
+  "chinese-calligraphy-workshop.jpg": {
+    "title": "Chinesecalligraphywater1.jpg",
+    "author": "Marc Smith",
+    "source": "https://commons.wikimedia.org/wiki/File%3AChinesecalligraphywater1.jpg",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "alt": "A man writing Chinese calligraphy with water brush at the Summer Palace in Beijing",
+    "status": "needs-review"
+  },
+  "hutong-cooking-class.jpg": {
+    "title": "Jiaozi 2.jpg",
+    "author": "Azchael",
+    "source": "https://commons.wikimedia.org/wiki/File%3AJiaozi%202.jpg",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "alt": "Making Chinese dumplings calles Jiaozi",
     "status": "needs-review"
   }
 }
