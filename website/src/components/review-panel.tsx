@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useRef, useCallback, useLayoutEffect } from "react";
 import { ChevronDown, Heart } from "lucide-react";
 import StarRating from "@/components/star-rating";
 import { useUser, type UserInfo } from "@/lib/user-context";
@@ -226,23 +226,62 @@ function UserReviewCard({
 }) {
   const [notes, setNotes] = useState(review.notes ?? "");
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const cursorRef = useRef<number | null>(null);
+  const textareaRef = useRef<HTMLTextAreaElement | null>(null);
 
   useEffect(() => {
     setNotes(review.notes ?? "");
   }, [review.notes]);
 
-  function handleNotesChange(value: string) {
-    setNotes(value);
+  // Restore cursor position after state update (needed for mid-text Enter)
+  useLayoutEffect(() => {
+    if (cursorRef.current !== null && textareaRef.current) {
+      textareaRef.current.selectionStart = cursorRef.current;
+      textareaRef.current.selectionEnd = cursorRef.current;
+      cursorRef.current = null;
+    }
+  });
+
+  function notesOrNull(value: string) {
+    // Treat notes that contain only bullets and whitespace as empty
+    return value.replace(/^•\s*/gm, "").trim() || null;
+  }
+
+  function scheduleSave(value: string) {
     if (timerRef.current) clearTimeout(timerRef.current);
     timerRef.current = setTimeout(() => {
-      onSave(review.stars, value || null);
+      onSave(review.stars, notesOrNull(value));
     }, 2000);
+  }
+
+  function handleNotesChange(value: string) {
+    setNotes(value);
+    scheduleSave(value);
+  }
+
+  function handleNotesFocus() {
+    if (!notes) {
+      setNotes("• ");
+    }
+  }
+
+  function handleNotesKeyDown(e: React.KeyboardEvent<HTMLTextAreaElement>) {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      const el = e.currentTarget;
+      const { selectionStart, selectionEnd, value } = el;
+      const newValue =
+        value.substring(0, selectionStart) + "\n• " + value.substring(selectionEnd);
+      cursorRef.current = selectionStart + 3; // length of "\n• "
+      setNotes(newValue);
+      scheduleSave(newValue);
+    }
   }
 
   function handleNotesBlur() {
     if (timerRef.current) clearTimeout(timerRef.current);
     if (notes !== (review.notes ?? "")) {
-      onSave(review.stars, notes || null);
+      onSave(review.stars, notesOrNull(notes));
     }
   }
 
@@ -270,11 +309,14 @@ function UserReviewCard({
 
       {isCurrentUser ? (
         <textarea
+          ref={textareaRef}
           className="mt-3 w-full rounded-md border bg-muted/30 px-3 py-2 text-sm placeholder:text-muted-foreground/50 focus:outline-none focus:ring-2 focus:ring-ring"
           rows={3}
           placeholder="Add your notes about this city..."
           value={notes}
           onChange={(e) => handleNotesChange(e.target.value)}
+          onFocus={handleNotesFocus}
+          onKeyDown={handleNotesKeyDown}
           onBlur={handleNotesBlur}
         />
       ) : (
