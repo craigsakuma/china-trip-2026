@@ -20,15 +20,24 @@ This is a **travel planning repository**. Your role:
 - **Not interested:** Shanghai, Xian
 - **Note:** Deliberately avoiding Golden Week (Oct 1–7)
 
-## Model Policy
+## Model Policy (Credit-Optimized)
 
-**Default: Sonnet.** Override when task clearly fits a lower tier.
+**Default: Sonnet.** Escalate to Opus only for planning, troubleshooting, and subjective quality evaluation.
 
 | Tier | Model | Use when... |
 |------|-------|-------------|
-| Sonnet | Default | Research, itinerary planning, website work, content creation |
-| Haiku | Override | Single-file mechanical edits, formatting, quick lookups |
-| Opus | Override | Complex multi-source synthesis, travel logistics analysis across many constraints |
+| Opus | Escalate | Complex multi-source synthesis, itinerary trade-off analysis across many constraints, subjective quality evaluation |
+| Sonnet | Default | Research, itinerary planning, website work, content creation, anything with clear instructions |
+| Haiku | Downgrade | Single-file mechanical edits, formatting, quick lookups |
+
+**Routing rules:**
+- Default to Sonnet. Escalate to Opus only when the task requires *judgment*, not just *work*.
+- Researching a destination = Sonnet. Deciding between competing itinerary options = Opus.
+
+**Subagent routing (Task tool):** Always set the `model` parameter on Task tool calls:
+- `model: "sonnet"` for execution subagents (file writes, searches, web research)
+- `model: "haiku"` for lookups and single-file reads
+- `model: "opus"` only for subagents doing planning or quality evaluation
 
 ---
 
