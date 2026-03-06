@@ -1,0 +1,46 @@
+{
+  "config_version": 2,
+  "last_version_check": "2026-03-05",
+  "repo_name": "china-trip-2026",
+  "repo_suffix": "CHINA_TRIP",
+  "repo_type": [
+    "docs",
+    "frontend",
+    "typescript"
+  ],
+  "files": {
+    "claude_md": "CLAUDE.md"
+  },
+  "deployed_skills": {
+    "check-skill-updates": {
+      "version": "2026-02-16-a",
+      "has_readme": false
+    },
+    "format-into-context-dense": {
+      "version": "custom",
+      "has_readme": false,
+      "note": "Custom trip skill — not tracked in tool-library, do not auto-upgrade"
+    },
+    "restore-checkpoint": {
+      "version": "2026-03-04-a",
+      "has_readme": false
+    },
+    "save-checkpoint": {
+      "version": "2026-03-04-a",
+      "has_readme": false
+    },
+    "plan": {
+      "version": "2026-03-05-a",
+      "has_readme": true
+    },
+    "execute-plan": {
+      "version": "2026-03-06-b",
+      "has_readme": true
+    }
+  },
+  "repo_specific": {
+    "test_command": null,
+    "build_command": "cd website && npm run build",
+    "pre_commit_checks": []
+  }
+}
